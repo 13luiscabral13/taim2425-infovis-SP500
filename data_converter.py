@@ -1,47 +1,36 @@
-import csv
 import sqlite3
-import pandas as pd
+import openpyxl
 
-# Convert CSV to SQLite
-def csv_to_sqlite(csv_file, sqlite_file, table_name):
-    conn = sqlite3.connect(sqlite_file)
+def xlsx_to_sqlite(xlsx_file, db_file, table_name):
+    # Load the Excel file
+    wb = openpyxl.load_workbook(xlsx_file)
+    sheet = wb.active
+
+    # Connect to the SQLite database (or create it)
+    conn = sqlite3.connect(db_file)
     cursor = conn.cursor()
 
-    with open(csv_file, 'r') as f:
-        reader = csv.reader(f)
-        columns = next(reader)
-        query = 'CREATE TABLE IF NOT EXISTS {} ({})'.format(table_name, ', '.join(columns))
-        cursor.execute(query)
+    # Get column names from the second row (remember rows and cols start from 1 in openpyxl)
+    columns = [cell.value for cell in sheet[2]]
 
-        query = 'INSERT INTO {} VALUES ({})'.format(table_name, ', '.join(['?'] * len(columns)))
-        cursor.executemany(query, reader)
+    # Create the table based on the column names
+    cursor.execute(f"DROP TABLE IF EXISTS {table_name}")
+    columns_str = ', '.join([f'"{col}" TEXT' for col in columns])
+    cursor.execute(f"CREATE TABLE {table_name} ({columns_str})")
 
+    # Iterate over the rows, starting from the third row (after deleting the first row)
+    for row in sheet.iter_rows(min_row=3, values_only=True):
+        # Prepare the data to insert
+        row_data = tuple(row)
+        placeholders = ', '.join(['?' for _ in row_data])
+        cursor.execute(f"INSERT INTO {table_name} ({', '.join(columns)}) VALUES ({placeholders})", row_data)
+
+    # Commit changes and close the connection
     conn.commit()
     conn.close()
-
-
-# Convert Excel to SQLite
-def excel_to_sqlite(excel_file, sqlite_file, table_name):
-    # The second row of the Excel file is the column names
-    df = pd.read_excel(excel_file)
-
-    # Delete first row
-    df = df.iloc[1:]
-    columns = df.columns.tolist()
-
-    conn = sqlite3.connect(sqlite_file)
-    cursor = conn.cursor()
-
-    query = 'CREATE TABLE IF NOT EXISTS {} ({})'.format(table_name, ', '.join(columns))
-    cursor.execute(query)
-
-    query = 'INSERT INTO {} VALUES ({})'.format(table_name, ', '.join(['?'] * len(columns)))
-    cursor.executemany(query, df.values.tolist())
-    
-    conn.commit()
-    conn.close()
+    print(f"Data from {xlsx_file} has been inserted into the {table_name} table in {db_file}.")
 
 
 
 if __name__ == '__main__':
-    excel_to_sqlite('s&p500.xlsx', 's&p500.db', 'company')
+    xlsx_to_sqlite('sp500_top10_holders.xlsx', 'sp500_top10_holders.db', 'company')
