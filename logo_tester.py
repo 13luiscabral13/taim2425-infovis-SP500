@@ -11,7 +11,7 @@ html_template = f"""
 <body>
     """
 
-connection = sqlite3.connect('s&p500.db')
+connection = sqlite3.connect('sp500.db')
 cursor = connection.cursor()
 cursor.execute('SELECT hotlink FROM company')
 hotlinks = cursor.fetchall()

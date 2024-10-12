@@ -19,5 +19,9 @@ def add_hotlink(sqlite_file, table_name, column_name):
     conn.close()
     print(f"Hotlinks have been added to the {column_name} column in the {table_name} table in {sqlite_file}.")
 
+def add_shares_integer(sqlite_file, table_name, column_name):
+    return
+
 if __name__ == '__main__':
-    add_hotlink('s&p500.db', 'company', 'hotlink')
+    add_hotlink('sp500.db', 'company', 'hotlink')
+    add_shares_integer('sp500.db', 'company', 'hotlink')
