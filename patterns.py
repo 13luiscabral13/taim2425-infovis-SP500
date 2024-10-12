@@ -3,8 +3,8 @@ import sqlite3
 
 def connect_db():
     # Path to your database
-    database_path1 = r"c:\FEUP\5ano\1semestre\TAIM\taim2425-infovis-SP500\sp500.db"
-    database_path2 = r"c:\FEUP\5ano\1semestre\TAIM\taim2425-infovis-SP500\sp500_top10_holders.db"
+    database_path1 = r"sp500.db"
+    database_path2 = r"sp500_top10_holders.db"
 
     # Connect to the SQLite database
     conn1 = sqlite3.connect(database_path1)
