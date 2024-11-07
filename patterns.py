@@ -16,12 +16,30 @@ def connect_db():
     cursor1 = conn1.cursor()
     cursor2 = conn2.cursor()
 
-    #in what concerns to wealth distribution, should we measure it by marketCap or by shares' value (investment made) held by holders
-    #shouldn't the sum of shares' values be equal to the marketCap of the company?
+    conn1.execute("ATTACH DATABASE ? AS db2", (database_path2,))
 
-    wealth_distribution_per_sector(cursor1)
-    print("\n-----------------------\n")
+    # Create a view that joins the tables on 'isin'
+    create_view_query = """
+    CREATE TEMPORARY TABLE IF NOT EXISTS joined_sp500 AS
+    SELECT *
+    FROM main.company AS sp500
+    JOIN db2.company AS holders
+    ON sp500.isin = holders.isin;
+    """
+    
+    # Execute the query to create the view
+    conn1.execute(create_view_query)
+    
+    # Create a cursor for working with the joined view
+    cursor = conn1.cursor()
+
+    # in what concerns to wealth distribution, should we measure it by marketCap or by shares' value (investment made) held by holders
+    # can be important to make the comparison between these two, to see which holder invested their money better 
+    # (e.g, holder A invested 10 in a company that's worth 20, holder B invested 15 in the same company, the holder A wins)
+
     ownership_concentration(cursor2)
+    print("\n-----------------------\n")
+    ownership_concentration_by_sector(cursor)
     print("\n-----------------------\n")
     conn1.close()
     conn2.close()
@@ -39,57 +57,24 @@ def execute_query(cursor, query):
     except sqlite3.Error as e:
         print(f"An error occurred: {e}")
 
-def wealth_distribution_per_sector(cursor1):
-
-    top_3_wealth = 0
-    total_wealth = 0
-    remaining_wealth = 0
-    pctg_wealth_distribution_per_sector_top3 = 0
-    pctg_remaining_wealth_distribution_per_sector = 0
-
-    # SQL query to calculate total shareholding value by company
-    query_wealth_distribution_per_sector = '''
-    SELECT sector, SUM (marketCap) AS marketValue
-    FROM company
-    GROUP BY sector
-    ORDER BY marketValue DESC
-    '''  
-    results = execute_query(cursor1, query_wealth_distribution_per_sector)
-
-    # Top 3 companies by shareholding value
-    print("\nTop 3 sectors by market capitalization\n")
-    for row_number in range(0,3):
-        print(f"{results[row_number][0]}: ${int(results[row_number][1]):,.2f}")
-
-    
-    # Sum the shareholding value of the top 10 companies
-    for row_number in range(0,3):
-        top_3_wealth += results[row_number][1]
-    
-    for row in results:
-        total_wealth += row[1]
-
-    remaining_wealth = total_wealth - top_3_wealth
-    
-    pctg_wealth_distribution_per_sector_top3 = (top_3_wealth / total_wealth) * 100  
-    pctg_remaining_wealth_distribution_per_sector = (remaining_wealth / total_wealth) * 100
-
-
-    print("\nComparison of wealth Distribution:")
-    print(f"Total market capitalization of Top 3 Sectors: ${top_3_wealth:,.2f}")
-    print(f"Total market capitalization of Other Sectors: ${remaining_wealth:,.2f}")
-    print(f"Top 3 as % of Total: {pctg_wealth_distribution_per_sector_top3:.2f}%")
-    print(f"Others as % of Total: {pctg_remaining_wealth_distribution_per_sector:.2f}%")
-
 def ownership_concentration(cursor2):
+
+    query_total_shares_value = '''
+    SELECT SUM(value) as total_shares_value
+    FROM company
+    '''
+
+    results_total_shares_value = execute_query(cursor2, query_total_shares_value)
+    print("Total shares value: ", results_total_shares_value[0][0])
+
     top_holder_names = []
 
     # SQL query to calculate top holders
     query_top_holders = '''
-    SELECT name, SUM (value) AS shares_value
+    SELECT name, SUM (value) AS shares_value_by_holder
     FROM company
     GROUP BY name
-    ORDER BY shares_value DESC
+    ORDER BY shares_value_by_holder DESC
     '''
     results_top_holders = execute_query(cursor2, query_top_holders)
     
@@ -98,29 +83,19 @@ def ownership_concentration(cursor2):
         top_holder_names.append(results_top_holders[row_number][0])
         print(f"{results_top_holders[row_number][0]}: ${int(results_top_holders[row_number][1]):,.2f}")
 
-    query_ownership_holders = '''
-    SELECT symbol, SUM (pctg) AS ownership
-    FROM company
-    GROUP BY isin
-    ORDER BY ownership DESC
+    print("\nTop 10 holders by shares value in relation to the total shares value invested(%)\n")
+    for row_number in range(0,10):
+        print(f"{results_top_holders[row_number][0]}: %{(int(results_top_holders[row_number][1]) / results_total_shares_value[0][0]) * 100:,.2f}")
+
+
+def ownership_concentration_by_sector(cursor):
+    query = '''
+    SELECT * 
+    FROM joined_sp500
+    WHERE isin="US67066G1040"
     '''
 
-    results_ownership = execute_query(cursor2, query_ownership_holders)
-
-    query_ownership_top10_holders = '''
-    SELECT symbol, SUM (pctg) AS ownership
-    FROM company
-    WHERE name IN ({})
-    GROUP BY isin
-    ORDER BY ownership DESC
-    '''.format(','.join(f"'{holder}'" for holder in top_holder_names))
-
-    results_ownership_top10 = execute_query(cursor2, query_ownership_top10_holders)
-
-    #divide, for each company, %owned on results_ownership_top10 by %owned on results_ownership. This way, we can see
-    #how much of each company in terms of % is owned just by the top 10 holders. then, verify how many companies are
-    #50% or more owned by just the top 10 holders and verify where the top 10 companies place in terms of being owned
-    #by the top 10 holders, to verify how much the top 10 holders invest on the top 10 companies
+    print(execute_query(cursor, query))
 
 if __name__ == '__main__':
     connect_db()
