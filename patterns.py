@@ -187,5 +187,6 @@ def ownership_concentration_by_state(cursor, state_name):
     for row_number in range(0,10):
         print(f"{results_top_holders_by_state[row_number][0]}: %{(int(results_top_holders_by_state[row_number][1]) / results_total_shares_value_by_state[0][0]) * 100:,.2f}")
 
+
 if __name__ == '__main__':
     connect_db()
