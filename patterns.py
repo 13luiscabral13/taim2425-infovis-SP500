@@ -39,15 +39,19 @@ def connect_db():
 
     ownership_concentration(cursor2)
     print("\n-----------------------\n")
-    ownership_concentration_by_sector(cursor)
+    ownership_concentration_by_sector(cursor, "Technology")
+    print("\n-----------------------\n")
+    ownership_concentration_by_industry(cursor, "Semiconductors")
+    print("\n-----------------------\n")
+    ownership_concentration_by_state(cursor, "CA")
     print("\n-----------------------\n")
     conn1.close()
     conn2.close()
 
-def execute_query(cursor, query):
+def execute_query(cursor, query, params=()):
     try:
         # Execute the query
-        cursor.execute(query)
+        cursor.execute(query, params)
 
         # Fetch all results
         results = cursor.fetchall()
@@ -88,14 +92,100 @@ def ownership_concentration(cursor2):
         print(f"{results_top_holders[row_number][0]}: %{(int(results_top_holders[row_number][1]) / results_total_shares_value[0][0]) * 100:,.2f}")
 
 
-def ownership_concentration_by_sector(cursor):
-    query = '''
-    SELECT * 
+def ownership_concentration_by_sector(cursor, sector_name):
+    query_total_shares_value_by_sector = '''
+    SELECT SUM(value)
     FROM joined_sp500
-    WHERE isin="US67066G1040"
+    WHERE sector = ?
     '''
 
-    print(execute_query(cursor, query))
+    results_total_shares_value_by_sector = execute_query(cursor, query_total_shares_value_by_sector, (sector_name,))
+    print("Total shares value in the", sector_name, " sector: ", results_total_shares_value_by_sector[0][0])
+
+    top_holder_names_by_sector = []
+
+    query_top_holders_by_sector = '''
+    SELECT name, SUM(value) AS shares_value_by_holder_by_sector
+    FROM joined_sp500
+    WHERE sector = ?
+    GROUP BY name
+    ORDER BY shares_value_by_holder_by_sector DESC
+    '''
+
+    results_top_holders_by_sector = execute_query(cursor, query_top_holders_by_sector, (sector_name,))
+
+    print("\nTop 10 holders by shares value in the", sector_name, " sector\n")
+    for row_number in range(0,10):
+        top_holder_names_by_sector.append(results_top_holders_by_sector[row_number][0])
+        print(f"{results_top_holders_by_sector[row_number][0]}: ${int(results_top_holders_by_sector[row_number][1]):,.2f}")
+
+    print("\nTop 10 holders by shares value in the", sector_name, " sector in relation to the total shares value invested(%)\n")
+    for row_number in range(0,10):
+        print(f"{results_top_holders_by_sector[row_number][0]}: %{(int(results_top_holders_by_sector[row_number][1]) / results_total_shares_value_by_sector[0][0]) * 100:,.2f}")
+
+
+def ownership_concentration_by_industry(cursor, industry_name):
+    query_total_shares_value_by_industry = '''
+    SELECT SUM(value)
+    FROM joined_sp500
+    WHERE industry = ?
+    '''
+
+    results_total_shares_value_by_industry = execute_query(cursor, query_total_shares_value_by_industry, (industry_name,))
+    print("Total shares value in the ", industry_name, " industry: ", results_total_shares_value_by_industry[0][0])
+
+    top_holder_names_by_industry = []
+
+    query_top_holders_by_industry = '''
+    SELECT name, SUM(value) AS shares_value_by_holder_by_industry
+    FROM joined_sp500
+    WHERE industry = ?
+    GROUP BY name
+    ORDER BY shares_value_by_holder_by_industry DESC
+    '''
+
+    results_top_holders_by_industry = execute_query(cursor, query_top_holders_by_industry, (industry_name,))
+
+    print("\nTop 10 holders by shares value in the", industry_name, " industry\n")
+    for row_number in range(0,10):
+        top_holder_names_by_industry.append(results_top_holders_by_industry[row_number][0])
+        print(f"{results_top_holders_by_industry[row_number][0]}: ${int(results_top_holders_by_industry[row_number][1]):,.2f}")
+
+    print("\nTop 10 holders by shares value in the ", industry_name, " industry in relation to the total shares value invested(%)\n")
+    for row_number in range(0,10):
+        print(f"{results_top_holders_by_industry[row_number][0]}: %{(int(results_top_holders_by_industry[row_number][1]) / results_total_shares_value_by_industry[0][0]) * 100:,.2f}")
+
+
+def ownership_concentration_by_state(cursor, state_name):
+    query_total_shares_value_by_state = '''
+    SELECT SUM(value)
+    FROM joined_sp500
+    WHERE state = ?
+    '''
+
+    results_total_shares_value_by_state = execute_query(cursor, query_total_shares_value_by_state, (state_name,))
+    print("Total shares value in ", state_name, ":", results_total_shares_value_by_state[0][0])
+
+    top_holder_names_by_state = []
+
+    query_top_holders_by_state = '''
+    SELECT name, SUM(value) AS shares_value_by_holder_by_state
+    FROM joined_sp500
+    WHERE state = ?
+    GROUP BY name
+    ORDER BY shares_value_by_holder_by_state DESC
+    '''
+
+    results_top_holders_by_state = execute_query(cursor, query_top_holders_by_state, (state_name,))
+
+    print("\nTop 10 holders by shares value in ", state_name, "\n")
+    for row_number in range(0,10):
+        top_holder_names_by_state.append(results_top_holders_by_state[row_number][0])
+        print(f"{results_top_holders_by_state[row_number][0]}: ${int(results_top_holders_by_state[row_number][1]):,.2f}")
+
+    print("\nTop 10 holders by shares value in ", state_name, " in relation to the total shares value invested(%)\n")
+    for row_number in range(0,10):
+        print(f"{results_top_holders_by_state[row_number][0]}: %{(int(results_top_holders_by_state[row_number][1]) / results_total_shares_value_by_state[0][0]) * 100:,.2f}")
 
 if __name__ == '__main__':
     connect_db()
