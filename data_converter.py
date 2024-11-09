@@ -23,6 +23,7 @@ def xlsx_to_sqlite(xlsx_file, db_file, table_name):
         # Prepare the data to insert
         row_data = tuple(row)
         placeholders = ', '.join(['?' for _ in row_data])
+        print(columns)
         cursor.execute(f"INSERT INTO {table_name} ({', '.join(columns)}) VALUES ({placeholders})", row_data)
 
     # Commit changes and close the connection
@@ -33,4 +34,4 @@ def xlsx_to_sqlite(xlsx_file, db_file, table_name):
 
 
 if __name__ == '__main__':
-    xlsx_to_sqlite('sp500_top10_holders.xlsx', 'sp500_top10_holders.db', 'company')
+    xlsx_to_sqlite('original_dataset/s&p500.xlsx', 'sp500.db', 'company')
