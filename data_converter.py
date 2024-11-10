@@ -34,4 +34,4 @@ def xlsx_to_sqlite(xlsx_file, db_file, table_name):
 
 
 if __name__ == '__main__':
-    xlsx_to_sqlite('original_dataset/s&p500.xlsx', 'sp500.db', 'company')
+    xlsx_to_sqlite('original_dataset/sp500_top10_holders.xlsx', 'sp500_top10_holders.db', 'company')
