@@ -49,7 +49,7 @@ def connect_db():
     #ownership_concentration_by_state(cursor, state_list)#- done
     #shareholder_per_sector(cursor, shareholder_list)#- done
     #shareholder_per_company(cursor, shareholder_list)#- done
-    shareholder_per_sector_per_company(cursor, shareholder_list, sector_list,)#- done 
+    #shareholder_per_sector_per_company(cursor, shareholder_list, sector_list,)#- done 
 
     conn1.close()
     conn2.close()
@@ -231,7 +231,7 @@ def shareholder_per_company(cursor, shareholder_list):
 
     for shareholder in shareholder_list:
         query_shareholder_per_company = '''
-        SELECT name, symbol, SUM(value) AS shareholder_per_sector_value
+        SELECT name, symbol, SUM(value), shortName, city, website, state AS shareholder_per_sector_value
         FROM joined_sp500
         WHERE name = ? AND class = "Top Institutional Holders"
         GROUP BY name, isin 
@@ -240,11 +240,12 @@ def shareholder_per_company(cursor, shareholder_list):
         results_shareholder_per_company = execute_query(cursor, query_shareholder_per_company, (shareholder,))
         
         # Convert results to list of tuples for each shareholder
-        sector_values = [(row[1], f"${row[2]:,.2f}") for row in results_shareholder_per_company]
+        sector_values = [(row[1], f"${row[2]:,.2f}", row[3], row[4], row[5]) for row in results_shareholder_per_company]
         
         # Add data to the main dictionary
         shareholders_per_company_data[shareholder] = sector_values
 
+    print(shareholders_per_company_data)
     # Write the dictionary to a JSON file
     with open('shareholder_per_company.json', 'w') as json_file:
         json.dump(shareholders_per_company_data, json_file, indent=4)
@@ -259,7 +260,7 @@ def shareholder_per_sector_per_company(cursor, shareholder_list, sector_list):
         shareholders_per_sector_per_company_data[shareholder] = {}
         for sector in sector_list:
             query_shareholder_per_sector_per_company = '''
-            SELECT name, sector, symbol, SUM(value) AS shareholder_per_sector_value
+            SELECT name, sector, symbol, SUM(value), shortName, city, website AS shareholder_per_sector_value
             FROM joined_sp500
             WHERE name = ? AND sector = ? AND class = "Top Institutional Holders"
             GROUP BY name, sector, isin 
@@ -275,7 +276,7 @@ def shareholder_per_sector_per_company(cursor, shareholder_list, sector_list):
                 # Append each company's data within the sector
                 for row in results_shareholder_per_sector_per_company:
                     shareholders_per_sector_per_company_data[shareholder][sector].append(
-                        (row[2], f"${row[3]:,.2f}")  # symbol and formatted value
+                        (row[2], f"${row[3]:,.2f}", row[4], row[5], row[6])  # symbol and formatted value
                     )
 
     # Write the dictionary to a JSON file

@@ -9,7 +9,7 @@ const Chart = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const data = await ownershipByState("AZ", 8);
+            const data = await perShareholderPerCompany("Brown Advisory  Inc.", 8);
             setChartData(data);
         };
 
