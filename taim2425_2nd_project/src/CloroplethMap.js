@@ -61,7 +61,7 @@ const ChoroplethMapComp = ({ geojsonData }) => {
 
     // method that we will use to update the control based on feature properties passed
     info.update = function (props) {
-      this._div.innerHTML = props ? ('<h4>' + props.NAME + '</h4>') : '<h4> Hover over a state </h4>';
+      this._div.innerHTML = props ? ('<h4>' + props.LSAD + '</h4>') : '<h4> Hover over a state </h4>';
     };
 
     info.addTo(map);

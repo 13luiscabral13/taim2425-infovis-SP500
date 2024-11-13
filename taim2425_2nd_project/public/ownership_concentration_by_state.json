@@ -1,0 +1,5856 @@
+[
+    {
+        "state": "AL",
+        "total_shares_value": "$26,667,582,123.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$6,611,071,266.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$4,479,828,989.00"
+            },
+            {
+                "name": "State Farm Mutual Automobile Insurance Co",
+                "value": "$2,413,094,623.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$2,388,299,101.00"
+            },
+            {
+                "name": "JP Morgan Chase & Company",
+                "value": "$2,125,781,260.00"
+            },
+            {
+                "name": "Massachusetts Financial Services Co.",
+                "value": "$1,794,276,569.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$1,326,519,298.00"
+            },
+            {
+                "name": "Wellington Management Group, LLP",
+                "value": "$1,118,688,440.00"
+            },
+            {
+                "name": "Principal Financial Group, Inc.",
+                "value": "$1,107,356,205.00"
+            },
+            {
+                "name": "FMR, LLC",
+                "value": "$894,339,433.00"
+            },
+            {
+                "name": "ClearBridge Investments, LLC",
+                "value": "$647,313,069.00"
+            },
+            {
+                "name": "Charles Schwab Investment Management, Inc.",
+                "value": "$614,257,841.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$400,403,305.00"
+            },
+            {
+                "name": "First Trust Advisors LP",
+                "value": "$385,356,318.00"
+            },
+            {
+                "name": "Invesco Ltd.",
+                "value": "$360,996,406.00"
+            }
+        ]
+    },
+    {
+        "state": "AR",
+        "total_shares_value": "$124,437,725,539.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$37,041,921,451.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$26,446,337,840.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$16,391,340,676.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$7,568,861,290.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$7,003,042,024.00"
+            },
+            {
+                "name": "Bank of America Corporation",
+                "value": "$5,695,769,462.00"
+            },
+            {
+                "name": "Norges Bank Investment Management",
+                "value": "$5,590,493,254.00"
+            },
+            {
+                "name": "Price (T.Rowe) Associates Inc",
+                "value": "$5,220,034,481.00"
+            },
+            {
+                "name": "FMR, LLC",
+                "value": "$4,990,154,289.00"
+            },
+            {
+                "name": "Fisher Asset Management, LLC",
+                "value": "$3,669,721,131.00"
+            },
+            {
+                "name": "T. Rowe Price Investment Management, Inc.",
+                "value": "$921,520,047.00"
+            },
+            {
+                "name": "Wellington Management Group, LLP",
+                "value": "$815,961,272.00"
+            },
+            {
+                "name": "Pzena Investment Management Llc",
+                "value": "$723,895,118.00"
+            },
+            {
+                "name": "Invesco Ltd.",
+                "value": "$693,498,384.00"
+            },
+            {
+                "name": "Janus Henderson Group PLC",
+                "value": "$581,030,072.00"
+            },
+            {
+                "name": "Victory Capital Management Inc.",
+                "value": "$405,556,671.00"
+            },
+            {
+                "name": "Franklin Resources, Inc.",
+                "value": "$401,979,140.00"
+            },
+            {
+                "name": "Northern Trust Corporation",
+                "value": "$276,608,937.00"
+            }
+        ]
+    },
+    {
+        "state": "AZ",
+        "total_shares_value": "$94,689,047,163.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$21,886,604,141.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$18,337,309,816.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$9,722,448,705.00"
+            },
+            {
+                "name": "FMR, LLC",
+                "value": "$7,758,953,055.00"
+            },
+            {
+                "name": "Capital Research Global Investors",
+                "value": "$5,007,424,285.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$4,792,177,853.00"
+            },
+            {
+                "name": "Fisher Asset Management, LLC",
+                "value": "$2,802,796,566.00"
+            },
+            {
+                "name": "JP Morgan Chase & Company",
+                "value": "$2,603,214,616.00"
+            },
+            {
+                "name": "Price (T.Rowe) Associates Inc",
+                "value": "$2,411,149,827.00"
+            },
+            {
+                "name": "Bank of America Corporation",
+                "value": "$2,361,515,591.00"
+            },
+            {
+                "name": "Capital World Investors",
+                "value": "$1,938,534,457.00"
+            },
+            {
+                "name": "Pictet Asset Management Holding SA",
+                "value": "$1,928,104,242.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$1,723,784,421.00"
+            },
+            {
+                "name": "Wellington Management Group, LLP",
+                "value": "$1,439,373,999.00"
+            },
+            {
+                "name": "T. Rowe Price Investment Management, Inc.",
+                "value": "$1,410,854,734.00"
+            },
+            {
+                "name": "Invesco Ltd.",
+                "value": "$1,319,425,666.00"
+            },
+            {
+                "name": "Franklin Resources, Inc.",
+                "value": "$1,205,049,843.00"
+            },
+            {
+                "name": "Aristotle Capital Management, LLC",
+                "value": "$1,098,150,327.00"
+            },
+            {
+                "name": "Janus Henderson Group PLC",
+                "value": "$833,693,446.00"
+            },
+            {
+                "name": "Ameriprise Financial, Inc.",
+                "value": "$779,945,335.00"
+            },
+            {
+                "name": "Principal Financial Group, Inc.",
+                "value": "$703,743,737.00"
+            },
+            {
+                "name": "Barrow, Hanley Mewhinney & Strauss, LLC",
+                "value": "$622,628,202.00"
+            },
+            {
+                "name": "Sands Capital Management, LLC",
+                "value": "$328,615,702.00"
+            },
+            {
+                "name": "Brown Advisory  Inc.",
+                "value": "$294,085,403.00"
+            },
+            {
+                "name": "Nuveen Asset Management, LLC",
+                "value": "$294,005,214.00"
+            },
+            {
+                "name": "Atlas Infrastructure Partners (UK) Ltd.",
+                "value": "$292,651,126.00"
+            },
+            {
+                "name": "Bank Of New York Mellon Corporation",
+                "value": "$287,747,982.00"
+            },
+            {
+                "name": "Lazard Asset Management LLC",
+                "value": "$260,467,443.00"
+            },
+            {
+                "name": "Zimmer Partners, Lp",
+                "value": "$244,591,429.00"
+            }
+        ]
+    },
+    {
+        "state": "BC",
+        "total_shares_value": "$16,108,220,864.00",
+        "top_holders": [
+            {
+                "name": "FMR, LLC",
+                "value": "$4,769,670,035.00"
+            },
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$3,128,482,672.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$2,435,060,013.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$1,287,960,366.00"
+            },
+            {
+                "name": "Value Star Asset Management (hong Kong) Ltd",
+                "value": "$1,239,920,804.00"
+            },
+            {
+                "name": "Edgewood Management Llc",
+                "value": "$861,315,873.00"
+            },
+            {
+                "name": "Alliancebernstein L.P.",
+                "value": "$705,013,114.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$647,579,320.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$550,158,429.00"
+            },
+            {
+                "name": "Arrowstreet Capital, Limited Partnership",
+                "value": "$483,060,238.00"
+            }
+        ]
+    },
+    {
+        "state": "CA",
+        "total_shares_value": "$5,371,413,730,889.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$1,368,906,593,827.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$1,149,549,185,433.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$622,762,035,067.00"
+            },
+            {
+                "name": "FMR, LLC",
+                "value": "$457,986,015,122.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$321,534,435,359.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$238,002,386,479.00"
+            },
+            {
+                "name": "Price (T.Rowe) Associates Inc",
+                "value": "$228,031,414,899.00"
+            },
+            {
+                "name": "JP Morgan Chase & Company",
+                "value": "$203,130,893,937.00"
+            },
+            {
+                "name": "Norges Bank Investment Management",
+                "value": "$120,030,911,222.00"
+            },
+            {
+                "name": "Berkshire Hathaway, Inc",
+                "value": "$107,343,455,461.00"
+            },
+            {
+                "name": "Capital World Investors",
+                "value": "$105,344,066,858.00"
+            },
+            {
+                "name": "Capital International Investors",
+                "value": "$74,420,388,318.00"
+            },
+            {
+                "name": "Capital Research Global Investors",
+                "value": "$59,847,443,400.00"
+            },
+            {
+                "name": "Northern Trust Corporation",
+                "value": "$43,177,532,452.00"
+            },
+            {
+                "name": "Bank of America Corporation",
+                "value": "$42,085,224,852.00"
+            },
+            {
+                "name": "Wellington Management Group, LLP",
+                "value": "$24,576,613,891.00"
+            },
+            {
+                "name": "Primecap Management Company",
+                "value": "$17,757,421,154.00"
+            },
+            {
+                "name": "Alliancebernstein L.P.",
+                "value": "$13,665,223,556.00"
+            },
+            {
+                "name": "Charles Schwab Investment Management, Inc.",
+                "value": "$11,941,768,587.00"
+            },
+            {
+                "name": "Massachusetts Financial Services Co.",
+                "value": "$11,870,388,015.00"
+            },
+            {
+                "name": "Bank Of New York Mellon Corporation",
+                "value": "$10,993,301,302.00"
+            },
+            {
+                "name": "Cohen & Steers Inc.",
+                "value": "$10,450,876,809.00"
+            },
+            {
+                "name": "Dodge & Cox Inc",
+                "value": "$10,274,944,847.00"
+            },
+            {
+                "name": "Fisher Asset Management, LLC",
+                "value": "$9,390,980,057.00"
+            },
+            {
+                "name": "Jennison Associates LLC",
+                "value": "$9,125,366,854.00"
+            },
+            {
+                "name": "Franklin Resources, Inc.",
+                "value": "$6,616,291,587.00"
+            },
+            {
+                "name": "Ameriprise Financial, Inc.",
+                "value": "$5,995,882,510.00"
+            },
+            {
+                "name": "T. Rowe Price Investment Management, Inc.",
+                "value": "$5,605,416,841.00"
+            },
+            {
+                "name": "Invesco Ltd.",
+                "value": "$3,944,244,398.00"
+            },
+            {
+                "name": "Principal Financial Group, Inc.",
+                "value": "$3,637,172,306.00"
+            },
+            {
+                "name": "Public Investment Fund",
+                "value": "$3,509,826,113.00"
+            },
+            {
+                "name": "UBS Asset Management Americas Inc",
+                "value": "$3,446,493,004.00"
+            },
+            {
+                "name": "Apg Asset Management US Inc.",
+                "value": "$3,359,687,954.00"
+            },
+            {
+                "name": "Cresset Asset Management, LLC",
+                "value": "$2,999,778,963.00"
+            },
+            {
+                "name": "Loomis Sayles & Company, LP",
+                "value": "$2,999,285,938.00"
+            },
+            {
+                "name": "Edgewood Management Llc",
+                "value": "$2,944,067,229.00"
+            },
+            {
+                "name": "State Farm Mutual Automobile Insurance Co",
+                "value": "$2,929,318,885.00"
+            },
+            {
+                "name": "Comprehensive Financial Management, LLC",
+                "value": "$2,821,955,569.00"
+            },
+            {
+                "name": "Wells Fargo & Company",
+                "value": "$2,433,488,543.00"
+            },
+            {
+                "name": "Aristotle Capital Management, LLC",
+                "value": "$2,028,126,454.00"
+            },
+            {
+                "name": "Ninety One UK Ltd",
+                "value": "$1,965,317,679.00"
+            },
+            {
+                "name": "Brown Advisory  Inc.",
+                "value": "$1,930,477,111.00"
+            },
+            {
+                "name": "Baillie Gifford and Company",
+                "value": "$1,750,195,006.00"
+            },
+            {
+                "name": "Pershing Square Capital Management, L.P.",
+                "value": "$1,682,229,363.00"
+            },
+            {
+                "name": "Select Equity Group, Inc.",
+                "value": "$1,596,112,924.00"
+            },
+            {
+                "name": "Amundi",
+                "value": "$1,506,722,433.00"
+            },
+            {
+                "name": "Pzena Investment Management Llc",
+                "value": "$1,505,203,222.00"
+            },
+            {
+                "name": "Deutsche Bank Aktiengesellschaft",
+                "value": "$1,453,278,416.00"
+            },
+            {
+                "name": "Canada Pension Plan Investment Board",
+                "value": "$1,439,033,939.00"
+            },
+            {
+                "name": "Parnassus Investments, LLC",
+                "value": "$1,426,433,806.00"
+            },
+            {
+                "name": "Nordea Investment Management AB",
+                "value": "$1,393,168,212.00"
+            },
+            {
+                "name": "Kayne Anderson Rudnick Investment Management LLC",
+                "value": "$1,384,555,031.00"
+            },
+            {
+                "name": "Legal & General Group PLC",
+                "value": "$1,346,688,037.00"
+            },
+            {
+                "name": "Polen Capital Management, LLC",
+                "value": "$1,329,773,547.00"
+            },
+            {
+                "name": "Independent Franchise Partners, LLP",
+                "value": "$1,168,334,845.00"
+            },
+            {
+                "name": "Newport Trust Company, LLC",
+                "value": "$1,144,410,059.00"
+            },
+            {
+                "name": "Barclays Plc",
+                "value": "$1,121,738,576.00"
+            },
+            {
+                "name": "ClearBridge Investments, LLC",
+                "value": "$1,116,591,696.00"
+            },
+            {
+                "name": "Third Point, LLC",
+                "value": "$1,069,087,467.00"
+            },
+            {
+                "name": "Swedbank",
+                "value": "$1,030,126,620.00"
+            },
+            {
+                "name": "Goldman Sachs Group Inc",
+                "value": "$999,268,685.00"
+            },
+            {
+                "name": "Pacer Advisors, Inc.",
+                "value": "$990,573,501.00"
+            },
+            {
+                "name": "Veritas Asset Management LLP",
+                "value": "$854,361,308.00"
+            },
+            {
+                "name": "Blackstone Inc",
+                "value": "$808,128,109.00"
+            },
+            {
+                "name": "Victory Capital Management Inc.",
+                "value": "$794,516,844.00"
+            },
+            {
+                "name": "Fundsmith LLP",
+                "value": "$787,984,725.00"
+            },
+            {
+                "name": "Nuveen Asset Management, LLC",
+                "value": "$763,355,605.00"
+            },
+            {
+                "name": "Pictet Asset Management Holding SA",
+                "value": "$744,755,048.00"
+            },
+            {
+                "name": "Janus Henderson Group PLC",
+                "value": "$737,013,402.00"
+            },
+            {
+                "name": "Sands Capital Management, LLC",
+                "value": "$707,771,980.00"
+            },
+            {
+                "name": "Power Corp of Canada",
+                "value": "$671,188,881.00"
+            },
+            {
+                "name": "FIL LTD",
+                "value": "$612,462,403.00"
+            },
+            {
+                "name": "Mirova US, LLC",
+                "value": "$587,850,124.00"
+            },
+            {
+                "name": "DnB Asset Management AS",
+                "value": "$518,600,676.00"
+            },
+            {
+                "name": "Arrowstreet Capital, Limited Partnership",
+                "value": "$509,384,604.00"
+            },
+            {
+                "name": "Citadel Advisors Llc",
+                "value": "$458,989,349.00"
+            },
+            {
+                "name": "Lsv Asset Management",
+                "value": "$456,754,788.00"
+            },
+            {
+                "name": "Vulcan Value Partners, LLC",
+                "value": "$446,694,068.00"
+            },
+            {
+                "name": "D1 Capital Partners, LP",
+                "value": "$378,980,736.00"
+            },
+            {
+                "name": "Stifel Financial Corporation",
+                "value": "$372,458,663.00"
+            },
+            {
+                "name": "Pentwater Capital Management Lp",
+                "value": "$344,882,505.00"
+            },
+            {
+                "name": "Cantillon Capital Management LLC",
+                "value": "$326,189,897.00"
+            },
+            {
+                "name": "Royal Bank of Canada",
+                "value": "$269,319,712.00"
+            },
+            {
+                "name": "Nuance Investments, LLC",
+                "value": "$259,078,821.00"
+            },
+            {
+                "name": "Champlain Investment Partners, LLC",
+                "value": "$253,235,385.00"
+            },
+            {
+                "name": "Van Eck Associates Corporation",
+                "value": "$215,282,133.00"
+            },
+            {
+                "name": "First Eagle Investment Management, LLC",
+                "value": "$207,788,331.00"
+            },
+            {
+                "name": "Earnest Partners LLC",
+                "value": "$198,158,761.00"
+            },
+            {
+                "name": "Dimensional Fund Advisors LP",
+                "value": "$161,522,831.00"
+            },
+            {
+                "name": "ProShares Advisors, LLC",
+                "value": "$147,796,973.00"
+            }
+        ]
+    },
+    {
+        "state": "CO",
+        "total_shares_value": "$81,314,694,080.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$21,215,256,828.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$17,417,486,651.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$8,043,963,335.00"
+            },
+            {
+                "name": "Berkshire Hathaway, Inc",
+                "value": "$5,927,524,222.00"
+            },
+            {
+                "name": "Van Eck Associates Corporation",
+                "value": "$5,634,084,080.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$3,710,971,310.00"
+            },
+            {
+                "name": "Norges Bank Investment Management",
+                "value": "$3,111,472,684.00"
+            },
+            {
+                "name": "Bank Of New York Mellon Corporation",
+                "value": "$2,568,147,696.00"
+            },
+            {
+                "name": "First Eagle Investment Management, LLC",
+                "value": "$1,893,091,843.00"
+            },
+            {
+                "name": "Deutsche Bank Aktiengesellschaft",
+                "value": "$1,603,671,827.00"
+            },
+            {
+                "name": "Cohen & Steers Inc.",
+                "value": "$1,344,601,548.00"
+            },
+            {
+                "name": "Northern Trust Corporation",
+                "value": "$1,325,366,713.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$831,688,978.00"
+            },
+            {
+                "name": "Dodge & Cox Inc",
+                "value": "$801,331,514.00"
+            },
+            {
+                "name": "Generation Investment Management LLP",
+                "value": "$667,148,843.00"
+            },
+            {
+                "name": "Lsv Asset Management",
+                "value": "$524,797,550.00"
+            },
+            {
+                "name": "Select Equity Group, Inc.",
+                "value": "$523,877,766.00"
+            },
+            {
+                "name": "CenterSquare Investment Management LLC",
+                "value": "$497,664,129.00"
+            },
+            {
+                "name": "Invesco Ltd.",
+                "value": "$459,969,032.00"
+            },
+            {
+                "name": "FMR, LLC",
+                "value": "$454,335,023.00"
+            },
+            {
+                "name": "JP Morgan Chase & Company",
+                "value": "$336,255,663.00"
+            },
+            {
+                "name": "UBS Asset Management Americas Inc",
+                "value": "$334,105,195.00"
+            },
+            {
+                "name": "Wellington Management Group, LLP",
+                "value": "$326,354,726.00"
+            },
+            {
+                "name": "Sumitomo Mitsui Trust Holdings, Inc.",
+                "value": "$307,936,953.00"
+            },
+            {
+                "name": "Pacer Advisors, Inc.",
+                "value": "$296,739,318.00"
+            },
+            {
+                "name": "Primecap Management Company",
+                "value": "$281,851,632.00"
+            },
+            {
+                "name": "AQR Capital Management, LLC",
+                "value": "$263,380,918.00"
+            },
+            {
+                "name": "Clarkston Capital Partners LLC",
+                "value": "$256,637,676.00"
+            },
+            {
+                "name": "8 Knots Management, LLC",
+                "value": "$193,716,380.00"
+            },
+            {
+                "name": "Dimensional Fund Advisors LP",
+                "value": "$161,264,047.00"
+            }
+        ]
+    },
+    {
+        "state": "CT",
+        "total_shares_value": "$353,560,798,242.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$77,769,832,160.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$58,027,041,791.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$33,296,370,666.00"
+            },
+            {
+                "name": "Capital World Investors",
+                "value": "$23,977,205,003.00"
+            },
+            {
+                "name": "FMR, LLC",
+                "value": "$19,899,080,503.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$16,537,222,001.00"
+            },
+            {
+                "name": "Price (T.Rowe) Associates Inc",
+                "value": "$16,047,554,722.00"
+            },
+            {
+                "name": "Capital International Investors",
+                "value": "$14,826,050,460.00"
+            },
+            {
+                "name": "JP Morgan Chase & Company",
+                "value": "$12,716,245,748.00"
+            },
+            {
+                "name": "Capital Research Global Investors",
+                "value": "$12,243,848,448.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$10,796,125,132.00"
+            },
+            {
+                "name": "Dodge & Cox Inc",
+                "value": "$10,059,966,761.00"
+            },
+            {
+                "name": "Massachusetts Financial Services Co.",
+                "value": "$8,046,308,275.00"
+            },
+            {
+                "name": "Bank Of New York Mellon Corporation",
+                "value": "$4,569,129,740.00"
+            },
+            {
+                "name": "GQG Partners LLC",
+                "value": "$4,410,835,578.00"
+            },
+            {
+                "name": "Bank of America Corporation",
+                "value": "$3,647,112,729.00"
+            },
+            {
+                "name": "BAMCO Inc.",
+                "value": "$3,358,082,081.00"
+            },
+            {
+                "name": "Sanders Capital, LLC",
+                "value": "$2,752,951,476.00"
+            },
+            {
+                "name": "Alliancebernstein L.P.",
+                "value": "$2,182,902,863.00"
+            },
+            {
+                "name": "Norges Bank Investment Management",
+                "value": "$2,034,212,844.00"
+            },
+            {
+                "name": "Harris Associates L.P.",
+                "value": "$1,984,742,239.00"
+            },
+            {
+                "name": "Invesco Ltd.",
+                "value": "$1,464,566,263.00"
+            },
+            {
+                "name": "Berkshire Hathaway, Inc",
+                "value": "$1,204,163,617.00"
+            },
+            {
+                "name": "Wells Fargo & Company",
+                "value": "$1,092,190,759.00"
+            },
+            {
+                "name": "Principal Financial Group, Inc.",
+                "value": "$969,686,368.00"
+            },
+            {
+                "name": "Kayne Anderson Rudnick Investment Management LLC",
+                "value": "$957,434,687.00"
+            },
+            {
+                "name": "Franklin Resources, Inc.",
+                "value": "$953,360,995.00"
+            },
+            {
+                "name": "Pzena Investment Management Llc",
+                "value": "$950,888,475.00"
+            },
+            {
+                "name": "Polen Capital Management, LLC",
+                "value": "$843,686,242.00"
+            },
+            {
+                "name": "Parnassus Investments, LLC",
+                "value": "$830,930,356.00"
+            },
+            {
+                "name": "Victory Capital Management Inc.",
+                "value": "$820,334,989.00"
+            },
+            {
+                "name": "Loomis Sayles & Company, LP",
+                "value": "$735,243,458.00"
+            },
+            {
+                "name": "Fiera Capital Corporation",
+                "value": "$698,745,722.00"
+            },
+            {
+                "name": "Dimensional Fund Advisors LP",
+                "value": "$677,545,407.00"
+            },
+            {
+                "name": "Ninety One UK Ltd",
+                "value": "$559,401,737.00"
+            },
+            {
+                "name": "Arrowstreet Capital, Limited Partnership",
+                "value": "$464,823,648.00"
+            },
+            {
+                "name": "Janus Henderson Group PLC",
+                "value": "$422,740,036.00"
+            },
+            {
+                "name": "Par Capital Management Inc",
+                "value": "$404,880,006.00"
+            },
+            {
+                "name": "First Trust Advisors LP",
+                "value": "$327,354,257.00"
+            }
+        ]
+    },
+    {
+        "state": "DC",
+        "total_shares_value": "$97,776,298,979.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$24,806,011,256.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$19,505,958,471.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$9,971,974,298.00"
+            },
+            {
+                "name": "Wellington Management Group, LLP",
+                "value": "$6,557,110,236.00"
+            },
+            {
+                "name": "FMR, LLC",
+                "value": "$5,464,696,648.00"
+            },
+            {
+                "name": "Price (T.Rowe) Associates Inc",
+                "value": "$5,193,313,040.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$5,098,033,031.00"
+            },
+            {
+                "name": "Capital International Investors",
+                "value": "$4,696,608,328.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$4,185,179,477.00"
+            },
+            {
+                "name": "JP Morgan Chase & Company",
+                "value": "$2,733,198,173.00"
+            },
+            {
+                "name": "Principal Financial Group, Inc.",
+                "value": "$1,427,640,798.00"
+            },
+            {
+                "name": "BAMCO Inc.",
+                "value": "$1,420,272,493.00"
+            },
+            {
+                "name": "Aristotle Capital Management, LLC",
+                "value": "$1,107,833,065.00"
+            },
+            {
+                "name": "Janus Henderson Group PLC",
+                "value": "$892,840,824.00"
+            },
+            {
+                "name": "Pictet Asset Management Holding SA",
+                "value": "$862,472,060.00"
+            },
+            {
+                "name": "Massachusetts Financial Services Co.",
+                "value": "$839,042,921.00"
+            },
+            {
+                "name": "Baillie Gifford and Company",
+                "value": "$667,116,232.00"
+            },
+            {
+                "name": "Akre Capital Management, LLC",
+                "value": "$646,380,148.00"
+            },
+            {
+                "name": "Amundi",
+                "value": "$598,044,107.00"
+            },
+            {
+                "name": "Artisan Partners Limited Partnership",
+                "value": "$555,240,006.00"
+            },
+            {
+                "name": "Royal Bank of Canada",
+                "value": "$547,333,367.00"
+            }
+        ]
+    },
+    {
+        "state": "DE",
+        "total_shares_value": "$7,419,290,760.00",
+        "top_holders": [
+            {
+                "name": "Baker Bros. Advisors, LP",
+                "value": "$1,936,527,012.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$1,345,445,262.00"
+            },
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$1,283,653,161.00"
+            },
+            {
+                "name": "Dodge & Cox Inc",
+                "value": "$962,598,609.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$683,645,697.00"
+            },
+            {
+                "name": "Renaissance Technologies, LLC",
+                "value": "$328,755,231.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$254,938,194.00"
+            },
+            {
+                "name": "Invesco Ltd.",
+                "value": "$224,882,091.00"
+            },
+            {
+                "name": "Acadian Asset Management. LLC",
+                "value": "$224,342,307.00"
+            },
+            {
+                "name": "Lsv Asset Management",
+                "value": "$174,503,196.00"
+            }
+        ]
+    },
+    {
+        "state": "FL",
+        "total_shares_value": "$314,537,810,972.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$74,837,402,677.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$54,225,144,834.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$30,927,160,792.00"
+            },
+            {
+                "name": "JP Morgan Chase & Company",
+                "value": "$15,878,719,734.00"
+            },
+            {
+                "name": "Capital Research Global Investors",
+                "value": "$15,492,580,435.00"
+            },
+            {
+                "name": "Capital International Investors",
+                "value": "$15,370,553,225.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$15,261,257,617.00"
+            },
+            {
+                "name": "Capital World Investors",
+                "value": "$12,165,777,336.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$10,380,060,571.00"
+            },
+            {
+                "name": "Price (T.Rowe) Associates Inc",
+                "value": "$9,514,134,386.00"
+            },
+            {
+                "name": "Norges Bank Investment Management",
+                "value": "$5,913,018,369.00"
+            },
+            {
+                "name": "Franklin Resources, Inc.",
+                "value": "$4,893,633,835.00"
+            },
+            {
+                "name": "Dodge & Cox Inc",
+                "value": "$4,555,161,122.00"
+            },
+            {
+                "name": "Principal Financial Group, Inc.",
+                "value": "$4,446,512,154.00"
+            },
+            {
+                "name": "Bank of America Corporation",
+                "value": "$3,949,816,605.00"
+            },
+            {
+                "name": "Wells Fargo & Company",
+                "value": "$3,906,819,906.00"
+            },
+            {
+                "name": "Wellington Management Group, LLP",
+                "value": "$3,740,426,117.00"
+            },
+            {
+                "name": "FMR, LLC",
+                "value": "$2,892,715,808.00"
+            },
+            {
+                "name": "T. Rowe Price Investment Management, Inc.",
+                "value": "$2,411,651,740.00"
+            },
+            {
+                "name": "Primecap Management Company",
+                "value": "$2,407,585,190.00"
+            },
+            {
+                "name": "Fisher Asset Management, LLC",
+                "value": "$1,912,950,029.00"
+            },
+            {
+                "name": "Aristotle Capital Management, LLC",
+                "value": "$1,855,163,504.00"
+            },
+            {
+                "name": "Greenhaven Associates, Inc.",
+                "value": "$1,631,744,674.00"
+            },
+            {
+                "name": "Manufacturers Life Insurance Co.",
+                "value": "$1,421,598,589.00"
+            },
+            {
+                "name": "Select Equity Group, Inc.",
+                "value": "$1,360,201,614.00"
+            },
+            {
+                "name": "Barrow, Hanley Mewhinney & Strauss, LLC",
+                "value": "$1,336,638,373.00"
+            },
+            {
+                "name": "Boston Partners",
+                "value": "$1,317,565,136.00"
+            },
+            {
+                "name": "Goldman Sachs Group Inc",
+                "value": "$1,285,768,573.00"
+            },
+            {
+                "name": "Invesco Ltd.",
+                "value": "$1,113,566,157.00"
+            },
+            {
+                "name": "Dz Bank Ag Deutsche Zentral Genossenschafts Bank, Frankfurt Am Main",
+                "value": "$872,212,188.00"
+            },
+            {
+                "name": "Akre Capital Management, LLC",
+                "value": "$846,491,793.00"
+            },
+            {
+                "name": "Bank Of New York Mellon Corporation",
+                "value": "$736,473,489.00"
+            },
+            {
+                "name": "BESSEMER GROUP, INCORPORATED",
+                "value": "$665,541,911.00"
+            },
+            {
+                "name": "Charles Schwab Investment Management, Inc.",
+                "value": "$580,091,310.00"
+            },
+            {
+                "name": "Deutsche Bank Aktiengesellschaft",
+                "value": "$546,868,575.00"
+            },
+            {
+                "name": "Victory Capital Management Inc.",
+                "value": "$506,307,535.00"
+            },
+            {
+                "name": "Diamond Hill Capital Management Inc",
+                "value": "$472,405,592.00"
+            },
+            {
+                "name": "Massachusetts Financial Services Co.",
+                "value": "$436,708,565.00"
+            },
+            {
+                "name": "Allspring Global Investments Holdings, LLC",
+                "value": "$402,582,537.00"
+            },
+            {
+                "name": "Raymond James & Associates, Inc.",
+                "value": "$387,375,811.00"
+            },
+            {
+                "name": "Nuveen Asset Management, LLC",
+                "value": "$345,252,476.00"
+            },
+            {
+                "name": "AGF Management Ltd.",
+                "value": "$322,816,417.00"
+            },
+            {
+                "name": "Apg Asset Management US Inc.",
+                "value": "$220,651,416.00"
+            },
+            {
+                "name": "Two Sigma Investments, LP",
+                "value": "$212,168,510.00"
+            },
+            {
+                "name": "Dimensional Fund Advisors LP",
+                "value": "$167,490,189.00"
+            },
+            {
+                "name": "Citadel Advisors Llc",
+                "value": "$148,443,069.00"
+            },
+            {
+                "name": "Northern Trust Corporation",
+                "value": "$141,163,213.00"
+            },
+            {
+                "name": "Ariel Investments, LLC",
+                "value": "$121,437,274.00"
+            }
+        ]
+    },
+    {
+        "state": "GA",
+        "total_shares_value": "$498,865,928,687.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$123,977,156,601.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$97,518,876,645.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$57,490,329,965.00"
+            },
+            {
+                "name": "Berkshire Hathaway, Inc",
+                "value": "$28,464,001,464.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$28,043,604,530.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$21,597,140,247.00"
+            },
+            {
+                "name": "JP Morgan Chase & Company",
+                "value": "$14,608,961,670.00"
+            },
+            {
+                "name": "Charles Schwab Investment Management, Inc.",
+                "value": "$12,992,991,405.00"
+            },
+            {
+                "name": "FMR, LLC",
+                "value": "$12,379,525,210.00"
+            },
+            {
+                "name": "Capital World Investors",
+                "value": "$12,163,020,679.00"
+            },
+            {
+                "name": "Bank of America Corporation",
+                "value": "$8,301,553,846.00"
+            },
+            {
+                "name": "Capital International Investors",
+                "value": "$7,941,625,756.00"
+            },
+            {
+                "name": "Price (T.Rowe) Associates Inc",
+                "value": "$7,057,303,761.00"
+            },
+            {
+                "name": "Norges Bank Investment Management",
+                "value": "$5,989,351,209.00"
+            },
+            {
+                "name": "Franklin Resources, Inc.",
+                "value": "$5,842,786,358.00"
+            },
+            {
+                "name": "Japan Post Holdings Co., Ltd.",
+                "value": "$5,736,787,127.00"
+            },
+            {
+                "name": "Capital Research Global Investors",
+                "value": "$4,698,462,307.00"
+            },
+            {
+                "name": "T. Rowe Price Investment Management, Inc.",
+                "value": "$4,376,004,753.00"
+            },
+            {
+                "name": "Massachusetts Financial Services Co.",
+                "value": "$3,836,229,261.00"
+            },
+            {
+                "name": "Wellington Management Group, LLP",
+                "value": "$3,643,018,965.00"
+            },
+            {
+                "name": "Wells Fargo & Company",
+                "value": "$3,164,664,165.00"
+            },
+            {
+                "name": "Lazard Asset Management LLC",
+                "value": "$3,076,450,883.00"
+            },
+            {
+                "name": "Dodge & Cox Inc",
+                "value": "$2,626,391,174.00"
+            },
+            {
+                "name": "Harris Associates L.P.",
+                "value": "$2,378,880,180.00"
+            },
+            {
+                "name": "Dimensional Fund Advisors LP",
+                "value": "$2,145,320,654.00"
+            },
+            {
+                "name": "Greenhaven Associates, Inc.",
+                "value": "$1,569,061,572.00"
+            },
+            {
+                "name": "Kayne Anderson Rudnick Investment Management LLC",
+                "value": "$1,398,189,345.00"
+            },
+            {
+                "name": "Sanders Capital, LLC",
+                "value": "$1,392,012,319.00"
+            },
+            {
+                "name": "Parnassus Investments, LLC",
+                "value": "$1,201,864,275.00"
+            },
+            {
+                "name": "Primecap Management Company",
+                "value": "$1,152,670,401.00"
+            },
+            {
+                "name": "Generation Investment Management LLP",
+                "value": "$1,057,075,051.00"
+            },
+            {
+                "name": "Lsv Asset Management",
+                "value": "$1,022,901,857.00"
+            },
+            {
+                "name": "Apg Asset Management N.V.",
+                "value": "$986,736,906.00"
+            },
+            {
+                "name": "Invesco Ltd.",
+                "value": "$940,807,296.00"
+            },
+            {
+                "name": "Edgepoint Investment Group Inc.",
+                "value": "$921,969,790.00"
+            },
+            {
+                "name": "Ameriprise Financial, Inc.",
+                "value": "$821,766,449.00"
+            },
+            {
+                "name": "Northern Trust Corporation",
+                "value": "$802,313,286.00"
+            },
+            {
+                "name": "Synovus Financial Corporation",
+                "value": "$774,147,143.00"
+            },
+            {
+                "name": "Pzena Investment Management Llc",
+                "value": "$623,461,303.00"
+            },
+            {
+                "name": "Orbis Allan Gray Ltd",
+                "value": "$603,196,534.00"
+            },
+            {
+                "name": "Legal & General Group PLC",
+                "value": "$598,004,993.00"
+            },
+            {
+                "name": "Trian Fund Management, LP",
+                "value": "$484,174,105.00"
+            },
+            {
+                "name": "Montrusco Bolton Investments Inc.",
+                "value": "$418,403,245.00"
+            },
+            {
+                "name": "Bank Of New York Mellon Corporation",
+                "value": "$417,871,969.00"
+            },
+            {
+                "name": "Ariel Investments, LLC",
+                "value": "$285,036,453.00"
+            },
+            {
+                "name": "Stifel Financial Corporation",
+                "value": "$281,552,713.00"
+            },
+            {
+                "name": "Select Equity Group, Inc.",
+                "value": "$267,112,825.00"
+            },
+            {
+                "name": "Shapiro Capital Management Company, Inc.",
+                "value": "$217,000,536.00"
+            },
+            {
+                "name": "AQR Capital Management, LLC",
+                "value": "$204,981,395.00"
+            },
+            {
+                "name": "Macquarie Group Limited",
+                "value": "$178,901,532.00"
+            },
+            {
+                "name": "Alliancebernstein L.P.",
+                "value": "$103,622,985.00"
+            },
+            {
+                "name": "Millennium Management Llc",
+                "value": "$90,653,594.00"
+            }
+        ]
+    },
+    {
+        "state": "IA",
+        "total_shares_value": "$9,379,159,395.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$2,370,667,472.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$1,688,357,880.00"
+            },
+            {
+                "name": "Nippon Life Insurance Company",
+                "value": "$1,549,443,915.00"
+            },
+            {
+                "name": "Bank of America Corporation",
+                "value": "$915,543,232.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$816,552,757.00"
+            },
+            {
+                "name": "Capital Research Global Investors",
+                "value": "$564,171,349.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$463,838,256.00"
+            },
+            {
+                "name": "Wellington Management Group, LLP",
+                "value": "$378,830,366.00"
+            },
+            {
+                "name": "Dimensional Fund Advisors LP",
+                "value": "$333,614,744.00"
+            },
+            {
+                "name": "Northern Trust Corporation",
+                "value": "$298,139,424.00"
+            }
+        ]
+    },
+    {
+        "state": "ID",
+        "total_shares_value": "$45,732,514,255.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$10,486,552,278.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$9,464,529,881.00"
+            },
+            {
+                "name": "FMR, LLC",
+                "value": "$5,567,067,304.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$4,857,610,719.00"
+            },
+            {
+                "name": "Primecap Management Company",
+                "value": "$3,584,226,697.00"
+            },
+            {
+                "name": "Capital World Investors",
+                "value": "$2,622,932,099.00"
+            },
+            {
+                "name": "JP Morgan Chase & Company",
+                "value": "$2,467,445,971.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$2,409,717,529.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$1,926,396,871.00"
+            },
+            {
+                "name": "Capital International Investors",
+                "value": "$1,584,953,316.00"
+            },
+            {
+                "name": "Apg Asset Management N.V.",
+                "value": "$302,627,053.00"
+            },
+            {
+                "name": "Stockbridge Partners LLC",
+                "value": "$264,431,881.00"
+            },
+            {
+                "name": "TPG GP A, LLC",
+                "value": "$194,022,656.00"
+            }
+        ]
+    },
+    {
+        "state": "IL",
+        "total_shares_value": "$730,846,819,279.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$190,669,677,998.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$141,067,763,161.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$81,874,811,544.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$39,831,839,544.00"
+            },
+            {
+                "name": "JP Morgan Chase & Company",
+                "value": "$35,361,928,910.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$30,455,422,125.00"
+            },
+            {
+                "name": "Capital International Investors",
+                "value": "$21,610,908,233.00"
+            },
+            {
+                "name": "Capital Research Global Investors",
+                "value": "$19,099,804,254.00"
+            },
+            {
+                "name": "Norges Bank Investment Management",
+                "value": "$17,044,556,655.00"
+            },
+            {
+                "name": "Wellington Management Group, LLP",
+                "value": "$16,702,619,062.00"
+            },
+            {
+                "name": "Capital World Investors",
+                "value": "$16,359,201,705.00"
+            },
+            {
+                "name": "FMR, LLC",
+                "value": "$12,573,958,626.00"
+            },
+            {
+                "name": "State Farm Mutual Automobile Insurance Co",
+                "value": "$11,364,809,722.00"
+            },
+            {
+                "name": "Bank of America Corporation",
+                "value": "$8,856,725,482.00"
+            },
+            {
+                "name": "Price (T.Rowe) Associates Inc",
+                "value": "$8,562,935,264.00"
+            },
+            {
+                "name": "Northern Trust Corporation",
+                "value": "$7,728,268,435.00"
+            },
+            {
+                "name": "Briar Hall Management LLC",
+                "value": "$6,822,935,001.00"
+            },
+            {
+                "name": "Charles Schwab Investment Management, Inc.",
+                "value": "$5,917,801,551.00"
+            },
+            {
+                "name": "Invesco Ltd.",
+                "value": "$4,212,864,432.00"
+            },
+            {
+                "name": "Kellogg W K Foundation Trust",
+                "value": "$4,127,806,556.00"
+            },
+            {
+                "name": "Wells Fargo & Company",
+                "value": "$3,042,531,202.00"
+            },
+            {
+                "name": "T. Rowe Price Investment Management, Inc.",
+                "value": "$2,751,999,856.00"
+            },
+            {
+                "name": "Bank Of New York Mellon Corporation",
+                "value": "$2,299,028,668.00"
+            },
+            {
+                "name": "Alliancebernstein L.P.",
+                "value": "$2,249,519,508.00"
+            },
+            {
+                "name": "Harris Associates L.P.",
+                "value": "$2,173,747,436.00"
+            },
+            {
+                "name": "Primecap Management Company",
+                "value": "$1,994,256,711.00"
+            },
+            {
+                "name": "Massachusetts Financial Services Co.",
+                "value": "$1,864,508,815.00"
+            },
+            {
+                "name": "Apg Asset Management US Inc.",
+                "value": "$1,851,444,244.00"
+            },
+            {
+                "name": "Keybank National Association",
+                "value": "$1,580,478,705.00"
+            },
+            {
+                "name": "Parnassus Investments, LLC",
+                "value": "$1,532,320,117.00"
+            },
+            {
+                "name": "Ameriprise Financial, Inc.",
+                "value": "$1,509,769,262.00"
+            },
+            {
+                "name": "Franklin Resources, Inc.",
+                "value": "$1,508,192,989.00"
+            },
+            {
+                "name": "Principal Financial Group, Inc.",
+                "value": "$1,250,556,109.00"
+            },
+            {
+                "name": "Pzena Investment Management Llc",
+                "value": "$1,186,377,475.00"
+            },
+            {
+                "name": "ClearBridge Investments, LLC",
+                "value": "$1,124,367,018.00"
+            },
+            {
+                "name": "Select Equity Group, Inc.",
+                "value": "$1,099,128,111.00"
+            },
+            {
+                "name": "Dodge & Cox Inc",
+                "value": "$1,059,350,501.00"
+            },
+            {
+                "name": "Resolution Capital Ltd",
+                "value": "$1,046,558,725.00"
+            },
+            {
+                "name": "Raymond James & Associates, Inc.",
+                "value": "$1,044,970,546.00"
+            },
+            {
+                "name": "Lazard Asset Management LLC",
+                "value": "$1,030,844,667.00"
+            },
+            {
+                "name": "Amundi",
+                "value": "$1,013,761,050.00"
+            },
+            {
+                "name": "Victory Capital Management Inc.",
+                "value": "$918,529,178.00"
+            },
+            {
+                "name": "Macquarie Group Limited",
+                "value": "$907,797,862.00"
+            },
+            {
+                "name": "Pacer Advisors, Inc.",
+                "value": "$889,747,982.00"
+            },
+            {
+                "name": "American Century Companies Inc",
+                "value": "$851,642,977.00"
+            },
+            {
+                "name": "Apg Asset Management N.V.",
+                "value": "$811,244,795.00"
+            },
+            {
+                "name": "Nordea Investment Management AB",
+                "value": "$716,540,046.00"
+            },
+            {
+                "name": "Diamond Hill Capital Management Inc",
+                "value": "$711,960,020.00"
+            },
+            {
+                "name": "Mawer Investment Management Ltd.",
+                "value": "$702,664,507.00"
+            },
+            {
+                "name": "First Eagle Investment Management, LLC",
+                "value": "$699,368,679.00"
+            },
+            {
+                "name": "Goldman Sachs Group Inc",
+                "value": "$652,584,907.00"
+            },
+            {
+                "name": "Legal & General Group PLC",
+                "value": "$608,536,693.00"
+            },
+            {
+                "name": "Beutel, Goodman & Company Ltd",
+                "value": "$571,275,083.00"
+            },
+            {
+                "name": "Sessa Capital IM, L.P.",
+                "value": "$560,850,606.00"
+            },
+            {
+                "name": "Kayne Anderson Rudnick Investment Management LLC",
+                "value": "$539,109,578.00"
+            },
+            {
+                "name": "Nuveen Asset Management, LLC",
+                "value": "$506,191,782.00"
+            },
+            {
+                "name": "CenterSquare Investment Management LLC",
+                "value": "$503,386,376.00"
+            },
+            {
+                "name": "Dimensional Fund Advisors LP",
+                "value": "$501,365,786.00"
+            },
+            {
+                "name": "FIL LTD",
+                "value": "$484,385,804.00"
+            },
+            {
+                "name": "Sanders Capital, LLC",
+                "value": "$480,821,010.00"
+            },
+            {
+                "name": "Brave Warrior Advisors, LLC",
+                "value": "$470,415,307.00"
+            },
+            {
+                "name": "Boston Partners",
+                "value": "$452,315,929.00"
+            },
+            {
+                "name": "Impax Asset Management Group Plc",
+                "value": "$416,228,243.00"
+            },
+            {
+                "name": "Renaissance Technologies, LLC",
+                "value": "$377,756,886.00"
+            },
+            {
+                "name": "First Trust Advisors LP",
+                "value": "$362,124,749.00"
+            },
+            {
+                "name": "Federated Hermes, Inc.",
+                "value": "$355,570,942.00"
+            },
+            {
+                "name": "Allspring Global Investments Holdings, LLC",
+                "value": "$348,395,661.00"
+            },
+            {
+                "name": "Pictet Asset Management Holding SA",
+                "value": "$338,712,716.00"
+            },
+            {
+                "name": "Janus Henderson Group PLC",
+                "value": "$306,900,418.00"
+            },
+            {
+                "name": "Berkshire Hathaway, Inc",
+                "value": "$280,486,684.00"
+            },
+            {
+                "name": "Camber Capital Management LP",
+                "value": "$59,558,098.00"
+            }
+        ]
+    },
+    {
+        "state": "IN",
+        "total_shares_value": "$525,043,245,875.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$100,250,995,467.00"
+            },
+            {
+                "name": "Lilly Endowment, Inc",
+                "value": "$88,589,698,307.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$86,574,713,437.00"
+            },
+            {
+                "name": "PNC Financial Services Group, Inc.",
+                "value": "$46,770,688,779.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$45,540,826,168.00"
+            },
+            {
+                "name": "FMR, LLC",
+                "value": "$34,232,747,148.00"
+            },
+            {
+                "name": "Price (T.Rowe) Associates Inc",
+                "value": "$28,385,880,933.00"
+            },
+            {
+                "name": "Capital World Investors",
+                "value": "$19,847,251,732.00"
+            },
+            {
+                "name": "Primecap Management Company",
+                "value": "$18,394,724,767.00"
+            },
+            {
+                "name": "JP Morgan Chase & Company",
+                "value": "$17,524,696,904.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$6,953,764,847.00"
+            },
+            {
+                "name": "Cohen & Steers Inc.",
+                "value": "$3,462,947,925.00"
+            },
+            {
+                "name": "Capital International Investors",
+                "value": "$3,089,525,623.00"
+            },
+            {
+                "name": "Norges Bank Investment Management",
+                "value": "$2,949,590,268.00"
+            },
+            {
+                "name": "Ameriprise Financial, Inc.",
+                "value": "$2,567,554,378.00"
+            },
+            {
+                "name": "Sanders Capital, LLC",
+                "value": "$2,375,752,097.00"
+            },
+            {
+                "name": "Wellington Management Group, LLP",
+                "value": "$2,172,879,152.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$1,967,618,318.00"
+            },
+            {
+                "name": "Dodge & Cox Inc",
+                "value": "$1,806,267,344.00"
+            },
+            {
+                "name": "Aristotle Capital Management, LLC",
+                "value": "$1,377,111,811.00"
+            },
+            {
+                "name": "Bank of America Corporation",
+                "value": "$1,095,993,957.00"
+            },
+            {
+                "name": "Invesco Ltd.",
+                "value": "$912,785,925.00"
+            },
+            {
+                "name": "Fisher Asset Management, LLC",
+                "value": "$901,754,610.00"
+            },
+            {
+                "name": "Nuveen Asset Management, LLC",
+                "value": "$822,991,911.00"
+            },
+            {
+                "name": "Legal & General Group PLC",
+                "value": "$810,903,860.00"
+            },
+            {
+                "name": "Harris Associates L.P.",
+                "value": "$809,323,574.00"
+            },
+            {
+                "name": "Franklin Resources, Inc.",
+                "value": "$796,248,111.00"
+            },
+            {
+                "name": "Massachusetts Financial Services Co.",
+                "value": "$744,349,737.00"
+            },
+            {
+                "name": "American Century Companies Inc",
+                "value": "$697,222,627.00"
+            },
+            {
+                "name": "First Eagle Investment Management, LLC",
+                "value": "$634,205,615.00"
+            },
+            {
+                "name": "Deutsche Bank Aktiengesellschaft",
+                "value": "$612,182,405.00"
+            },
+            {
+                "name": "Northern Trust Corporation",
+                "value": "$542,859,277.00"
+            },
+            {
+                "name": "T. Rowe Price Investment Management, Inc.",
+                "value": "$468,904,611.00"
+            },
+            {
+                "name": "Jennison Associates LLC",
+                "value": "$358,284,250.00"
+            }
+        ]
+    },
+    {
+        "state": "KY",
+        "total_shares_value": "$35,380,443,181.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$7,879,414,622.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$6,562,704,845.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$3,350,273,976.00"
+            },
+            {
+                "name": "Capital World Investors",
+                "value": "$2,621,961,965.00"
+            },
+            {
+                "name": "JP Morgan Chase & Company",
+                "value": "$2,190,280,036.00"
+            },
+            {
+                "name": "Capital International Investors",
+                "value": "$1,933,731,234.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$1,856,157,359.00"
+            },
+            {
+                "name": "FMR, LLC",
+                "value": "$1,449,158,605.00"
+            },
+            {
+                "name": "T. Rowe Price Investment Management, Inc.",
+                "value": "$1,434,994,440.00"
+            },
+            {
+                "name": "Wellington Management Group, LLP",
+                "value": "$1,434,890,820.00"
+            },
+            {
+                "name": "Dodge & Cox Inc",
+                "value": "$1,344,047,857.00"
+            },
+            {
+                "name": "Eagle Capital Management LLC",
+                "value": "$1,006,626,815.00"
+            },
+            {
+                "name": "Price (T.Rowe) Associates Inc",
+                "value": "$832,698,461.00"
+            },
+            {
+                "name": "Sustainable Growth Advisors, LP",
+                "value": "$760,293,772.00"
+            },
+            {
+                "name": "Pzena Investment Management Llc",
+                "value": "$723,208,374.00"
+            }
+        ]
+    },
+    {
+        "state": "LA",
+        "total_shares_value": "$18,594,115,577.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$4,970,353,244.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$3,657,379,304.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$2,050,531,117.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$993,665,328.00"
+            },
+            {
+                "name": "Invesco Ltd.",
+                "value": "$969,057,084.00"
+            },
+            {
+                "name": "Barrow, Hanley Mewhinney & Strauss, LLC",
+                "value": "$898,643,110.00"
+            },
+            {
+                "name": "Ameriprise Financial, Inc.",
+                "value": "$840,591,204.00"
+            },
+            {
+                "name": "FMR, LLC",
+                "value": "$817,089,191.00"
+            },
+            {
+                "name": "Kayne Anderson Rudnick Investment Management LLC",
+                "value": "$777,660,160.00"
+            },
+            {
+                "name": "Capital International Investors",
+                "value": "$643,150,917.00"
+            },
+            {
+                "name": "Capital Research Global Investors",
+                "value": "$521,127,069.00"
+            },
+            {
+                "name": "Wellington Management Group, LLP",
+                "value": "$406,927,166.00"
+            },
+            {
+                "name": "JP Morgan Chase & Company",
+                "value": "$379,932,137.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$351,937,169.00"
+            },
+            {
+                "name": "Blair (William) & Company, L.L.C.",
+                "value": "$316,071,377.00"
+            }
+        ]
+    },
+    {
+        "state": "MA",
+        "total_shares_value": "$468,703,202,456.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$108,060,981,653.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$91,363,798,809.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$48,062,860,736.00"
+            },
+            {
+                "name": "FMR, LLC",
+                "value": "$35,486,130,522.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$23,585,991,559.00"
+            },
+            {
+                "name": "Capital World Investors",
+                "value": "$22,200,068,620.00"
+            },
+            {
+                "name": "JP Morgan Chase & Company",
+                "value": "$18,803,588,562.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$15,397,507,809.00"
+            },
+            {
+                "name": "Wellington Management Group, LLP",
+                "value": "$14,572,658,362.00"
+            },
+            {
+                "name": "Price (T.Rowe) Associates Inc",
+                "value": "$9,835,329,859.00"
+            },
+            {
+                "name": "Capital Research Global Investors",
+                "value": "$8,883,689,696.00"
+            },
+            {
+                "name": "Bank of America Corporation",
+                "value": "$8,307,272,415.00"
+            },
+            {
+                "name": "Massachusetts Financial Services Co.",
+                "value": "$6,421,715,923.00"
+            },
+            {
+                "name": "Primecap Management Company",
+                "value": "$6,247,465,106.00"
+            },
+            {
+                "name": "T. Rowe Price Investment Management, Inc.",
+                "value": "$5,342,928,062.00"
+            },
+            {
+                "name": "Invesco Ltd.",
+                "value": "$4,198,812,563.00"
+            },
+            {
+                "name": "Cohen & Steers Inc.",
+                "value": "$4,179,520,906.00"
+            },
+            {
+                "name": "Alliancebernstein L.P.",
+                "value": "$4,140,566,305.00"
+            },
+            {
+                "name": "Bank Of New York Mellon Corporation",
+                "value": "$3,499,655,364.00"
+            },
+            {
+                "name": "Baillie Gifford and Company",
+                "value": "$2,800,508,017.00"
+            },
+            {
+                "name": "Capital International Investors",
+                "value": "$2,209,322,698.00"
+            },
+            {
+                "name": "Jennison Associates LLC",
+                "value": "$2,169,963,590.00"
+            },
+            {
+                "name": "Wells Fargo & Company",
+                "value": "$2,088,876,055.00"
+            },
+            {
+                "name": "Principal Financial Group, Inc.",
+                "value": "$2,067,797,969.00"
+            },
+            {
+                "name": "Norges Bank Investment Management",
+                "value": "$1,850,334,985.00"
+            },
+            {
+                "name": "Deutsche Bank Aktiengesellschaft",
+                "value": "$1,810,133,024.00"
+            },
+            {
+                "name": "Fundsmith LLP",
+                "value": "$1,250,552,834.00"
+            },
+            {
+                "name": "Dodge & Cox Inc",
+                "value": "$1,142,952,189.00"
+            },
+            {
+                "name": "Kayne Anderson Rudnick Investment Management LLC",
+                "value": "$972,671,161.00"
+            },
+            {
+                "name": "Ameriprise Financial, Inc.",
+                "value": "$810,380,734.00"
+            },
+            {
+                "name": "Amundi",
+                "value": "$759,577,832.00"
+            },
+            {
+                "name": "Charles Schwab Investment Management, Inc.",
+                "value": "$643,586,126.00"
+            },
+            {
+                "name": "Harris Associates L.P.",
+                "value": "$639,324,088.00"
+            },
+            {
+                "name": "Generation Investment Management LLP",
+                "value": "$619,891,900.00"
+            },
+            {
+                "name": "Allspring Global Investments Holdings, LLC",
+                "value": "$604,914,289.00"
+            },
+            {
+                "name": "Apg Asset Management US Inc.",
+                "value": "$597,782,785.00"
+            },
+            {
+                "name": "Pictet Asset Management Holding SA",
+                "value": "$588,132,860.00"
+            },
+            {
+                "name": "Nuveen Asset Management, LLC",
+                "value": "$469,806,104.00"
+            },
+            {
+                "name": "Lsv Asset Management",
+                "value": "$467,491,161.00"
+            },
+            {
+                "name": "Theleme Partners LLP",
+                "value": "$465,807,338.00"
+            },
+            {
+                "name": "First Trust Advisors LP",
+                "value": "$462,318,657.00"
+            },
+            {
+                "name": "Victory Capital Management Inc.",
+                "value": "$451,226,855.00"
+            },
+            {
+                "name": "Lone Pine Capital Llc",
+                "value": "$448,992,656.00"
+            },
+            {
+                "name": "Fundsmith Investment Services Ltd.",
+                "value": "$420,093,632.00"
+            },
+            {
+                "name": "Legal & General Group PLC",
+                "value": "$410,483,309.00"
+            },
+            {
+                "name": "Van Eck Associates Corporation",
+                "value": "$378,610,560.00"
+            },
+            {
+                "name": "Zimmer Partners, Lp",
+                "value": "$353,761,296.00"
+            },
+            {
+                "name": "Magellan Asset Management Ltd",
+                "value": "$350,730,822.00"
+            },
+            {
+                "name": "First Eagle Investment Management, LLC",
+                "value": "$299,941,677.00"
+            },
+            {
+                "name": "Flagship Pioneering Inc.",
+                "value": "$298,565,172.00"
+            },
+            {
+                "name": "Macquarie Group Limited",
+                "value": "$292,714,001.00"
+            },
+            {
+                "name": "ClearBridge Investments, LLC",
+                "value": "$266,222,125.00"
+            },
+            {
+                "name": "Meritage Group, LP",
+                "value": "$230,068,183.00"
+            },
+            {
+                "name": "Southpoint Capital Advisors Lp",
+                "value": "$223,715,254.00"
+            },
+            {
+                "name": "Earnest Partners LLC",
+                "value": "$195,407,687.00"
+            }
+        ]
+    },
+    {
+        "state": "MD",
+        "total_shares_value": "$120,053,891,219.00",
+        "top_holders": [
+            {
+                "name": "State Street Corporation",
+                "value": "$28,196,796,932.00"
+            },
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$27,996,475,914.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$20,809,739,583.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$5,950,537,454.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$4,795,959,767.00"
+            },
+            {
+                "name": "Charles Schwab Investment Management, Inc.",
+                "value": "$4,643,039,697.00"
+            },
+            {
+                "name": "JP Morgan Chase & Company",
+                "value": "$3,994,084,435.00"
+            },
+            {
+                "name": "FMR, LLC",
+                "value": "$3,718,360,932.00"
+            },
+            {
+                "name": "Wellington Management Group, LLP",
+                "value": "$3,023,159,026.00"
+            },
+            {
+                "name": "Capital World Investors",
+                "value": "$2,251,949,576.00"
+            },
+            {
+                "name": "Norges Bank Investment Management",
+                "value": "$2,053,536,115.00"
+            },
+            {
+                "name": "Bank of America Corporation",
+                "value": "$1,903,122,907.00"
+            },
+            {
+                "name": "Fundsmith LLP",
+                "value": "$1,884,781,102.00"
+            },
+            {
+                "name": "Massachusetts Financial Services Co.",
+                "value": "$1,882,361,283.00"
+            },
+            {
+                "name": "State Farm Mutual Automobile Insurance Co",
+                "value": "$1,393,746,682.00"
+            },
+            {
+                "name": "Invesco Ltd.",
+                "value": "$1,068,553,895.00"
+            },
+            {
+                "name": "Sarofim, Fayez & Co",
+                "value": "$620,866,478.00"
+            },
+            {
+                "name": "Cohen & Steers Inc.",
+                "value": "$495,030,484.00"
+            },
+            {
+                "name": "Franklin Resources, Inc.",
+                "value": "$407,388,162.00"
+            },
+            {
+                "name": "Price (T.Rowe) Associates Inc",
+                "value": "$377,787,942.00"
+            },
+            {
+                "name": "Victory Capital Management Inc.",
+                "value": "$369,234,598.00"
+            },
+            {
+                "name": "Resolution Capital Ltd",
+                "value": "$336,468,613.00"
+            },
+            {
+                "name": "Voya Investment Management LLC",
+                "value": "$322,495,235.00"
+            },
+            {
+                "name": "Champlain Investment Partners, LLC",
+                "value": "$302,205,964.00"
+            },
+            {
+                "name": "Capital Research Global Investors",
+                "value": "$276,986,748.00"
+            },
+            {
+                "name": "American Century Companies Inc",
+                "value": "$270,024,733.00"
+            },
+            {
+                "name": "Provident Trust Company",
+                "value": "$256,810,377.00"
+            },
+            {
+                "name": "Allspring Global Investments Holdings, LLC",
+                "value": "$243,380,721.00"
+            },
+            {
+                "name": "Dimensional Fund Advisors LP",
+                "value": "$209,005,864.00"
+            }
+        ]
+    },
+    {
+        "state": "ME",
+        "total_shares_value": "$18,397,302,537.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$4,826,207,883.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$4,780,101,867.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$1,805,012,190.00"
+            },
+            {
+                "name": "Alliancebernstein L.P.",
+                "value": "$1,565,229,745.00"
+            },
+            {
+                "name": "Fundsmith LLP",
+                "value": "$1,325,630,475.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$1,104,623,040.00"
+            },
+            {
+                "name": "BAMCO Inc.",
+                "value": "$1,013,109,364.00"
+            },
+            {
+                "name": "Franklin Resources, Inc.",
+                "value": "$686,109,908.00"
+            },
+            {
+                "name": "Invesco Ltd.",
+                "value": "$658,683,829.00"
+            },
+            {
+                "name": "Price (T.Rowe) Associates Inc",
+                "value": "$632,594,236.00"
+            }
+        ]
+    },
+    {
+        "state": "MI",
+        "total_shares_value": "$170,450,571,643.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$42,160,725,196.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$32,364,632,977.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$18,224,593,858.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$8,877,326,577.00"
+            },
+            {
+                "name": "JP Morgan Chase & Company",
+                "value": "$8,613,113,586.00"
+            },
+            {
+                "name": "Capital Research Global Investors",
+                "value": "$8,081,587,045.00"
+            },
+            {
+                "name": "Greenleaf Trust",
+                "value": "$6,669,963,837.00"
+            },
+            {
+                "name": "FMR, LLC",
+                "value": "$4,290,921,437.00"
+            },
+            {
+                "name": "Price (T.Rowe) Associates Inc",
+                "value": "$4,205,198,763.00"
+            },
+            {
+                "name": "Wellington Management Group, LLP",
+                "value": "$4,039,211,142.00"
+            },
+            {
+                "name": "Capital World Investors",
+                "value": "$3,746,717,666.00"
+            },
+            {
+                "name": "T. Rowe Price Investment Management, Inc.",
+                "value": "$2,667,031,230.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$2,557,153,868.00"
+            },
+            {
+                "name": "Harris Associates L.P.",
+                "value": "$2,528,537,819.00"
+            },
+            {
+                "name": "Pzena Investment Management Llc",
+                "value": "$2,016,383,563.00"
+            },
+            {
+                "name": "Arrowstreet Capital, Limited Partnership",
+                "value": "$1,911,109,813.00"
+            },
+            {
+                "name": "Ameriprise Financial, Inc.",
+                "value": "$1,864,610,824.00"
+            },
+            {
+                "name": "Newport Trust Company, LLC",
+                "value": "$1,606,718,559.00"
+            },
+            {
+                "name": "Norges Bank Investment Management",
+                "value": "$1,538,871,869.00"
+            },
+            {
+                "name": "Franklin Resources, Inc.",
+                "value": "$1,344,988,753.00"
+            },
+            {
+                "name": "Massachusetts Financial Services Co.",
+                "value": "$1,295,282,575.00"
+            },
+            {
+                "name": "Charles Schwab Investment Management, Inc.",
+                "value": "$1,222,667,137.00"
+            },
+            {
+                "name": "Dimensional Fund Advisors LP",
+                "value": "$1,222,351,104.00"
+            },
+            {
+                "name": "Greenhaven Associates, Inc.",
+                "value": "$1,062,588,228.00"
+            },
+            {
+                "name": "Neuberger Berman Group, LLC",
+                "value": "$771,805,597.00"
+            },
+            {
+                "name": "Boston Partners",
+                "value": "$751,005,938.00"
+            },
+            {
+                "name": "Principal Financial Group, Inc.",
+                "value": "$710,465,085.00"
+            },
+            {
+                "name": "Fisher Asset Management, LLC",
+                "value": "$701,764,518.00"
+            },
+            {
+                "name": "Janus Henderson Group PLC",
+                "value": "$667,417,745.00"
+            },
+            {
+                "name": "Invesco Ltd.",
+                "value": "$536,776,901.00"
+            },
+            {
+                "name": "Victory Capital Management Inc.",
+                "value": "$464,058,617.00"
+            },
+            {
+                "name": "Wells Fargo & Company",
+                "value": "$432,102,604.00"
+            },
+            {
+                "name": "Holocene Advisors, LP",
+                "value": "$311,392,421.00"
+            },
+            {
+                "name": "Marshfield Associates",
+                "value": "$308,621,271.00"
+            },
+            {
+                "name": "Northern Trust Corporation",
+                "value": "$308,153,970.00"
+            },
+            {
+                "name": "Alliancebernstein L.P.",
+                "value": "$195,782,228.00"
+            },
+            {
+                "name": "Bank of America Corporation",
+                "value": "$178,937,322.00"
+            }
+        ]
+    },
+    {
+        "state": "MN",
+        "total_shares_value": "$415,625,103,760.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$101,199,434,131.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$82,801,619,722.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$52,435,694,118.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$22,518,727,560.00"
+            },
+            {
+                "name": "FMR, LLC",
+                "value": "$22,397,942,758.00"
+            },
+            {
+                "name": "JP Morgan Chase & Company",
+                "value": "$20,140,679,837.00"
+            },
+            {
+                "name": "Capital World Investors",
+                "value": "$19,863,664,885.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$18,015,068,794.00"
+            },
+            {
+                "name": "Wellington Management Group, LLP",
+                "value": "$16,583,937,431.00"
+            },
+            {
+                "name": "Price (T.Rowe) Associates Inc",
+                "value": "$16,473,237,876.00"
+            },
+            {
+                "name": "Aristotle Capital Management, LLC",
+                "value": "$4,660,144,053.00"
+            },
+            {
+                "name": "Charles Schwab Investment Management, Inc.",
+                "value": "$4,412,302,110.00"
+            },
+            {
+                "name": "MUFG Bank Ltd",
+                "value": "$2,967,424,359.00"
+            },
+            {
+                "name": "Massachusetts Financial Services Co.",
+                "value": "$2,503,572,495.00"
+            },
+            {
+                "name": "Bank of America Corporation",
+                "value": "$2,470,870,145.00"
+            },
+            {
+                "name": "Bank Of New York Mellon Corporation",
+                "value": "$2,236,990,444.00"
+            },
+            {
+                "name": "Franklin Resources, Inc.",
+                "value": "$1,801,819,667.00"
+            },
+            {
+                "name": "Norges Bank Investment Management",
+                "value": "$1,712,590,614.00"
+            },
+            {
+                "name": "UBS Asset Management Americas Inc",
+                "value": "$1,690,810,837.00"
+            },
+            {
+                "name": "Capital Research Global Investors",
+                "value": "$1,448,414,097.00"
+            },
+            {
+                "name": "Wells Fargo & Company",
+                "value": "$1,433,960,890.00"
+            },
+            {
+                "name": "Northern Trust Corporation",
+                "value": "$1,377,143,709.00"
+            },
+            {
+                "name": "Bill & Melinda Gates Foundation Trust",
+                "value": "$1,329,662,010.00"
+            },
+            {
+                "name": "First Eagle Investment Management, LLC",
+                "value": "$1,247,646,760.00"
+            },
+            {
+                "name": "State Farm Mutual Automobile Insurance Co",
+                "value": "$1,149,360,888.00"
+            },
+            {
+                "name": "Viking Global Investors, L.P.",
+                "value": "$1,143,729,194.00"
+            },
+            {
+                "name": "Capital International Investors",
+                "value": "$1,109,192,143.00"
+            },
+            {
+                "name": "Newport Trust Company, LLC",
+                "value": "$1,054,171,941.00"
+            },
+            {
+                "name": "Pictet Asset Management Holding SA",
+                "value": "$944,059,456.00"
+            },
+            {
+                "name": "Invesco Ltd.",
+                "value": "$905,515,946.00"
+            },
+            {
+                "name": "Pacer Advisors, Inc.",
+                "value": "$687,756,642.00"
+            },
+            {
+                "name": "Boston Partners",
+                "value": "$678,850,571.00"
+            },
+            {
+                "name": "Baird Financial Group, Inc.",
+                "value": "$578,490,593.00"
+            },
+            {
+                "name": "Victory Capital Management Inc.",
+                "value": "$486,059,267.00"
+            },
+            {
+                "name": "ProShares Advisors, LLC",
+                "value": "$433,485,713.00"
+            },
+            {
+                "name": "BAMCO Inc.",
+                "value": "$368,708,974.00"
+            },
+            {
+                "name": "Amundi",
+                "value": "$367,845,790.00"
+            },
+            {
+                "name": "Raymond James & Associates, Inc.",
+                "value": "$333,520,311.00"
+            },
+            {
+                "name": "Ameriprise Financial, Inc.",
+                "value": "$316,668,941.00"
+            },
+            {
+                "name": "Van Eck Associates Corporation",
+                "value": "$281,678,392.00"
+            },
+            {
+                "name": "Neuberger Berman Group, LLC",
+                "value": "$272,938,576.00"
+            },
+            {
+                "name": "Df Dent & Co Inc",
+                "value": "$260,470,022.00"
+            },
+            {
+                "name": "Champlain Investment Partners, LLC",
+                "value": "$196,607,041.00"
+            },
+            {
+                "name": "Citadel Advisors Llc",
+                "value": "$174,481,198.00"
+            },
+            {
+                "name": "Mairs & Power Inc",
+                "value": "$158,152,859.00"
+            }
+        ]
+    },
+    {
+        "state": "MO",
+        "total_shares_value": "$83,815,079,588.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$20,688,440,150.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$14,630,865,366.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$9,152,116,846.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$4,704,725,203.00"
+            },
+            {
+                "name": "FMR, LLC",
+                "value": "$4,322,451,518.00"
+            },
+            {
+                "name": "Wellington Management Group, LLP",
+                "value": "$4,011,222,824.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$3,053,485,994.00"
+            },
+            {
+                "name": "Norges Bank Investment Management",
+                "value": "$2,482,331,161.00"
+            },
+            {
+                "name": "Principal Financial Group, Inc.",
+                "value": "$2,114,947,148.00"
+            },
+            {
+                "name": "Bank of America Corporation",
+                "value": "$2,054,225,272.00"
+            },
+            {
+                "name": "Price (T.Rowe) Associates Inc",
+                "value": "$2,000,884,086.00"
+            },
+            {
+                "name": "Capital World Investors",
+                "value": "$1,974,282,925.00"
+            },
+            {
+                "name": "Invesco Ltd.",
+                "value": "$1,945,321,037.00"
+            },
+            {
+                "name": "Harris Associates L.P.",
+                "value": "$1,845,095,763.00"
+            },
+            {
+                "name": "Bank Of New York Mellon Corporation",
+                "value": "$1,629,331,727.00"
+            },
+            {
+                "name": "JP Morgan Chase & Company",
+                "value": "$1,541,966,184.00"
+            },
+            {
+                "name": "T. Rowe Price Investment Management, Inc.",
+                "value": "$1,183,675,330.00"
+            },
+            {
+                "name": "Wells Fargo & Company",
+                "value": "$1,145,669,330.00"
+            },
+            {
+                "name": "Politan Capital Management LP",
+                "value": "$899,449,494.00"
+            },
+            {
+                "name": "Zimmer Partners, Lp",
+                "value": "$713,438,633.00"
+            },
+            {
+                "name": "Ameriprise Financial, Inc.",
+                "value": "$565,853,513.00"
+            },
+            {
+                "name": "Janus Henderson Group PLC",
+                "value": "$390,489,383.00"
+            },
+            {
+                "name": "Franklin Resources, Inc.",
+                "value": "$322,984,119.00"
+            },
+            {
+                "name": "Millennium Management Llc",
+                "value": "$226,835,970.00"
+            },
+            {
+                "name": "Federated Hermes, Inc.",
+                "value": "$214,990,612.00"
+            }
+        ]
+    },
+    {
+        "state": "N/A",
+        "total_shares_value": "$525,215,128,408.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$120,769,847,721.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$100,463,499,837.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$55,564,012,540.00"
+            },
+            {
+                "name": "FMR, LLC",
+                "value": "$29,789,046,987.00"
+            },
+            {
+                "name": "JP Morgan Chase & Company",
+                "value": "$27,314,737,412.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$26,900,728,324.00"
+            },
+            {
+                "name": "Massachusetts Financial Services Co.",
+                "value": "$24,867,318,599.00"
+            },
+            {
+                "name": "Capital World Investors",
+                "value": "$16,194,325,985.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$16,032,251,996.00"
+            },
+            {
+                "name": "Wellington Management Group, LLP",
+                "value": "$14,785,517,193.00"
+            },
+            {
+                "name": "Price (T.Rowe) Associates Inc",
+                "value": "$14,099,439,751.00"
+            },
+            {
+                "name": "Capital Research Global Investors",
+                "value": "$11,970,810,827.00"
+            },
+            {
+                "name": "Berkshire Hathaway, Inc",
+                "value": "$9,220,807,758.00"
+            },
+            {
+                "name": "Bank of America Corporation",
+                "value": "$8,972,462,262.00"
+            },
+            {
+                "name": "Dodge & Cox Inc",
+                "value": "$8,790,334,142.00"
+            },
+            {
+                "name": "Capital International Investors",
+                "value": "$4,559,352,704.00"
+            },
+            {
+                "name": "Artisan Partners Limited Partnership",
+                "value": "$4,013,729,560.00"
+            },
+            {
+                "name": "Invesco Ltd.",
+                "value": "$2,968,475,669.00"
+            },
+            {
+                "name": "Northern Trust Corporation",
+                "value": "$2,618,172,567.00"
+            },
+            {
+                "name": "BAMCO Inc.",
+                "value": "$2,365,447,007.00"
+            },
+            {
+                "name": "Ameriprise Financial, Inc.",
+                "value": "$2,244,467,659.00"
+            },
+            {
+                "name": "Sanders Capital, LLC",
+                "value": "$1,747,595,248.00"
+            },
+            {
+                "name": "Franklin Resources, Inc.",
+                "value": "$1,725,073,458.00"
+            },
+            {
+                "name": "WCM Investment Management, LLC",
+                "value": "$1,581,119,315.00"
+            },
+            {
+                "name": "Mawer Investment Management Ltd.",
+                "value": "$1,528,453,256.00"
+            },
+            {
+                "name": "HPS Investment Partners, LLC",
+                "value": "$1,505,549,250.00"
+            },
+            {
+                "name": "Bank Of New York Mellon Corporation",
+                "value": "$1,412,009,866.00"
+            },
+            {
+                "name": "Impax Asset Management Group Plc",
+                "value": "$1,315,330,661.00"
+            },
+            {
+                "name": "Fisher Asset Management, LLC",
+                "value": "$1,125,674,355.00"
+            },
+            {
+                "name": "Apg Asset Management N.V.",
+                "value": "$818,564,694.00"
+            },
+            {
+                "name": "Principal Financial Group, Inc.",
+                "value": "$802,904,640.00"
+            },
+            {
+                "name": "Boston Partners",
+                "value": "$601,450,802.00"
+            },
+            {
+                "name": "Allspring Global Investments Holdings, LLC",
+                "value": "$573,810,461.00"
+            },
+            {
+                "name": "Alliancebernstein L.P.",
+                "value": "$564,073,950.00"
+            },
+            {
+                "name": "Barrow, Hanley Mewhinney & Strauss, LLC",
+                "value": "$544,617,421.00"
+            },
+            {
+                "name": "Kayne Anderson Rudnick Investment Management LLC",
+                "value": "$535,510,355.00"
+            },
+            {
+                "name": "M&G Plc",
+                "value": "$530,834,854.00"
+            },
+            {
+                "name": "Pictet Asset Management Holding SA",
+                "value": "$493,596,792.00"
+            },
+            {
+                "name": "Amundi",
+                "value": "$489,620,589.00"
+            },
+            {
+                "name": "Charles Schwab Investment Management, Inc.",
+                "value": "$464,045,342.00"
+            },
+            {
+                "name": "Van Eck Associates Corporation",
+                "value": "$449,323,185.00"
+            },
+            {
+                "name": "First Trust Advisors LP",
+                "value": "$354,610,127.00"
+            },
+            {
+                "name": "Select Equity Group, Inc.",
+                "value": "$349,703,797.00"
+            },
+            {
+                "name": "Norges Bank Investment Management",
+                "value": "$334,367,157.00"
+            },
+            {
+                "name": "UBS Asset Management Americas Inc",
+                "value": "$322,990,957.00"
+            },
+            {
+                "name": "Brown Advisory  Inc.",
+                "value": "$270,755,750.00"
+            },
+            {
+                "name": "Federated Hermes, Inc.",
+                "value": "$268,755,626.00"
+            }
+        ]
+    },
+    {
+        "state": "NC",
+        "total_shares_value": "$346,038,552,919.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$78,939,486,811.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$59,073,247,671.00"
+            },
+            {
+                "name": "Berkshire Hathaway, Inc",
+                "value": "$40,554,933,385.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$34,539,522,067.00"
+            },
+            {
+                "name": "FMR, LLC",
+                "value": "$18,274,320,118.00"
+            },
+            {
+                "name": "JP Morgan Chase & Company",
+                "value": "$17,447,305,304.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$15,292,497,983.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$10,517,465,672.00"
+            },
+            {
+                "name": "Price (T.Rowe) Associates Inc",
+                "value": "$8,812,041,510.00"
+            },
+            {
+                "name": "Bank of America Corporation",
+                "value": "$6,314,022,364.00"
+            },
+            {
+                "name": "Capital International Investors",
+                "value": "$5,148,220,829.00"
+            },
+            {
+                "name": "Norges Bank Investment Management",
+                "value": "$5,013,458,854.00"
+            },
+            {
+                "name": "Capital Research Global Investors",
+                "value": "$4,203,631,741.00"
+            },
+            {
+                "name": "Massachusetts Financial Services Co.",
+                "value": "$4,130,678,330.00"
+            },
+            {
+                "name": "State Farm Mutual Automobile Insurance Co",
+                "value": "$3,676,161,606.00"
+            },
+            {
+                "name": "T. Rowe Price Investment Management, Inc.",
+                "value": "$3,219,215,557.00"
+            },
+            {
+                "name": "Wells Fargo & Company",
+                "value": "$2,920,413,373.00"
+            },
+            {
+                "name": "Wellington Management Group, LLP",
+                "value": "$2,754,706,033.00"
+            },
+            {
+                "name": "Harris Associates L.P.",
+                "value": "$2,472,645,604.00"
+            },
+            {
+                "name": "Capital World Investors",
+                "value": "$2,293,361,699.00"
+            },
+            {
+                "name": "Dodge & Cox Inc",
+                "value": "$2,178,749,052.00"
+            },
+            {
+                "name": "CIBC Private Wealth Group, LLC",
+                "value": "$1,778,148,420.00"
+            },
+            {
+                "name": "Bank Of New York Mellon Corporation",
+                "value": "$1,605,967,892.00"
+            },
+            {
+                "name": "Franklin Resources, Inc.",
+                "value": "$1,502,676,043.00"
+            },
+            {
+                "name": "Aristotle Capital Management, LLC",
+                "value": "$1,425,699,792.00"
+            },
+            {
+                "name": "Baillie Gifford and Company",
+                "value": "$1,409,761,906.00"
+            },
+            {
+                "name": "Invesco Ltd.",
+                "value": "$1,153,904,084.00"
+            },
+            {
+                "name": "Select Equity Group, Inc.",
+                "value": "$1,123,776,610.00"
+            },
+            {
+                "name": "Amundi",
+                "value": "$1,076,748,660.00"
+            },
+            {
+                "name": "Alliancebernstein L.P.",
+                "value": "$932,222,418.00"
+            },
+            {
+                "name": "Dimensional Fund Advisors LP",
+                "value": "$892,621,541.00"
+            },
+            {
+                "name": "Canada Pension Plan Investment Board",
+                "value": "$788,622,227.00"
+            },
+            {
+                "name": "Lazard Asset Management LLC",
+                "value": "$761,981,832.00"
+            },
+            {
+                "name": "Charles Schwab Investment Management, Inc.",
+                "value": "$742,203,438.00"
+            },
+            {
+                "name": "Farallon Capital Management LLC",
+                "value": "$677,295,764.00"
+            },
+            {
+                "name": "Northern Trust Corporation",
+                "value": "$542,216,511.00"
+            },
+            {
+                "name": "Diamond Hill Capital Management Inc",
+                "value": "$427,146,620.00"
+            },
+            {
+                "name": "Allspring Global Investments Holdings, LLC",
+                "value": "$351,059,951.00"
+            },
+            {
+                "name": "Primecap Management Company",
+                "value": "$350,572,194.00"
+            },
+            {
+                "name": "FIL LTD",
+                "value": "$347,720,493.00"
+            },
+            {
+                "name": "Vulcan Value Partners, LLC",
+                "value": "$222,577,869.00"
+            },
+            {
+                "name": "Pacer Advisors, Inc.",
+                "value": "$149,543,091.00"
+            }
+        ]
+    },
+    {
+        "state": "NE",
+        "total_shares_value": "$48,759,398,944.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$14,331,715,039.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$10,507,744,927.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$6,032,071,743.00"
+            },
+            {
+                "name": "Bank of America Corporation",
+                "value": "$3,261,351,869.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$3,100,926,703.00"
+            },
+            {
+                "name": "Capital International Investors",
+                "value": "$2,601,353,843.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$2,479,775,860.00"
+            },
+            {
+                "name": "Massachusetts Financial Services Co.",
+                "value": "$2,334,753,854.00"
+            },
+            {
+                "name": "JP Morgan Chase & Company",
+                "value": "$2,069,071,299.00"
+            },
+            {
+                "name": "Ameriprise Financial, Inc.",
+                "value": "$2,040,633,807.00"
+            }
+        ]
+    },
+    {
+        "state": "NH",
+        "total_shares_value": "$17,179,068,435.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$5,565,484,746.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$3,328,068,658.00"
+            },
+            {
+                "name": "Cohen & Steers Inc.",
+                "value": "$2,750,447,222.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$2,090,030,353.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$969,993,204.00"
+            },
+            {
+                "name": "Daiwa Securities Group Inc.",
+                "value": "$539,051,843.00"
+            },
+            {
+                "name": "Dimensional Fund Advisors LP",
+                "value": "$511,413,632.00"
+            },
+            {
+                "name": "Capital World Investors",
+                "value": "$491,138,539.00"
+            },
+            {
+                "name": "Deutsche Bank Aktiengesellschaft",
+                "value": "$468,178,627.00"
+            },
+            {
+                "name": "Legal & General Group PLC",
+                "value": "$465,261,611.00"
+            }
+        ]
+    },
+    {
+        "state": "NJ",
+        "total_shares_value": "$596,957,148,031.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$162,511,750,955.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$136,417,191,677.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$79,330,400,345.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$37,261,842,487.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$29,111,039,820.00"
+            },
+            {
+                "name": "Wellington Management Group, LLP",
+                "value": "$20,406,949,141.00"
+            },
+            {
+                "name": "JP Morgan Chase & Company",
+                "value": "$18,751,951,175.00"
+            },
+            {
+                "name": "FMR, LLC",
+                "value": "$15,684,477,282.00"
+            },
+            {
+                "name": "Norges Bank Investment Management",
+                "value": "$14,303,193,810.00"
+            },
+            {
+                "name": "Bank of America Corporation",
+                "value": "$14,202,636,274.00"
+            },
+            {
+                "name": "State Farm Mutual Automobile Insurance Co",
+                "value": "$8,193,544,392.00"
+            },
+            {
+                "name": "Price (T.Rowe) Associates Inc",
+                "value": "$6,831,913,808.00"
+            },
+            {
+                "name": "Alliancebernstein L.P.",
+                "value": "$6,105,730,794.00"
+            },
+            {
+                "name": "Northern Trust Corporation",
+                "value": "$5,986,691,869.00"
+            },
+            {
+                "name": "Capital International Investors",
+                "value": "$3,684,110,432.00"
+            },
+            {
+                "name": "Massachusetts Financial Services Co.",
+                "value": "$3,251,630,387.00"
+            },
+            {
+                "name": "Bank Of New York Mellon Corporation",
+                "value": "$3,184,259,160.00"
+            },
+            {
+                "name": "Charles Schwab Investment Management, Inc.",
+                "value": "$2,950,130,661.00"
+            },
+            {
+                "name": "Wells Fargo & Company",
+                "value": "$2,209,696,815.00"
+            },
+            {
+                "name": "Invesco Ltd.",
+                "value": "$2,080,608,690.00"
+            },
+            {
+                "name": "T. Rowe Price Investment Management, Inc.",
+                "value": "$1,824,035,011.00"
+            },
+            {
+                "name": "Ameriprise Financial, Inc.",
+                "value": "$1,816,831,564.00"
+            },
+            {
+                "name": "Nomura Holdings Inc.",
+                "value": "$1,719,351,660.00"
+            },
+            {
+                "name": "Legal & General Group PLC",
+                "value": "$1,501,842,552.00"
+            },
+            {
+                "name": "Pzena Investment Management Llc",
+                "value": "$1,438,359,033.00"
+            },
+            {
+                "name": "Dodge & Cox Inc",
+                "value": "$1,426,674,794.00"
+            },
+            {
+                "name": "Polen Capital Management, LLC",
+                "value": "$1,349,530,139.00"
+            },
+            {
+                "name": "Dimensional Fund Advisors LP",
+                "value": "$1,332,994,866.00"
+            },
+            {
+                "name": "Generation Investment Management LLP",
+                "value": "$1,271,837,633.00"
+            },
+            {
+                "name": "Aristotle Capital Management, LLC",
+                "value": "$994,843,464.00"
+            },
+            {
+                "name": "Impax Asset Management Group Plc",
+                "value": "$994,753,245.00"
+            },
+            {
+                "name": "Capital World Investors",
+                "value": "$873,758,122.00"
+            },
+            {
+                "name": "UBS Asset Management Americas Inc",
+                "value": "$723,023,853.00"
+            },
+            {
+                "name": "Fundsmith LLP",
+                "value": "$711,764,852.00"
+            },
+            {
+                "name": "Amundi",
+                "value": "$651,059,483.00"
+            },
+            {
+                "name": "Victory Capital Management Inc.",
+                "value": "$594,209,313.00"
+            },
+            {
+                "name": "Pictet Asset Management Holding SA",
+                "value": "$572,809,244.00"
+            },
+            {
+                "name": "Parnassus Investments, LLC",
+                "value": "$563,654,862.00"
+            },
+            {
+                "name": "Brown Advisory  Inc.",
+                "value": "$500,802,130.00"
+            },
+            {
+                "name": "Stifel Financial Corporation",
+                "value": "$439,957,335.00"
+            },
+            {
+                "name": "American Century Companies Inc",
+                "value": "$436,755,942.00"
+            },
+            {
+                "name": "Van Eck Associates Corporation",
+                "value": "$430,489,222.00"
+            },
+            {
+                "name": "Davis Selected Advisers, LP",
+                "value": "$365,796,684.00"
+            },
+            {
+                "name": "Beutel, Goodman & Company Ltd",
+                "value": "$341,359,688.00"
+            },
+            {
+                "name": "Grantham, Mayo, Van Otterloo & Co. LLC",
+                "value": "$325,694,313.00"
+            },
+            {
+                "name": "Barclays Plc",
+                "value": "$297,616,816.00"
+            },
+            {
+                "name": "Veritas Asset Management LLP",
+                "value": "$263,413,566.00"
+            },
+            {
+                "name": "Balyasny Asset Management LLC",
+                "value": "$262,130,884.00"
+            },
+            {
+                "name": "Citadel Advisors Llc",
+                "value": "$236,824,727.00"
+            },
+            {
+                "name": "Brandywine Trust Company",
+                "value": "$235,223,060.00"
+            }
+        ]
+    },
+    {
+        "state": "NV",
+        "total_shares_value": "$20,413,055,773.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$4,941,396,497.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$3,431,237,689.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$1,760,302,015.00"
+            },
+            {
+                "name": "Capital Research Global Investors",
+                "value": "$1,323,093,620.00"
+            },
+            {
+                "name": "Fisher Asset Management, LLC",
+                "value": "$941,359,974.00"
+            },
+            {
+                "name": "Viking Global Investors, L.P.",
+                "value": "$886,794,261.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$816,326,009.00"
+            },
+            {
+                "name": "Price (T.Rowe) Associates Inc",
+                "value": "$774,503,309.00"
+            },
+            {
+                "name": "Invesco Ltd.",
+                "value": "$685,910,545.00"
+            },
+            {
+                "name": "Capital World Investors",
+                "value": "$685,100,752.00"
+            },
+            {
+                "name": "Bank Of New York Mellon Corporation",
+                "value": "$508,777,498.00"
+            },
+            {
+                "name": "Davis Selected Advisers, LP",
+                "value": "$455,676,702.00"
+            },
+            {
+                "name": "Janus Henderson Group PLC",
+                "value": "$439,707,698.00"
+            },
+            {
+                "name": "T. Rowe Price Investment Management, Inc.",
+                "value": "$341,019,499.00"
+            },
+            {
+                "name": "Cohen & Steers Inc.",
+                "value": "$340,387,957.00"
+            },
+            {
+                "name": "Citadel Advisors Llc",
+                "value": "$337,115,827.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$331,335,135.00"
+            },
+            {
+                "name": "FMR, LLC",
+                "value": "$318,984,483.00"
+            },
+            {
+                "name": "Barrow, Hanley Mewhinney & Strauss, LLC",
+                "value": "$259,708,955.00"
+            },
+            {
+                "name": "Edgepoint Investment Group Inc.",
+                "value": "$242,455,812.00"
+            },
+            {
+                "name": "Boston Partners",
+                "value": "$235,622,153.00"
+            },
+            {
+                "name": "Corvex Management LP",
+                "value": "$224,154,337.00"
+            },
+            {
+                "name": "Norges Bank Investment Management",
+                "value": "$132,085,046.00"
+            }
+        ]
+    },
+    {
+        "state": "NY",
+        "total_shares_value": "$1,562,782,743,892.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$364,369,232,235.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$300,639,908,248.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$185,553,384,199.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$81,103,766,910.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$62,321,150,128.00"
+            },
+            {
+                "name": "FMR, LLC",
+                "value": "$60,903,288,070.00"
+            },
+            {
+                "name": "Berkshire Hathaway, Inc",
+                "value": "$55,503,816,108.00"
+            },
+            {
+                "name": "JP Morgan Chase & Company",
+                "value": "$45,199,401,618.00"
+            },
+            {
+                "name": "Wellington Management Group, LLP",
+                "value": "$40,203,624,415.00"
+            },
+            {
+                "name": "Mitsubishi UFJ Financial Group Inc",
+                "value": "$38,590,894,609.00"
+            },
+            {
+                "name": "Capital International Investors",
+                "value": "$34,451,193,921.00"
+            },
+            {
+                "name": "Bank of America Corporation",
+                "value": "$32,437,035,334.00"
+            },
+            {
+                "name": "Capital World Investors",
+                "value": "$29,760,103,097.00"
+            },
+            {
+                "name": "Price (T.Rowe) Associates Inc",
+                "value": "$29,355,045,882.00"
+            },
+            {
+                "name": "Norges Bank Investment Management",
+                "value": "$18,636,025,211.00"
+            },
+            {
+                "name": "Dodge & Cox Inc",
+                "value": "$17,997,944,195.00"
+            },
+            {
+                "name": "Charles Schwab Investment Management, Inc.",
+                "value": "$17,877,845,273.00"
+            },
+            {
+                "name": "Capital Research Global Investors",
+                "value": "$15,422,673,030.00"
+            },
+            {
+                "name": "Massachusetts Financial Services Co.",
+                "value": "$11,980,724,307.00"
+            },
+            {
+                "name": "TCI Fund Management Ltd",
+                "value": "$11,661,616,695.00"
+            },
+            {
+                "name": "Northern Trust Corporation",
+                "value": "$7,022,724,258.00"
+            },
+            {
+                "name": "Fisher Asset Management, LLC",
+                "value": "$6,882,066,849.00"
+            },
+            {
+                "name": "Thoma Bravo, LP",
+                "value": "$6,252,838,636.00"
+            },
+            {
+                "name": "Bank Of New York Mellon Corporation",
+                "value": "$5,831,438,370.00"
+            },
+            {
+                "name": "Temasek Holdings (Private) Limited",
+                "value": "$4,876,948,605.00"
+            },
+            {
+                "name": "Investor AB",
+                "value": "$4,249,644,448.00"
+            },
+            {
+                "name": "Legal & General Group PLC",
+                "value": "$4,224,153,817.00"
+            },
+            {
+                "name": "Franklin Resources, Inc.",
+                "value": "$4,212,868,195.00"
+            },
+            {
+                "name": "Invesco Ltd.",
+                "value": "$3,916,685,518.00"
+            },
+            {
+                "name": "Amundi",
+                "value": "$3,063,169,075.00"
+            },
+            {
+                "name": "Harris Associates L.P.",
+                "value": "$2,917,801,411.00"
+            },
+            {
+                "name": "Winder Pte. Ltd.",
+                "value": "$2,637,063,624.00"
+            },
+            {
+                "name": "Cohen & Steers Inc.",
+                "value": "$2,605,019,678.00"
+            },
+            {
+                "name": "Edgewood Management Llc",
+                "value": "$2,573,878,339.00"
+            },
+            {
+                "name": "Ameriprise Financial, Inc.",
+                "value": "$2,434,121,785.00"
+            },
+            {
+                "name": "Independent Franchise Partners, LLP",
+                "value": "$2,085,140,110.00"
+            },
+            {
+                "name": "First Eagle Investment Management, LLC",
+                "value": "$2,070,287,195.00"
+            },
+            {
+                "name": "Akre Capital Management, LLC",
+                "value": "$2,009,878,643.00"
+            },
+            {
+                "name": "Dimensional Fund Advisors LP",
+                "value": "$1,739,424,336.00"
+            },
+            {
+                "name": "Public Investment Fund",
+                "value": "$1,720,991,352.00"
+            },
+            {
+                "name": "Artisan Partners Limited Partnership",
+                "value": "$1,680,764,484.00"
+            },
+            {
+                "name": "Principal Financial Group, Inc.",
+                "value": "$1,621,526,101.00"
+            },
+            {
+                "name": "Fiera Capital Corporation",
+                "value": "$1,585,314,740.00"
+            },
+            {
+                "name": "Primecap Management Company",
+                "value": "$1,409,859,561.00"
+            },
+            {
+                "name": "State Farm Mutual Automobile Insurance Co",
+                "value": "$1,360,812,340.00"
+            },
+            {
+                "name": "Wells Fargo & Company",
+                "value": "$1,272,227,234.00"
+            },
+            {
+                "name": "BAMCO Inc.",
+                "value": "$1,245,880,110.00"
+            },
+            {
+                "name": "Van Eck Associates Corporation",
+                "value": "$1,245,622,629.00"
+            },
+            {
+                "name": "Goldman Sachs Group Inc",
+                "value": "$1,231,073,782.00"
+            },
+            {
+                "name": "Adage Capital Partners GP L.L.C.",
+                "value": "$1,142,054,893.00"
+            },
+            {
+                "name": "T. Rowe Price Investment Management, Inc.",
+                "value": "$1,085,967,260.00"
+            },
+            {
+                "name": "ClearBridge Investments, LLC",
+                "value": "$1,008,470,581.00"
+            },
+            {
+                "name": "Citadel Advisors Llc",
+                "value": "$971,131,681.00"
+            },
+            {
+                "name": "Polen Capital Management, LLC",
+                "value": "$928,163,558.00"
+            },
+            {
+                "name": "Tiger Global Management, LLC",
+                "value": "$850,876,851.00"
+            },
+            {
+                "name": "Apg Asset Management N.V.",
+                "value": "$832,009,930.00"
+            },
+            {
+                "name": "HBK Investments L P",
+                "value": "$806,494,261.00"
+            },
+            {
+                "name": "Pzena Investment Management Llc",
+                "value": "$778,823,348.00"
+            },
+            {
+                "name": "Aristotle Capital Management, LLC",
+                "value": "$777,809,999.00"
+            },
+            {
+                "name": "Allianz Asset Management GmbH",
+                "value": "$772,925,505.00"
+            },
+            {
+                "name": "Alliancebernstein L.P.",
+                "value": "$744,722,935.00"
+            },
+            {
+                "name": "Janus Henderson Group PLC",
+                "value": "$685,161,384.00"
+            },
+            {
+                "name": "Generation Investment Management LLP",
+                "value": "$655,974,735.00"
+            },
+            {
+                "name": "Pentwater Capital Management Lp",
+                "value": "$579,079,829.00"
+            },
+            {
+                "name": "FIL LTD",
+                "value": "$572,396,558.00"
+            },
+            {
+                "name": "UBS Asset Management Americas Inc",
+                "value": "$553,211,612.00"
+            },
+            {
+                "name": "Farallon Capital Management LLC",
+                "value": "$548,290,762.00"
+            },
+            {
+                "name": "Guardcap Asset Management Ltd.",
+                "value": "$547,182,263.00"
+            },
+            {
+                "name": "Pacer Advisors, Inc.",
+                "value": "$480,130,976.00"
+            },
+            {
+                "name": "Millennium Management Llc",
+                "value": "$449,291,128.00"
+            },
+            {
+                "name": "Nordea Investment Management AB",
+                "value": "$431,329,600.00"
+            },
+            {
+                "name": "Dz Bank Ag Deutsche Zentral Genossenschafts Bank, Frankfurt Am Main",
+                "value": "$399,540,811.00"
+            },
+            {
+                "name": "American Century Companies Inc",
+                "value": "$388,945,553.00"
+            },
+            {
+                "name": "Boston Partners",
+                "value": "$388,219,536.00"
+            },
+            {
+                "name": "Yacktman Asset Management Lp",
+                "value": "$383,697,582.00"
+            },
+            {
+                "name": "Lsv Asset Management",
+                "value": "$361,078,881.00"
+            },
+            {
+                "name": "Apg Asset Management US Inc.",
+                "value": "$348,866,786.00"
+            },
+            {
+                "name": "CenterSquare Investment Management LLC",
+                "value": "$345,966,891.00"
+            },
+            {
+                "name": "Barclays Plc",
+                "value": "$321,528,849.00"
+            },
+            {
+                "name": "First Trust Advisors LP",
+                "value": "$320,261,121.00"
+            },
+            {
+                "name": "Lingotto Investment Management Llp",
+                "value": "$316,883,220.00"
+            },
+            {
+                "name": "Black Creek Investment Management Inc.",
+                "value": "$295,817,519.00"
+            },
+            {
+                "name": "Victory Capital Management Inc.",
+                "value": "$273,274,810.00"
+            },
+            {
+                "name": "Macquarie Group Limited",
+                "value": "$248,829,946.00"
+            },
+            {
+                "name": "Elliott Investment Management L.p.",
+                "value": "$247,455,007.00"
+            },
+            {
+                "name": "Arrowstreet Capital, Limited Partnership",
+                "value": "$244,859,211.00"
+            },
+            {
+                "name": "Renaissance Technologies, LLC",
+                "value": "$231,803,203.00"
+            },
+            {
+                "name": "59 North Capital Management, LP",
+                "value": "$214,581,155.00"
+            },
+            {
+                "name": "Bares Capital Management Inc",
+                "value": "$210,825,122.00"
+            },
+            {
+                "name": "Sessa Capital IM, L.P.",
+                "value": "$192,190,497.00"
+            },
+            {
+                "name": "Starboard Value LP",
+                "value": "$190,332,819.00"
+            },
+            {
+                "name": "Manufacturers Life Insurance Co.",
+                "value": "$184,986,273.00"
+            },
+            {
+                "name": "Point72 Asset Management, L.P.",
+                "value": "$148,677,229.00"
+            },
+            {
+                "name": "Ariel Investments, LLC",
+                "value": "$148,637,375.00"
+            },
+            {
+                "name": "Contrarius Investment Management Limited",
+                "value": "$135,930,326.00"
+            },
+            {
+                "name": "Susquehanna International Group, LLP",
+                "value": "$90,155,811.00"
+            }
+        ]
+    },
+    {
+        "state": "OH",
+        "total_shares_value": "$611,168,488,296.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$154,647,489,625.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$117,471,914,598.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$69,400,682,782.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$33,258,222,689.00"
+            },
+            {
+                "name": "FMR, LLC",
+                "value": "$32,114,854,667.00"
+            },
+            {
+                "name": "Capital International Investors",
+                "value": "$24,831,867,892.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$20,353,092,879.00"
+            },
+            {
+                "name": "Capital World Investors",
+                "value": "$15,148,697,926.00"
+            },
+            {
+                "name": "Bank of America Corporation",
+                "value": "$14,798,630,814.00"
+            },
+            {
+                "name": "Capital Research Global Investors",
+                "value": "$14,699,983,938.00"
+            },
+            {
+                "name": "Wellington Management Group, LLP",
+                "value": "$12,717,565,069.00"
+            },
+            {
+                "name": "Norges Bank Investment Management",
+                "value": "$12,268,255,637.00"
+            },
+            {
+                "name": "Price (T.Rowe) Associates Inc",
+                "value": "$10,185,911,210.00"
+            },
+            {
+                "name": "JP Morgan Chase & Company",
+                "value": "$9,610,870,866.00"
+            },
+            {
+                "name": "TCI Fund Management Ltd",
+                "value": "$8,942,759,618.00"
+            },
+            {
+                "name": "Invesco Ltd.",
+                "value": "$7,058,883,963.00"
+            },
+            {
+                "name": "Cohen & Steers Inc.",
+                "value": "$5,023,289,355.00"
+            },
+            {
+                "name": "Northern Trust Corporation",
+                "value": "$4,760,379,453.00"
+            },
+            {
+                "name": "Massachusetts Financial Services Co.",
+                "value": "$3,712,615,916.00"
+            },
+            {
+                "name": "Ameriprise Financial, Inc.",
+                "value": "$3,149,526,497.00"
+            },
+            {
+                "name": "Principal Financial Group, Inc.",
+                "value": "$2,848,175,348.00"
+            },
+            {
+                "name": "Charles Schwab Investment Management, Inc.",
+                "value": "$2,844,695,524.00"
+            },
+            {
+                "name": "Berkshire Hathaway, Inc",
+                "value": "$2,815,500,068.00"
+            },
+            {
+                "name": "Alliancebernstein L.P.",
+                "value": "$2,345,722,470.00"
+            },
+            {
+                "name": "Aristotle Capital Management, LLC",
+                "value": "$2,044,355,772.00"
+            },
+            {
+                "name": "Boston Partners",
+                "value": "$1,852,442,053.00"
+            },
+            {
+                "name": "Dimensional Fund Advisors LP",
+                "value": "$1,676,305,584.00"
+            },
+            {
+                "name": "Lazard Asset Management LLC",
+                "value": "$1,569,471,855.00"
+            },
+            {
+                "name": "Harris Associates L.P.",
+                "value": "$1,355,959,924.00"
+            },
+            {
+                "name": "Blackstone Inc",
+                "value": "$1,262,557,641.00"
+            },
+            {
+                "name": "T. Rowe Price Investment Management, Inc.",
+                "value": "$1,231,338,114.00"
+            },
+            {
+                "name": "Dodge & Cox Inc",
+                "value": "$1,196,787,093.00"
+            },
+            {
+                "name": "Elliott Investment Management L.p.",
+                "value": "$1,190,625,926.00"
+            },
+            {
+                "name": "Royal Bank of Canada",
+                "value": "$1,060,033,971.00"
+            },
+            {
+                "name": "ClearBridge Investments, LLC",
+                "value": "$1,035,106,086.00"
+            },
+            {
+                "name": "GQG Partners LLC",
+                "value": "$969,246,018.00"
+            },
+            {
+                "name": "Fort Washington Investment Advisors, Inc.",
+                "value": "$880,609,374.00"
+            },
+            {
+                "name": "Fundsmith LLP",
+                "value": "$840,249,458.00"
+            },
+            {
+                "name": "Bank Of New York Mellon Corporation",
+                "value": "$797,141,532.00"
+            },
+            {
+                "name": "Raymond James & Associates, Inc.",
+                "value": "$693,018,976.00"
+            },
+            {
+                "name": "Kayne Anderson Rudnick Investment Management LLC",
+                "value": "$668,626,101.00"
+            },
+            {
+                "name": "Fiera Capital Corporation",
+                "value": "$529,772,969.00"
+            },
+            {
+                "name": "Lsv Asset Management",
+                "value": "$506,940,191.00"
+            },
+            {
+                "name": "Neuberger Berman Group, LLC",
+                "value": "$468,709,725.00"
+            },
+            {
+                "name": "Fuller & Thaler Asset Management Inc.",
+                "value": "$453,692,092.00"
+            },
+            {
+                "name": "Pacer Advisors, Inc.",
+                "value": "$446,062,101.00"
+            },
+            {
+                "name": "Arrowstreet Capital, Limited Partnership",
+                "value": "$404,928,577.00"
+            },
+            {
+                "name": "AQR Capital Management, LLC",
+                "value": "$376,825,159.00"
+            },
+            {
+                "name": "Third Point, LLC",
+                "value": "$374,817,490.00"
+            },
+            {
+                "name": "Lone Pine Capital Llc",
+                "value": "$354,175,610.00"
+            },
+            {
+                "name": "Federated Hermes, Inc.",
+                "value": "$353,006,893.00"
+            },
+            {
+                "name": "London Company of Virginia, (The)",
+                "value": "$343,689,623.00"
+            },
+            {
+                "name": "Diamond Hill Capital Management Inc",
+                "value": "$334,576,077.00"
+            },
+            {
+                "name": "Goldman Sachs Group Inc",
+                "value": "$313,740,330.00"
+            },
+            {
+                "name": "Champlain Investment Partners, LLC",
+                "value": "$220,264,326.00"
+            },
+            {
+                "name": "ProShares Advisors, LLC",
+                "value": "$180,519,294.00"
+            },
+            {
+                "name": "Primecap Management Company",
+                "value": "$173,303,557.00"
+            }
+        ]
+    },
+    {
+        "state": "OK",
+        "total_shares_value": "$60,030,213,449.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$16,403,442,875.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$12,215,744,245.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$9,337,860,780.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$3,513,059,067.00"
+            },
+            {
+                "name": "Bank of America Corporation",
+                "value": "$2,644,256,979.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$2,265,545,255.00"
+            },
+            {
+                "name": "Dodge & Cox Inc",
+                "value": "$1,708,413,570.00"
+            },
+            {
+                "name": "Charles Schwab Investment Management, Inc.",
+                "value": "$1,592,583,575.00"
+            },
+            {
+                "name": "Wellington Management Group, LLP",
+                "value": "$1,366,686,275.00"
+            },
+            {
+                "name": "JP Morgan Chase & Company",
+                "value": "$1,228,669,806.00"
+            },
+            {
+                "name": "Price (T.Rowe) Associates Inc",
+                "value": "$1,091,578,169.00"
+            },
+            {
+                "name": "Deutsche Bank Aktiengesellschaft",
+                "value": "$992,723,451.00"
+            },
+            {
+                "name": "Invesco Ltd.",
+                "value": "$913,880,887.00"
+            },
+            {
+                "name": "Harris Associates L.P.",
+                "value": "$676,949,331.00"
+            },
+            {
+                "name": "Tortoise Capital Advisors, LLC",
+                "value": "$643,448,204.00"
+            },
+            {
+                "name": "Legal & General Group PLC",
+                "value": "$559,373,235.00"
+            },
+            {
+                "name": "Pacer Advisors, Inc.",
+                "value": "$394,557,929.00"
+            },
+            {
+                "name": "Victory Capital Management Inc.",
+                "value": "$382,453,117.00"
+            },
+            {
+                "name": "Polen Capital Management, LLC",
+                "value": "$375,881,434.00"
+            },
+            {
+                "name": "Raymond James & Associates, Inc.",
+                "value": "$365,514,357.00"
+            },
+            {
+                "name": "Dimensional Fund Advisors LP",
+                "value": "$349,970,029.00"
+            },
+            {
+                "name": "Sylebra Capital LLC",
+                "value": "$329,040,585.00"
+            },
+            {
+                "name": "Fuller & Thaler Asset Management Inc.",
+                "value": "$296,077,766.00"
+            },
+            {
+                "name": "Shaw D.E. & Co., Inc.",
+                "value": "$202,791,490.00"
+            },
+            {
+                "name": "Loring, Wolcott & Coolidge Fiduciary Advisors LLP",
+                "value": "$179,711,038.00"
+            }
+        ]
+    },
+    {
+        "state": "OR",
+        "total_shares_value": "$36,015,771,479.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$10,048,657,418.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$8,241,892,716.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$5,047,732,029.00"
+            },
+            {
+                "name": "Wellington Management Group, LLP",
+                "value": "$2,350,219,712.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$2,231,256,184.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$2,015,046,486.00"
+            },
+            {
+                "name": "Bank Of New York Mellon Corporation",
+                "value": "$1,610,317,468.00"
+            },
+            {
+                "name": "FMR, LLC",
+                "value": "$1,577,635,621.00"
+            },
+            {
+                "name": "Capital International Investors",
+                "value": "$1,565,408,001.00"
+            },
+            {
+                "name": "Goldman Sachs Group Inc",
+                "value": "$1,327,605,844.00"
+            }
+        ]
+    },
+    {
+        "state": "PA",
+        "total_shares_value": "$293,857,902,772.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$69,007,910,484.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$55,185,744,462.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$28,617,657,150.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$14,694,969,956.00"
+            },
+            {
+                "name": "JP Morgan Chase & Company",
+                "value": "$12,509,331,965.00"
+            },
+            {
+                "name": "FMR, LLC",
+                "value": "$12,301,834,290.00"
+            },
+            {
+                "name": "Berkshire Hathaway, Inc",
+                "value": "$11,240,914,066.00"
+            },
+            {
+                "name": "Wellington Management Group, LLP",
+                "value": "$7,986,648,480.00"
+            },
+            {
+                "name": "Price (T.Rowe) Associates Inc",
+                "value": "$7,591,321,766.00"
+            },
+            {
+                "name": "Capital International Investors",
+                "value": "$6,864,915,791.00"
+            },
+            {
+                "name": "Bank of America Corporation",
+                "value": "$5,879,550,321.00"
+            },
+            {
+                "name": "Capital World Investors",
+                "value": "$5,838,890,537.00"
+            },
+            {
+                "name": "Capital Research Global Investors",
+                "value": "$5,479,966,603.00"
+            },
+            {
+                "name": "Massachusetts Financial Services Co.",
+                "value": "$5,409,314,785.00"
+            },
+            {
+                "name": "Franklin Resources, Inc.",
+                "value": "$4,911,372,639.00"
+            },
+            {
+                "name": "Invesco Ltd.",
+                "value": "$4,496,668,823.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$3,709,729,373.00"
+            },
+            {
+                "name": "Norges Bank Investment Management",
+                "value": "$3,659,780,102.00"
+            },
+            {
+                "name": "State Farm Mutual Automobile Insurance Co",
+                "value": "$3,637,944,497.00"
+            },
+            {
+                "name": "Janus Henderson Group PLC",
+                "value": "$3,170,635,182.00"
+            },
+            {
+                "name": "Dodge & Cox Inc",
+                "value": "$2,952,489,984.00"
+            },
+            {
+                "name": "T. Rowe Price Investment Management, Inc.",
+                "value": "$1,992,115,735.00"
+            },
+            {
+                "name": "Bank Of New York Mellon Corporation",
+                "value": "$1,787,272,191.00"
+            },
+            {
+                "name": "Aristotle Capital Management, LLC",
+                "value": "$1,151,584,012.00"
+            },
+            {
+                "name": "First Eagle Investment Management, LLC",
+                "value": "$1,117,454,283.00"
+            },
+            {
+                "name": "Select Equity Group, Inc.",
+                "value": "$1,029,771,523.00"
+            },
+            {
+                "name": "Ameriprise Financial, Inc.",
+                "value": "$976,475,253.00"
+            },
+            {
+                "name": "Charles Schwab Investment Management, Inc.",
+                "value": "$810,710,060.00"
+            },
+            {
+                "name": "Artisan Partners Limited Partnership",
+                "value": "$755,865,566.00"
+            },
+            {
+                "name": "Apg Asset Management N.V.",
+                "value": "$707,680,081.00"
+            },
+            {
+                "name": "Alliancebernstein L.P.",
+                "value": "$676,187,756.00"
+            },
+            {
+                "name": "Davis Selected Advisers, LP",
+                "value": "$655,909,842.00"
+            },
+            {
+                "name": "Millennium Management Llc",
+                "value": "$612,113,834.00"
+            },
+            {
+                "name": "Pictet Asset Management Holding SA",
+                "value": "$555,357,754.00"
+            },
+            {
+                "name": "BAMCO Inc.",
+                "value": "$547,878,193.00"
+            },
+            {
+                "name": "Brown Advisory  Inc.",
+                "value": "$533,070,601.00"
+            },
+            {
+                "name": "Hotchkis & Wiley Capital Management, LLC",
+                "value": "$507,187,086.00"
+            },
+            {
+                "name": "Wells Fargo & Company",
+                "value": "$479,999,044.00"
+            },
+            {
+                "name": "WCM Investment Management, LLC",
+                "value": "$455,335,810.00"
+            },
+            {
+                "name": "Pacer Advisors, Inc.",
+                "value": "$436,751,244.00"
+            },
+            {
+                "name": "Royal Bank of Canada",
+                "value": "$433,086,229.00"
+            },
+            {
+                "name": "FIL LTD",
+                "value": "$400,914,206.00"
+            },
+            {
+                "name": "Amundi",
+                "value": "$398,676,766.00"
+            },
+            {
+                "name": "Hershey Trust Company",
+                "value": "$391,508,900.00"
+            },
+            {
+                "name": "Dimensional Fund Advisors LP",
+                "value": "$335,178,517.00"
+            },
+            {
+                "name": "Cohen & Steers Inc.",
+                "value": "$289,452,586.00"
+            },
+            {
+                "name": "Deerfield Management Company, L.P. (Series C)",
+                "value": "$243,908,646.00"
+            },
+            {
+                "name": "Cooke & Bieler LP",
+                "value": "$223,653,524.00"
+            },
+            {
+                "name": "Tweedy Browne Company, L.L.C.",
+                "value": "$205,212,274.00"
+            }
+        ]
+    },
+    {
+        "state": "RI",
+        "total_shares_value": "$53,119,700,006.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$11,961,116,091.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$10,459,968,097.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$5,380,186,028.00"
+            },
+            {
+                "name": "Dodge & Cox Inc",
+                "value": "$3,617,111,195.00"
+            },
+            {
+                "name": "Capital World Investors",
+                "value": "$3,285,238,471.00"
+            },
+            {
+                "name": "Capital Research Global Investors",
+                "value": "$3,143,014,642.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$2,580,542,414.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$2,216,493,305.00"
+            },
+            {
+                "name": "FMR, LLC",
+                "value": "$2,042,818,744.00"
+            },
+            {
+                "name": "Invesco Ltd.",
+                "value": "$1,639,809,578.00"
+            },
+            {
+                "name": "Capital International Investors",
+                "value": "$1,216,057,249.00"
+            },
+            {
+                "name": "T. Rowe Price Investment Management, Inc.",
+                "value": "$1,152,100,032.00"
+            },
+            {
+                "name": "Amundi",
+                "value": "$728,919,636.00"
+            },
+            {
+                "name": "Boston Partners",
+                "value": "$604,791,444.00"
+            },
+            {
+                "name": "Hotchkis & Wiley Capital Management, LLC",
+                "value": "$592,088,214.00"
+            },
+            {
+                "name": "Victory Capital Management Inc.",
+                "value": "$528,247,426.00"
+            },
+            {
+                "name": "Fuller & Thaler Asset Management Inc.",
+                "value": "$493,315,607.00"
+            },
+            {
+                "name": "Primecap Management Company",
+                "value": "$457,253,414.00"
+            },
+            {
+                "name": "JP Morgan Chase & Company",
+                "value": "$452,729,031.00"
+            },
+            {
+                "name": "Citadel Advisors Llc",
+                "value": "$241,935,201.00"
+            },
+            {
+                "name": "Marshall Wace LLP",
+                "value": "$163,217,367.00"
+            },
+            {
+                "name": "Cooke & Bieler LP",
+                "value": "$162,746,820.00"
+            }
+        ]
+    },
+    {
+        "state": "TN",
+        "total_shares_value": "$126,580,921,664.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$28,991,255,959.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$21,049,526,964.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$11,702,573,075.00"
+            },
+            {
+                "name": "Capital International Investors",
+                "value": "$9,697,916,353.00"
+            },
+            {
+                "name": "Price (T.Rowe) Associates Inc",
+                "value": "$7,557,250,149.00"
+            },
+            {
+                "name": "JP Morgan Chase & Company",
+                "value": "$7,227,817,440.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$6,208,871,032.00"
+            },
+            {
+                "name": "Capital World Investors",
+                "value": "$4,134,161,767.00"
+            },
+            {
+                "name": "FMR, LLC",
+                "value": "$3,878,972,585.00"
+            },
+            {
+                "name": "Dodge & Cox Inc",
+                "value": "$3,605,096,637.00"
+            },
+            {
+                "name": "Primecap Management Company",
+                "value": "$3,442,211,037.00"
+            },
+            {
+                "name": "Wellington Management Group, LLP",
+                "value": "$2,578,088,565.00"
+            },
+            {
+                "name": "Alliancebernstein L.P.",
+                "value": "$2,432,020,594.00"
+            },
+            {
+                "name": "Franklin Resources, Inc.",
+                "value": "$1,967,502,622.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$1,841,402,194.00"
+            },
+            {
+                "name": "Fiera Capital Corporation",
+                "value": "$1,338,075,803.00"
+            },
+            {
+                "name": "Norges Bank Investment Management",
+                "value": "$1,315,465,618.00"
+            },
+            {
+                "name": "Royal Bank of Canada",
+                "value": "$1,266,047,187.00"
+            },
+            {
+                "name": "Boston Partners",
+                "value": "$1,211,441,238.00"
+            },
+            {
+                "name": "Invesco Ltd.",
+                "value": "$1,016,212,363.00"
+            },
+            {
+                "name": "Parnassus Investments, LLC",
+                "value": "$966,267,866.00"
+            },
+            {
+                "name": "Bank Of New York Mellon Corporation",
+                "value": "$689,841,994.00"
+            },
+            {
+                "name": "Longview Partners (Guernsey) LTD",
+                "value": "$610,093,099.00"
+            },
+            {
+                "name": "Capital Research Global Investors",
+                "value": "$555,452,525.00"
+            },
+            {
+                "name": "Apg Asset Management US Inc.",
+                "value": "$463,596,412.00"
+            },
+            {
+                "name": "Massachusetts Financial Services Co.",
+                "value": "$297,314,197.00"
+            },
+            {
+                "name": "Bank of America Corporation",
+                "value": "$280,631,784.00"
+            },
+            {
+                "name": "Dimensional Fund Advisors LP",
+                "value": "$255,814,605.00"
+            }
+        ]
+    },
+    {
+        "state": "TX",
+        "total_shares_value": "$1,427,671,677,637.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$363,511,118,311.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$283,051,357,442.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$182,893,440,267.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$77,887,922,935.00"
+            },
+            {
+                "name": "JP Morgan Chase & Company",
+                "value": "$60,835,692,942.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$41,704,401,138.00"
+            },
+            {
+                "name": "Capital World Investors",
+                "value": "$41,539,774,150.00"
+            },
+            {
+                "name": "FMR, LLC",
+                "value": "$37,038,747,124.00"
+            },
+            {
+                "name": "Price (T.Rowe) Associates Inc",
+                "value": "$34,936,065,521.00"
+            },
+            {
+                "name": "Wellington Management Group, LLP",
+                "value": "$26,583,412,108.00"
+            },
+            {
+                "name": "Norges Bank Investment Management",
+                "value": "$25,999,494,307.00"
+            },
+            {
+                "name": "Bank of America Corporation",
+                "value": "$24,098,705,503.00"
+            },
+            {
+                "name": "Capital Research Global Investors",
+                "value": "$16,570,629,222.00"
+            },
+            {
+                "name": "Toronto Dominion Bank",
+                "value": "$14,519,905,186.00"
+            },
+            {
+                "name": "Dodge & Cox Inc",
+                "value": "$13,613,395,723.00"
+            },
+            {
+                "name": "Berkshire Hathaway, Inc",
+                "value": "$13,049,991,234.00"
+            },
+            {
+                "name": "Northern Trust Corporation",
+                "value": "$13,032,251,784.00"
+            },
+            {
+                "name": "Charles Schwab Investment Management, Inc.",
+                "value": "$10,881,724,870.00"
+            },
+            {
+                "name": "Capital International Investors",
+                "value": "$10,429,087,390.00"
+            },
+            {
+                "name": "Massachusetts Financial Services Co.",
+                "value": "$10,425,963,371.00"
+            },
+            {
+                "name": "Bill & Melinda Gates Foundation Trust",
+                "value": "$10,099,325,486.00"
+            },
+            {
+                "name": "Cohen & Steers Inc.",
+                "value": "$9,341,569,947.00"
+            },
+            {
+                "name": "Invesco Ltd.",
+                "value": "$8,515,135,243.00"
+            },
+            {
+                "name": "State Farm Mutual Automobile Insurance Co",
+                "value": "$6,708,025,452.00"
+            },
+            {
+                "name": "Primecap Management Company",
+                "value": "$6,672,748,176.00"
+            },
+            {
+                "name": "Fisher Asset Management, LLC",
+                "value": "$6,233,206,813.00"
+            },
+            {
+                "name": "Bank Of New York Mellon Corporation",
+                "value": "$4,421,518,056.00"
+            },
+            {
+                "name": "Principal Financial Group, Inc.",
+                "value": "$4,337,614,613.00"
+            },
+            {
+                "name": "Newport Trust Company, LLC",
+                "value": "$4,271,344,842.00"
+            },
+            {
+                "name": "Ameriprise Financial, Inc.",
+                "value": "$4,058,814,869.00"
+            },
+            {
+                "name": "Harris Associates L.P.",
+                "value": "$3,542,525,511.00"
+            },
+            {
+                "name": "Loomis Sayles & Company, LP",
+                "value": "$3,163,557,622.00"
+            },
+            {
+                "name": "Aristotle Capital Management, LLC",
+                "value": "$3,092,525,646.00"
+            },
+            {
+                "name": "Franklin Resources, Inc.",
+                "value": "$2,944,154,135.00"
+            },
+            {
+                "name": "Deutsche Bank Aktiengesellschaft",
+                "value": "$2,784,693,242.00"
+            },
+            {
+                "name": "Alliancebernstein L.P.",
+                "value": "$2,769,809,205.00"
+            },
+            {
+                "name": "T. Rowe Price Investment Management, Inc.",
+                "value": "$2,748,650,715.00"
+            },
+            {
+                "name": "Parnassus Investments, LLC",
+                "value": "$2,440,952,009.00"
+            },
+            {
+                "name": "Wells Fargo & Company",
+                "value": "$2,158,173,584.00"
+            },
+            {
+                "name": "Arrowstreet Capital, Limited Partnership",
+                "value": "$2,093,341,633.00"
+            },
+            {
+                "name": "Apg Asset Management US Inc.",
+                "value": "$2,082,071,441.00"
+            },
+            {
+                "name": "Pacer Advisors, Inc.",
+                "value": "$1,903,103,290.00"
+            },
+            {
+                "name": "Peconic Partners, LLC",
+                "value": "$1,668,036,469.00"
+            },
+            {
+                "name": "Artisan Partners Limited Partnership",
+                "value": "$1,412,895,741.00"
+            },
+            {
+                "name": "Elliott Investment Management L.p.",
+                "value": "$1,395,433,031.00"
+            },
+            {
+                "name": "Nuveen Asset Management, LLC",
+                "value": "$1,376,360,769.00"
+            },
+            {
+                "name": "Blackstone Inc",
+                "value": "$1,340,850,304.00"
+            },
+            {
+                "name": "American Century Companies Inc",
+                "value": "$1,338,420,750.00"
+            },
+            {
+                "name": "Jennison Associates LLC",
+                "value": "$1,161,818,909.00"
+            },
+            {
+                "name": "Boston Partners",
+                "value": "$1,136,930,288.00"
+            },
+            {
+                "name": "First Eagle Investment Management, LLC",
+                "value": "$1,100,783,397.00"
+            },
+            {
+                "name": "Generation Investment Management LLP",
+                "value": "$1,093,998,495.00"
+            },
+            {
+                "name": "Edgewood Management Llc",
+                "value": "$1,063,407,145.00"
+            },
+            {
+                "name": "Barclays Plc",
+                "value": "$1,006,530,893.00"
+            },
+            {
+                "name": "Tortoise Capital Advisors, LLC",
+                "value": "$972,767,565.00"
+            },
+            {
+                "name": "Victory Capital Management Inc.",
+                "value": "$932,081,465.00"
+            },
+            {
+                "name": "Apg Asset Management N.V.",
+                "value": "$874,156,209.00"
+            },
+            {
+                "name": "Hotchkis & Wiley Capital Management, LLC",
+                "value": "$869,322,344.00"
+            },
+            {
+                "name": "Nomura Holdings Inc.",
+                "value": "$861,732,655.00"
+            },
+            {
+                "name": "Dz Bank Ag Deutsche Zentral Genossenschafts Bank, Frankfurt Am Main",
+                "value": "$836,067,019.00"
+            },
+            {
+                "name": "Allspring Global Investments Holdings, LLC",
+                "value": "$744,813,888.00"
+            },
+            {
+                "name": "Sanders Capital, LLC",
+                "value": "$691,284,230.00"
+            },
+            {
+                "name": "FIL LTD",
+                "value": "$665,251,179.00"
+            },
+            {
+                "name": "Goldman Sachs Group Inc",
+                "value": "$620,352,077.00"
+            },
+            {
+                "name": "Dimensional Fund Advisors LP",
+                "value": "$595,857,634.00"
+            },
+            {
+                "name": "Cantillon Capital Management LLC",
+                "value": "$595,194,649.00"
+            },
+            {
+                "name": "Eagle Capital Management LLC",
+                "value": "$575,175,543.00"
+            },
+            {
+                "name": "Lsv Asset Management",
+                "value": "$575,141,234.00"
+            },
+            {
+                "name": "Canada Pension Plan Investment Board",
+                "value": "$562,694,597.00"
+            },
+            {
+                "name": "Neuberger Berman Group, LLC",
+                "value": "$478,134,146.00"
+            },
+            {
+                "name": "Barrow, Hanley Mewhinney & Strauss, LLC",
+                "value": "$428,938,289.00"
+            },
+            {
+                "name": "Viking Global Investors, L.P.",
+                "value": "$411,226,984.00"
+            },
+            {
+                "name": "Srs Investment Management, Llc",
+                "value": "$308,181,717.00"
+            },
+            {
+                "name": "Susquehanna International Group, LLP",
+                "value": "$279,036,503.00"
+            },
+            {
+                "name": "Smead Capital Management, Inc.",
+                "value": "$223,399,828.00"
+            },
+            {
+                "name": "Slate Path Capital, LP",
+                "value": "$213,561,169.00"
+            },
+            {
+                "name": "Millennium Management Llc",
+                "value": "$139,986,489.00"
+            },
+            {
+                "name": "UBS Asset Management Americas Inc",
+                "value": "$135,911,975.00"
+            }
+        ]
+    },
+    {
+        "state": "UT",
+        "total_shares_value": "$22,345,372,064.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$6,097,229,514.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$3,834,342,464.00"
+            },
+            {
+                "name": "Capital World Investors",
+                "value": "$3,552,423,145.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$2,387,127,795.00"
+            },
+            {
+                "name": "Cohen & Steers Inc.",
+                "value": "$1,592,144,495.00"
+            },
+            {
+                "name": "Principal Financial Group, Inc.",
+                "value": "$1,245,199,373.00"
+            },
+            {
+                "name": "Norges Bank Investment Management",
+                "value": "$1,234,657,173.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$1,044,248,726.00"
+            },
+            {
+                "name": "Invesco Ltd.",
+                "value": "$694,923,517.00"
+            },
+            {
+                "name": "Capital International Investors",
+                "value": "$663,075,862.00"
+            }
+        ]
+    },
+    {
+        "state": "VA",
+        "total_shares_value": "$286,444,285,233.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$63,164,039,165.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$47,739,607,629.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$32,753,908,766.00"
+            },
+            {
+                "name": "Capital Research Global Investors",
+                "value": "$11,309,963,385.00"
+            },
+            {
+                "name": "Newport Trust Company, LLC",
+                "value": "$9,516,695,064.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$9,174,511,743.00"
+            },
+            {
+                "name": "Longview Asset Management, LLC",
+                "value": "$8,476,804,835.00"
+            },
+            {
+                "name": "Capital World Investors",
+                "value": "$8,463,708,345.00"
+            },
+            {
+                "name": "FMR, LLC",
+                "value": "$8,277,945,694.00"
+            },
+            {
+                "name": "Wellington Management Group, LLP",
+                "value": "$7,909,495,796.00"
+            },
+            {
+                "name": "Capital International Investors",
+                "value": "$7,763,964,090.00"
+            },
+            {
+                "name": "JP Morgan Chase & Company",
+                "value": "$6,986,021,754.00"
+            },
+            {
+                "name": "Bank of America Corporation",
+                "value": "$6,803,292,706.00"
+            },
+            {
+                "name": "Massachusetts Financial Services Co.",
+                "value": "$5,951,390,737.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$4,813,075,018.00"
+            },
+            {
+                "name": "Principal Financial Group, Inc.",
+                "value": "$4,724,106,894.00"
+            },
+            {
+                "name": "Dodge & Cox Inc",
+                "value": "$4,223,004,842.00"
+            },
+            {
+                "name": "Price (T.Rowe) Associates Inc",
+                "value": "$3,798,113,030.00"
+            },
+            {
+                "name": "Berkshire Hathaway, Inc",
+                "value": "$3,784,642,159.00"
+            },
+            {
+                "name": "Charles Schwab Investment Management, Inc.",
+                "value": "$3,401,539,067.00"
+            },
+            {
+                "name": "Loomis Sayles & Company, LP",
+                "value": "$2,273,904,260.00"
+            },
+            {
+                "name": "Harris Associates L.P.",
+                "value": "$2,221,353,374.00"
+            },
+            {
+                "name": "Pershing Square Capital Management, L.P.",
+                "value": "$2,035,661,217.00"
+            },
+            {
+                "name": "Norges Bank Investment Management",
+                "value": "$1,963,613,896.00"
+            },
+            {
+                "name": "Wells Fargo & Company",
+                "value": "$1,908,045,962.00"
+            },
+            {
+                "name": "Franklin Resources, Inc.",
+                "value": "$1,478,928,501.00"
+            },
+            {
+                "name": "Davis Selected Advisers, LP",
+                "value": "$1,409,962,147.00"
+            },
+            {
+                "name": "Invesco Ltd.",
+                "value": "$1,299,857,269.00"
+            },
+            {
+                "name": "Boston Partners",
+                "value": "$1,105,364,065.00"
+            },
+            {
+                "name": "Diamond Hill Capital Management Inc",
+                "value": "$1,040,925,473.00"
+            },
+            {
+                "name": "Goldman Sachs Group Inc",
+                "value": "$885,968,311.00"
+            },
+            {
+                "name": "Mantle Ridge LP",
+                "value": "$863,709,003.00"
+            },
+            {
+                "name": "Arrowstreet Capital, Limited Partnership",
+                "value": "$813,265,045.00"
+            },
+            {
+                "name": "Northern Trust Corporation",
+                "value": "$797,103,484.00"
+            },
+            {
+                "name": "Nomura Holdings Inc.",
+                "value": "$769,502,559.00"
+            },
+            {
+                "name": "Ninety One UK Ltd",
+                "value": "$733,465,186.00"
+            },
+            {
+                "name": "Renaissance Technologies, LLC",
+                "value": "$554,673,897.00"
+            },
+            {
+                "name": "Legal & General Group PLC",
+                "value": "$533,871,474.00"
+            },
+            {
+                "name": "T. Rowe Price Investment Management, Inc.",
+                "value": "$520,162,918.00"
+            },
+            {
+                "name": "Victory Capital Management Inc.",
+                "value": "$508,625,384.00"
+            },
+            {
+                "name": "Edgepoint Investment Group Inc.",
+                "value": "$492,610,967.00"
+            },
+            {
+                "name": "Viking Global Investors, L.P.",
+                "value": "$485,841,732.00"
+            },
+            {
+                "name": "Orbis Allan Gray Ltd",
+                "value": "$463,904,879.00"
+            },
+            {
+                "name": "Ameriprise Financial, Inc.",
+                "value": "$423,253,377.00"
+            },
+            {
+                "name": "Primecap Management Company",
+                "value": "$404,530,854.00"
+            },
+            {
+                "name": "Barclays Plc",
+                "value": "$366,686,108.00"
+            },
+            {
+                "name": "Janus Henderson Group PLC",
+                "value": "$344,879,232.00"
+            },
+            {
+                "name": "Ruane, Cunniff & Goldfarb L.P.",
+                "value": "$283,858,714.00"
+            },
+            {
+                "name": "Van Eck Associates Corporation",
+                "value": "$235,917,780.00"
+            },
+            {
+                "name": "AQR Capital Management, LLC",
+                "value": "$189,007,446.00"
+            }
+        ]
+    },
+    {
+        "state": "WA",
+        "total_shares_value": "$1,965,668,655,511.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$521,288,632,904.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$427,723,331,158.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$231,342,484,066.00"
+            },
+            {
+                "name": "FMR, LLC",
+                "value": "$172,331,115,647.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$124,543,640,679.00"
+            },
+            {
+                "name": "Price (T.Rowe) Associates Inc",
+                "value": "$102,211,085,629.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$99,387,638,339.00"
+            },
+            {
+                "name": "JP Morgan Chase & Company",
+                "value": "$92,858,803,194.00"
+            },
+            {
+                "name": "Norges Bank Investment Management",
+                "value": "$75,444,267,459.00"
+            },
+            {
+                "name": "Capital International Investors",
+                "value": "$34,213,663,548.00"
+            },
+            {
+                "name": "Capital Research Global Investors",
+                "value": "$17,805,260,212.00"
+            },
+            {
+                "name": "Softbank Group Corporation",
+                "value": "$17,251,471,757.00"
+            },
+            {
+                "name": "Bank of America Corporation",
+                "value": "$10,143,340,449.00"
+            },
+            {
+                "name": "Wellington Management Group, LLP",
+                "value": "$7,405,626,600.00"
+            },
+            {
+                "name": "Northern Trust Corporation",
+                "value": "$6,357,044,331.00"
+            },
+            {
+                "name": "Bank Of New York Mellon Corporation",
+                "value": "$4,373,915,947.00"
+            },
+            {
+                "name": "Invesco Ltd.",
+                "value": "$2,734,274,715.00"
+            },
+            {
+                "name": "T. Rowe Price Investment Management, Inc.",
+                "value": "$2,455,589,347.00"
+            },
+            {
+                "name": "Barclays Plc",
+                "value": "$2,262,120,079.00"
+            },
+            {
+                "name": "Wells Fargo & Company",
+                "value": "$1,945,791,707.00"
+            },
+            {
+                "name": "Franklin Resources, Inc.",
+                "value": "$1,605,685,182.00"
+            },
+            {
+                "name": "Hotchkis & Wiley Capital Management, LLC",
+                "value": "$1,169,932,625.00"
+            },
+            {
+                "name": "Flossbach von Storch AG",
+                "value": "$852,265,881.00"
+            },
+            {
+                "name": "Royal Bank of Canada",
+                "value": "$851,241,166.00"
+            },
+            {
+                "name": "First Eagle Investment Management, LLC",
+                "value": "$822,847,445.00"
+            },
+            {
+                "name": "Loomis Sayles & Company, LP",
+                "value": "$782,373,489.00"
+            },
+            {
+                "name": "Viking Global Investors, L.P.",
+                "value": "$764,709,458.00"
+            },
+            {
+                "name": "Massachusetts Financial Services Co.",
+                "value": "$676,906,055.00"
+            },
+            {
+                "name": "Brown Advisory  Inc.",
+                "value": "$670,608,737.00"
+            },
+            {
+                "name": "ValueAct Holdings, L.P.",
+                "value": "$503,717,085.00"
+            },
+            {
+                "name": "Ameriprise Financial, Inc.",
+                "value": "$460,648,075.00"
+            },
+            {
+                "name": "Par Capital Management Inc",
+                "value": "$454,899,323.00"
+            },
+            {
+                "name": "Windacre Partnership LLC",
+                "value": "$426,657,356.00"
+            },
+            {
+                "name": "American Century Companies Inc",
+                "value": "$377,429,645.00"
+            },
+            {
+                "name": "Boston Partners",
+                "value": "$369,881,541.00"
+            },
+            {
+                "name": "First Trust Advisors LP",
+                "value": "$275,833,861.00"
+            },
+            {
+                "name": "UBS Asset Management Americas Inc",
+                "value": "$273,842,016.00"
+            },
+            {
+                "name": "Lyrical Asset Management LP",
+                "value": "$250,078,804.00"
+            }
+        ]
+    },
+    {
+        "state": "WI",
+        "total_shares_value": "$45,359,051,810.00",
+        "top_holders": [
+            {
+                "name": "Vanguard Group Inc",
+                "value": "$13,378,777,320.00"
+            },
+            {
+                "name": "Blackrock Inc.",
+                "value": "$9,010,807,451.00"
+            },
+            {
+                "name": "State Street Corporation",
+                "value": "$5,778,196,106.00"
+            },
+            {
+                "name": "Geode Capital Management, LLC",
+                "value": "$2,784,221,293.00"
+            },
+            {
+                "name": "Price (T.Rowe) Associates Inc",
+                "value": "$1,544,553,175.00"
+            },
+            {
+                "name": "Bank of America Corporation",
+                "value": "$1,035,268,679.00"
+            },
+            {
+                "name": "JP Morgan Chase & Company",
+                "value": "$752,796,088.00"
+            },
+            {
+                "name": "Wells Fargo & Company",
+                "value": "$738,267,658.00"
+            },
+            {
+                "name": "Victory Capital Management Inc.",
+                "value": "$656,711,975.00"
+            },
+            {
+                "name": "Janus Henderson Group PLC",
+                "value": "$636,926,141.00"
+            },
+            {
+                "name": "Lazard Asset Management LLC",
+                "value": "$577,688,101.00"
+            },
+            {
+                "name": "Invesco Ltd.",
+                "value": "$566,346,781.00"
+            },
+            {
+                "name": "Morgan Stanley",
+                "value": "$521,985,004.00"
+            },
+            {
+                "name": "Amundi",
+                "value": "$521,295,005.00"
+            },
+            {
+                "name": "Deutsche Bank Aktiengesellschaft",
+                "value": "$519,803,909.00"
+            },
+            {
+                "name": "Charles Schwab Investment Management, Inc.",
+                "value": "$477,338,910.00"
+            },
+            {
+                "name": "Earnest Partners LLC",
+                "value": "$447,058,626.00"
+            },
+            {
+                "name": "Nuveen Asset Management, LLC",
+                "value": "$402,555,532.00"
+            },
+            {
+                "name": "Ameriprise Financial, Inc.",
+                "value": "$401,221,675.00"
+            },
+            {
+                "name": "Goldman Sachs Group Inc",
+                "value": "$372,701,376.00"
+            },
+            {
+                "name": "First Trust Advisors LP",
+                "value": "$362,008,772.00"
+            },
+            {
+                "name": "Massachusetts Financial Services Co.",
+                "value": "$359,660,431.00"
+            },
+            {
+                "name": "Northern Trust Corporation",
+                "value": "$355,960,306.00"
+            },
+            {
+                "name": "Select Equity Group, Inc.",
+                "value": "$335,029,778.00"
+            },
+            {
+                "name": "FMR, LLC",
+                "value": "$334,389,381.00"
+            },
+            {
+                "name": "Ariel Investments, LLC",
+                "value": "$290,709,726.00"
+            },
+            {
+                "name": "Impax Asset Management Group Plc",
+                "value": "$282,567,622.00"
+            },
+            {
+                "name": "Nordea Investment Management AB",
+                "value": "$271,733,044.00"
+            },
+            {
+                "name": "Pacer Advisors, Inc.",
+                "value": "$236,731,018.00"
+            },
+            {
+                "name": "Pictet Asset Management Holding SA",
+                "value": "$236,478,519.00"
+            },
+            {
+                "name": "Brown Advisory  Inc.",
+                "value": "$224,095,173.00"
+            },
+            {
+                "name": "Capital World Investors",
+                "value": "$209,419,402.00"
+            },
+            {
+                "name": "Macquarie Group Limited",
+                "value": "$197,596,829.00"
+            },
+            {
+                "name": "Fisher Asset Management, LLC",
+                "value": "$192,644,946.00"
+            },
+            {
+                "name": "ProShares Advisors, LLC",
+                "value": "$176,554,596.00"
+            },
+            {
+                "name": "Holocene Advisors, LP",
+                "value": "$168,951,462.00"
+            }
+        ]
+    }
+]

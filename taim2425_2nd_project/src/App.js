@@ -1,11 +1,13 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
-import CloroplethMap from './CloroplethMap';
+import ChartView from './ChartView';
+import MapView from './MapView';
 
 function App() {
   return (
-    <div className="App">
-      <CloroplethMap></CloroplethMap>
+    <div>
+      <MapView/>
+      <ChartView/>
     </div>
   );
 }
