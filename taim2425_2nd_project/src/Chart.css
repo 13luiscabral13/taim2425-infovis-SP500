@@ -1,10 +1,9 @@
-
-#logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -45%);
-    z-index: 1;
-    width: 200px; /* adjust the size of the logo */
-    height: auto;
+#go-back-button {
+    margin-top: -20px;
+    margin-left: 90%;
+    padding: 10px;
+    background-color: #ff8181;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
 }

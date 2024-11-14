@@ -100,13 +100,13 @@ export async function perShareholderPerSectorPerCompany(shareholder, sector, top
 
         // Extract investments and sort by investment value
         const investments = data[shareholder][sector]
-            .map(([symbol, value, fullName, city, website, state]) => ({
+            .map(([symbol, value, fullName, city, state, website]) => ({
                 symbol,
                 value: parseFloat(value.replace(/[$,]/g, '')),
                 fullName,
                 city,
-                website,
-                state
+                state,
+                website
             }))
             .sort((a, b) => b.value - a.value);
 

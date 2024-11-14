@@ -4,17 +4,19 @@ import Chart from './Chart';
 import Filters from './Filters';
 import ShareholderFilters from './ShareholderFilters';
 import OwnershipFilters from './OwnershipFilters';
+import RangeFilter from './RangeFilter';
 
 function ChartView() {
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
   const [selectedFilter, setSelectedFilter] = useState('');
   const [selectedSubFilter, setSelectedSubFilter] = useState('');
+  const [selectedRangeFilter, setSelectedRangeFilter] = useState('');
   const [searchTriggered, setSearchTriggered] = useState(false);
 
   const handleFilterChange = (filter) => {
     console.log('Selected filter:', filter);
     if (filter.category != selectedFilter) {
-    setSelectedFilter(filter.category);
+      setSelectedFilter(filter.category);
     }
     setSelectedSubFilter('');
   };
@@ -23,6 +25,12 @@ function ChartView() {
     console.log('Selected sub-filter:', subFilter);
     setSelectedSubFilter(subFilter);
   };
+
+  const handleRangeFilterChange = (rangeFilter) => {
+    console.log('Selected range filter:', rangeFilter);
+    setSelectedRangeFilter(rangeFilter);
+  }
+
 
   const toggleSidebar = () => {
     setIsSidebarVisible(!isSidebarVisible);
@@ -49,18 +57,20 @@ function ChartView() {
       <div className={`sidebar-overlay ${isSidebarVisible ? 'visible' : ''}`}>
         <div className="sidebar-content">
           <div>
-          <button onClick={closeSidebar} className="close-button"><p id="closeBtnText">X</p></button>
-          <Filters onFilterChange={handleFilterChange} />
+            <button onClick={closeSidebar} className="close-button"><p id="closeBtnText">X</p></button>
+            <Filters onFilterChange={handleFilterChange} />
           </div>
           <hr></hr>
           <div>
-          {selectedFilter=="shareholder" && <ShareholderFilters onSubFilterChange={handleSubFilterChange} />}
-          {selectedFilter=="ownership" && <OwnershipFilters onSubFilterChange={handleSubFilterChange} />}
-          <button id="search-btn" onClick={search} >Search</button>
+            {selectedFilter == "shareholder" && <ShareholderFilters onSubFilterChange={handleSubFilterChange} />}
+            {selectedFilter == "ownership" && <OwnershipFilters onSubFilterChange={handleSubFilterChange} />}
           </div>
+          <hr></hr>
+          <RangeFilter onRangeFilterChange={handleRangeFilterChange}/>
+          <button id="search-btn" onClick={search} >Search</button>
         </div>
       </div>
-      <Chart filter={selectedFilter} subFilter={selectedSubFilter} searchTriggered={searchTriggered}/>
+      <Chart filter={selectedFilter} subFilter={selectedSubFilter} searchTriggered={searchTriggered} range={selectedRangeFilter} />
     </div>
   );
 }
