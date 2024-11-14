@@ -113,3 +113,14 @@
     right: 5%;
 }
 
+#deleteText {
+    background-color: transparent;
+    align-items: center;
+    padding: 0px;
+}
+
+#deleteText img {
+    margin-top: 3px;
+    margin-right: 5px;
+    max-width: 18px;
+}

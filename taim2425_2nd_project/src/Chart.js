@@ -49,14 +49,17 @@ const Chart = ({ filter, subFilter, searchTriggered, range }) => {
         if (typeOfSearch.subCategory == "state") {
             setChartKey("shareholder");
             setChartName("Ownership Distribution in " + typeOfSearch.identifier);
-            return await ownershipByState(typeOfSearch.identifier, range);
+            let stateData = await ownershipByState(typeOfSearch.identifier, range);
+            return stateData.holders;
         } else if (typeOfSearch.subCategory == "sector") {
             setChartKey("shareholder");
             setChartName("Ownership Distribution in " + typeOfSearch.identifier);
             return await ownershipBySector(typeOfSearch.identifier, range);
         }
         else {
-            return await ownershipInGeneral(8);
+            setChartKey("shareholder");
+            setChartName("Ownership Distribution Across SP500");
+            return await ownershipInGeneral(range);
         }
 
     }

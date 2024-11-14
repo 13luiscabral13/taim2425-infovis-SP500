@@ -5,7 +5,7 @@ import states from './state_list.json'; // Adjust the path as needed
 
 
 const OwnershipFilters = ({ onSubFilterChange }) => {
-    const [subCategory, setCategory] = useState('');
+    const [subCategory, setCategory] = useState('general');
     const [searchQuery, setSearchQuery] = useState('');
     const [suggestions, setSuggestions] = useState([]);
 
@@ -84,14 +84,14 @@ const OwnershipFilters = ({ onSubFilterChange }) => {
                     type="radio"
                     value="general"
                     checked={subCategory === 'general'}
-                    onChange={handleSubCategoryChange}
+                    onChange={handleSubCategoryChange}                    
                 />
                 In General
             </label>
             <br />
             {subCategory === 'sector' || subCategory === 'state' ? (
                 <div className="searchInput">
-                    <button onClick={() => deleteSuggestions()} ></button>
+                    <button id="deleteText" onClick={() => deleteSuggestions()} ><img src="/image.png"></img></button>
                     <label>
                         <input
                             type="text"

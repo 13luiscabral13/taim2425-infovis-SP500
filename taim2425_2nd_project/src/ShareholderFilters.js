@@ -61,7 +61,7 @@ const ShareholderFilters = ({ onSubFilterChange }) => {
     return (
         <div className="shareholder filters">
             <div className="searchInput">
-            <button onClick={() => deleteSuggestions()} ></button>
+            <button id="deleteText" onClick={() => deleteSuggestions()} ><img src='/image.png'></img></button>
             <label>
                 <input
                     type="text"

@@ -8,9 +8,9 @@ import RangeFilter from './RangeFilter';
 
 function ChartView() {
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
-  const [selectedFilter, setSelectedFilter] = useState('');
-  const [selectedSubFilter, setSelectedSubFilter] = useState('');
-  const [selectedRangeFilter, setSelectedRangeFilter] = useState('');
+  const [selectedFilter, setSelectedFilter] = useState("ownership");
+  const [selectedSubFilter, setSelectedSubFilter] = useState({subCategory: "general"});
+  const [selectedRangeFilter, setSelectedRangeFilter] = useState(5);
   const [searchTriggered, setSearchTriggered] = useState(false);
 
   const handleFilterChange = (filter) => {

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Filters.css';
 
 const Filters = ({ onFilterChange }) => {
-    const [category, setCategory] = useState('');
+    const [category, setCategory] = useState('ownership');
 
     const handleCategoryChange = (e) => {
         setCategory(e.target.value);
