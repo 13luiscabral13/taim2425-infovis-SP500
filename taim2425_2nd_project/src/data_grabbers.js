@@ -181,8 +181,12 @@ export async function ownershipByState(state, topX) {
             }))
             .sort((a, b) => b.value - a.value); // Sort by value in descending order
 
-        // Return the top X holders
-        return sortedHolders.slice(0, topX);
+        return{
+            holders : sortedHolders.slice(0, topX),
+            shares_value : stateData.total_shares_value
+        }
+    
+
     } catch (error) {
         console.error('Error in ownershipByState:', error);
         return [];
