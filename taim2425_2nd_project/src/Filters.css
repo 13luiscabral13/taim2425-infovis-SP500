@@ -51,6 +51,10 @@
     display: flex;
 }
 
+.close-button:hover {
+    background-color: #ff938c;
+}
+
 .toggle-button {
     margin: 20px;
     padding: 10px 20px;
@@ -124,3 +128,4 @@
     margin-right: 5px;
     max-width: 18px;
 }
+

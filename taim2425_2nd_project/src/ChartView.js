@@ -57,7 +57,7 @@ function ChartView() {
       <div className={`sidebar-overlay ${isSidebarVisible ? 'visible' : ''}`}>
         <div className="sidebar-content">
           <div>
-            <button onClick={closeSidebar} className="close-button"><p id="closeBtnText">X</p></button>
+            <button onClick={closeSidebar} className="close-button"></button>
             <Filters onFilterChange={handleFilterChange} />
           </div>
           <hr></hr>
