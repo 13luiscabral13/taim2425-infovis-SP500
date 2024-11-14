@@ -4,7 +4,6 @@ import { perShareholderPerCompany, ownershipByState, perShareholderPerSector, ow
 import './Chart.css';
 
 const Chart = ({ filter, subFilter, searchTriggered, range }) => {
-    console.log("The Searchtrigger attribute is: ", searchTriggered);
     const [chartData, setChartData] = useState([]);
     const [chartKey, setChartKey] = useState({});
     const [chartName, setChartName] = useState({});
@@ -14,7 +13,6 @@ const Chart = ({ filter, subFilter, searchTriggered, range }) => {
 
 
     async function getSearchFunction(filter, subFilter, range) {
-        console.log("Filter: ", filter, "Subfilter: ", subFilter);
         if (filter == "shareholder") {
             return await getShareholderInfo(subFilter, range)
         } else if (filter == "ownership") {
@@ -45,11 +43,12 @@ const Chart = ({ filter, subFilter, searchTriggered, range }) => {
     }
 
     async function getOwnershipInfo(typeOfSearch, range) {
-        console.log("Type of search: ", typeOfSearch);
         if (typeOfSearch.subCategory == "state") {
+            let actualState = typeOfSearch.identifier.split(": ")[1];
+            let abbreviation = typeOfSearch.identifier.split(": ")[0];
             setChartKey("shareholder");
-            setChartName("Ownership Distribution in " + typeOfSearch.identifier);
-            let stateData = await ownershipByState(typeOfSearch.identifier, range);
+            setChartName("Ownership Distribution in " + actualState);
+            let stateData = await ownershipByState(abbreviation, range);
             return stateData.holders;
         } else if (typeOfSearch.subCategory == "sector") {
             setChartKey("shareholder");
