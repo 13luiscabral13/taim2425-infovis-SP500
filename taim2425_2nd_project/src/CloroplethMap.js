@@ -3,7 +3,7 @@ import 'leaflet/dist/leaflet.css';
 import { GeoJSON } from 'react-leaflet';
 import React, { useEffect, useRef, useState } from 'react';
 import geojsonData from './gz_2010_us_040_00_20m.json';
-
+import { ownershipByState } from './data_grabbers';
 
 var geojson;
 
@@ -81,17 +81,57 @@ const ChoroplethMapComp = ({ geojsonData }) => {
 
     function resetHighlight(e) {
       geojson.resetStyle(e.target);
+      const infoBox = document.getElementsByClassName('info-box')[0];
+      infoBox.remove();
       info.update();
     }
 
-    function zoomToFeature(e) {
-      map.fitBounds(e.target.getBounds());
+    function changeColor(e) {
+      e.target.setStyle({
+        fillColor: '#FF0000', // Change color to red or any color of your choice
+        weight: 5,
+        fillOpacity: 0.2
+      });
     }
+
+    function addInfoBox(e) {
+      const infoContainer = document.getElementsByTagName('div')[2];
+      const { NAME, LSAD, CENSUSAREA } = e.target.feature.properties;
+      const infoBox = document.createElement('div');
+      infoBox.className = 'info-box';
+
+      ownershipByState(e.target.feature.properties.LSAD, 10)
+      .then(total_shares_value => {
+        infoBox.innerHTML = `
+        <p><strong>Name:</strong> ${NAME}</p>
+        <p><strong>Symbol:</strong> ${LSAD}</p>
+        <p><strong>Area:</strong> ${CENSUSAREA}</p>
+        <p><strong>Total Shares Value:</strong> ${total_shares_value.shares_value}</p>
+      `;
+      })
+
+      infoContainer.style.display = "flex";
+      infoContainer.style.justifyContent = "space-between";
+      infoBox.style.border = "1px solid";
+      infoBox.style.borderRadius = "10px";
+      infoBox.style.padding = "10px";
+      infoBox.style.width = "300px";
+      infoBox.style.height = "50%"
+      infoBox.style.borderColor = "#0096C7";
+      infoBox.style.backgroundColor = "rgba(0, 150, 199, 0.2)";
+      infoBox.style.opacity = "1.0";
+
+      infoContainer.appendChild(infoBox);
+    }
+
     function onEachFeature(feature, layer) {
       layer.on({
-        mouseover: highlightFeature,
+        mouseover: (e) => {
+          highlightFeature(e)
+          changeColor(e)
+          addInfoBox(e)
+        },
         mouseout: resetHighlight,
-        click: zoomToFeature
       });
     }
 
