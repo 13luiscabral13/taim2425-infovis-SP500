@@ -33,10 +33,15 @@ export async function perShareholderPerCompany(shareholder, topX) {
             throw new Error('Shareholder not found in data');
         }
 
+        console.log("Shareholder main data: ", data[shareholder]);
         const investments = data[shareholder]
-            .map(([symbol, value]) => ({
+            .map(([symbol, value, fullName, city, website, state]) => ({
                 symbol,
-                value: parseFloat(value.replace(/[$,]/g, ''))
+                value: parseFloat(value.replace(/[$,]/g, '')),
+                fullName,
+                city,
+                website,
+                state
             }))
             .sort((a, b) => b.value - a.value);
 
@@ -95,9 +100,13 @@ export async function perShareholderPerSectorPerCompany(shareholder, sector, top
 
         // Extract investments and sort by investment value
         const investments = data[shareholder][sector]
-            .map(([symbol, value]) => ({
+            .map(([symbol, value, fullName, city, website, state]) => ({
                 symbol,
-                value: parseFloat(value.replace(/[$,]/g, ''))
+                value: parseFloat(value.replace(/[$,]/g, '')),
+                fullName,
+                city,
+                website,
+                state
             }))
             .sort((a, b) => b.value - a.value);
 
@@ -180,5 +189,30 @@ export async function ownershipByState(state, topX) {
     }
 }
 
+export async function ownershipInGeneral(topX) {
+    try {
+        // Fetch the JSON file from the public directory
+        const response = await fetch('/ownership_concentration.json');
+        if (!response.ok) {
+            throw new Error('Failed to fetch the data');
+        }
+
+        const data = await response.json();
+
+        // Sort the top holders by value, cleaning the value from "$" and commas
+        const sortedHolders = data.top_holders
+            .map(holder => ({
+                shareholder: holder.name,
+                value: parseFloat(holder.value.replace(/[$,]/g, '')) // Remove $ and commas, then convert to float
+            }))
+            .sort((a, b) => b.value - a.value); // Sort by value in descending order
+
+        // Return the top X holders
+        return sortedHolders.slice(0, topX);
+    } catch (error) {
+        console.error('Error in ownershipInGeneral:', error);
+        return [];
+    }
+}
 
 

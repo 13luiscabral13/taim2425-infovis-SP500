@@ -1,0 +1,115 @@
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    display: flex;
+    justify-content: flex-start;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+.sidebar-overlay.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sidebar-content {
+    background-color: #ffffff;
+    width: 300px;
+    height: 100%; /* Full height */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    overflow-y: auto;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.sidebar-overlay.visible .sidebar-content {
+    transform: translateX(0);
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+}
+
+.toggle-button {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+#closeBtnText {
+    margin: 0;
+}
+
+#closing {
+    margin: 0;
+    display: flex;
+}
+
+.shareholder, .ownership {
+    display: block
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+}
+
+.searchInput {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.searchInput button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 10px;
+    cursor: pointer;
+    margin-right: 3px;
+}
+
+.searchInput input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#search-btn {
+    background-color: #36aef4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 10px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-top: 15px;
+    position: absolute;
+    right: 5%;
+}
+
