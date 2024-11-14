@@ -95,7 +95,7 @@ const ChoroplethMapComp = ({ geojsonData }) => {
     }
 
     function addInfoBox(e) {
-      const infoContainer = document.getElementsByTagName('div')[2];
+      const infoContainer = document.getElementById('informationBox');
       const { NAME, LSAD, CENSUSAREA } = e.target.feature.properties;
       const infoBox = document.createElement('div');
       infoBox.className = 'info-box';
@@ -162,7 +162,9 @@ const ChoroplethMap = () => {
     return <div>Loading...</div>;
   }
 
-  return <ChoroplethMapComp geojsonData={data} />
+  return <div style={{display: 'flex'}}><ChoroplethMapComp geojsonData={data} />
+    <div id="informationBox"></div>
+  </div>
 };
 
 export default ChoroplethMap;
