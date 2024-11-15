@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { AgCharts } from 'ag-charts-enterprise';
-import { perShareholderPerCompany, ownershipByState, perShareholderPerSector, ownershipBySector, ownershipInGeneral, perShareholderPerSectorPerCompany } from './data_grabbers';
+import { perShareholderPerCompany, ownershipByState, perShareholderPerSector, ownershipBySector, ownershipInGeneral, perShareholderPerSectorPerCompany, specificShareholderOwnershipPerSector, specificShareholderOwnershipPerState, specificShareholderOwnershipInGeneral } from './data_grabbers';
 import './Chart.css';
 
 const Chart = ({ filter, subFilter, searchTriggered, range }) => {
@@ -10,13 +10,92 @@ const Chart = ({ filter, subFilter, searchTriggered, range }) => {
     const [chartTooltipContent, setChartTooltipContent] = useState({});
     const [reloadTrigger, setReloadTrigger] = useState(0); // State to trigger reloading
     const [goBackButton, setGoBackButton] = useState(false);
-
+    const [chartSubtitle, setChartSubtitle] = useState("");
 
     async function getSearchFunction(filter, subFilter, range) {
         if (filter == "shareholder") {
             return await getShareholderInfo(subFilter, range)
         } else if (filter == "ownership") {
             return await getOwnershipInfo(subFilter, range)
+        }
+        else {
+            return await getSpecificInfo(subFilter, range)
+        }
+    }
+
+    async function getSpecificInfo(subFilter, range) {
+        if (subFilter.subCategory == "state") {
+            let actualState = subFilter.specificity;
+            let abbreviation = subFilter.specificity;
+            if (subFilter.specificity.includes(":")) {
+                actualState = subFilter.specificity.split(": ")[1];
+                abbreviation = subFilter.specificity.split(": ")[0];
+            }
+            let data = await specificShareholderOwnershipPerState(subFilter.searchQuery, abbreviation, range);   
+            if (data && data[0]) {
+                console.log("Data:", data);
+                data[0].outlier = true;
+                let chartArray = [...data[1], data[0]];
+                let rank = data[2] + 1;
+                if (rank == 1) {
+                    rank = "";
+                } else if (rank == 2) {
+                    rank = "2nd ";
+                } else if (rank == 3) {
+                    rank = "3rd ";
+                } else {
+                    rank = rank + "th ";
+                }
+                setChartKey("shareholder");
+                setChartName(subFilter.searchQuery + " Investments in " + actualState + " Compared to the Top " + range + " Holders");
+                setChartSubtitle(subFilter.searchQuery + " is the " + rank + "largest holder in " + actualState);
+                return chartArray;
+            }
+        }
+        else if (subFilter.subCategory == "sector") {
+            let data = await specificShareholderOwnershipPerSector(subFilter.searchQuery, subFilter.specificity, range);
+            if (data) {
+                console.log("Data:", data);
+                data[0].outlier = true;
+                let chartArray = [...data[1], data[0]];
+                let rank = data[2] + 1;
+                if (rank == 1) {
+                    rank = "";
+                } else if (rank == 2) {
+                    rank = "2nd ";
+                } else if (rank == 3) {
+                    rank = "3rd ";
+                } else {
+                    rank = rank + "th ";
+                }
+                setChartKey("shareholder");
+                setChartName(subFilter.searchQuery + " Investments in " + subFilter.specificity + " Compared to the Top " + range + " Holders");
+                setChartSubtitle(subFilter.searchQuery + " is the " + rank + "largest holder in the " + subFilter.specificity + " sector");
+                return chartArray;
+            }
+        }
+        else {
+            console.log("Claling general function with:", subFilter.shareholder, range);
+            let data = await specificShareholderOwnershipInGeneral(subFilter.shareholder, range);
+            if (data) {
+                console.log("Data:", data);
+                data[0].outlier = true;
+                let chartArray = [...data[1], data[0]];
+                let rank = data[2] + 1;
+                if (rank == 1) {
+                    rank = "";
+                } else if (rank == 2) {
+                    rank = "2nd ";
+                } else if (rank == 3) {
+                    rank = "3rd ";
+                } else {
+                    rank = rank + "th ";
+                }
+                setChartKey("shareholder");
+                setChartName(subFilter.shareholder + " Investments in the SP500 Compared to the Top " + range + " Holders");
+                setChartSubtitle(subFilter.shareholder + " is the " + rank + "largest holder in the SP500");
+                return chartArray;
+            }
         }
     }
 
@@ -70,6 +149,7 @@ const Chart = ({ filter, subFilter, searchTriggered, range }) => {
     useEffect(() => {
         const fetchData = async () => {
             const data = await getSearchFunction(filter, subFilter, range);
+            console.log("The data being set is:", data);
             setChartData(data);
             if (subFilter) {
                 subFilter.additional = null;
@@ -88,7 +168,7 @@ const Chart = ({ filter, subFilter, searchTriggered, range }) => {
                     text: chartName,
                 },
                 subtitle: {
-                    text: "Millions USD",
+                    text: chartSubtitle,
                 },
                 series: [
                     {

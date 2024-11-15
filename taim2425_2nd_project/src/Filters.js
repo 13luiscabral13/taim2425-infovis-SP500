@@ -29,6 +29,15 @@ const Filters = ({ onFilterChange }) => {
                 />
                 Ownership Concentration
             </label>
+            <label>
+                <input
+                    type="radio"
+                    value="specific"
+                    checked={category === 'specific'}
+                    onChange={handleCategoryChange}
+                />
+                Compare a specific shareholder
+            </label>
         </div>
     );
 };

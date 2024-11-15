@@ -5,12 +5,13 @@ import Filters from './Filters';
 import ShareholderFilters from './ShareholderFilters';
 import OwnershipFilters from './OwnershipFilters';
 import RangeFilter from './RangeFilter';
+import SpecificFilters from './SpecificFilters';
 
 function ChartView() {
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
   const [selectedFilter, setSelectedFilter] = useState("ownership");
   const [selectedSubFilter, setSelectedSubFilter] = useState({ subCategory: "general" });
-  const [selectedRangeFilter, setSelectedRangeFilter] = useState(5);
+  const [selectedRangeFilter, setSelectedRangeFilter] = useState(10);
   const [searchTriggered, setSearchTriggered] = useState(false);
 
   const handleFilterChange = (filter) => {
@@ -41,7 +42,7 @@ function ChartView() {
   };
 
   function search() {
-    if (selectedSubFilter.subCategory != "general" && !selectedSubFilter.identifier) {
+    if (selectedSubFilter.subCategory == "ownership" && !selectedSubFilter.identifier) {
       alert("Please select a valid sub-filter.");
       return;
     }
@@ -70,6 +71,7 @@ function ChartView() {
           <div>
             {selectedFilter == "shareholder" && <ShareholderFilters onSubFilterChange={handleSubFilterChange} />}
             {selectedFilter == "ownership" && <OwnershipFilters onSubFilterChange={handleSubFilterChange} />}
+            {selectedFilter == "specific" && <SpecificFilters onSubFilterChange={handleSubFilterChange} />}
           </div>
           <hr></hr>
           <RangeFilter onRangeFilterChange={handleRangeFilterChange} />

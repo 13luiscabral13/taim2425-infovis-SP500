@@ -146,7 +146,7 @@ const ChoroplethMapComp = ({ geojsonData }) => {
     };
   }, [geojsonData]);
 
-  return <div ref={mapRef} style={{ height: '400px', width: '80%' }} />;
+  return <div ref={mapRef} style={{ height: '650px', width: '80%' }} />;
 };
 
 
