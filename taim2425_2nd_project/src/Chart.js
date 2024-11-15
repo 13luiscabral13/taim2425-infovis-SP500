@@ -44,8 +44,12 @@ const Chart = ({ filter, subFilter, searchTriggered, range }) => {
 
     async function getOwnershipInfo(typeOfSearch, range) {
         if (typeOfSearch.subCategory == "state") {
-            let actualState = typeOfSearch.identifier.split(": ")[1];
-            let abbreviation = typeOfSearch.identifier.split(": ")[0];
+            let actualState = typeOfSearch.identifier;
+            let abbreviation = typeOfSearch.identifier;
+            if (typeOfSearch.identifier.includes(":")) {
+                actualState = typeOfSearch.identifier.split(": ")[1];
+                abbreviation = typeOfSearch.identifier.split(": ")[0];
+            }
             setChartKey("shareholder");
             setChartName("Ownership Distribution in " + actualState);
             let stateData = await ownershipByState(abbreviation, range);
@@ -68,7 +72,7 @@ const Chart = ({ filter, subFilter, searchTriggered, range }) => {
             const data = await getSearchFunction(filter, subFilter, range);
             setChartData(data);
             if (subFilter) {
-             subFilter.additional = null;
+                subFilter.additional = null;
             }
         };
         fetchData(); // Call the async function to fetch data
@@ -81,7 +85,7 @@ const Chart = ({ filter, subFilter, searchTriggered, range }) => {
                 container: document.getElementById("myChart"),
                 data: chartData,
                 title: {
-                    text: chartName,                    
+                    text: chartName,
                 },
                 subtitle: {
                     text: "Millions USD",
@@ -118,7 +122,7 @@ const Chart = ({ filter, subFilter, searchTriggered, range }) => {
                 ],
                 axes: [
                     { type: 'angle-category', groupPaddingInner: 0.5, paddingInner: 0.5, },
-                    { type: 'radius-number', innerRadiusRatio: 0.4, label: {enabled: false} },
+                    { type: 'radius-number', innerRadiusRatio: 0.4, label: { enabled: false } },
                 ],
 
             };

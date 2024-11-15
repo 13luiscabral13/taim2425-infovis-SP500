@@ -9,7 +9,7 @@ import RangeFilter from './RangeFilter';
 function ChartView() {
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
   const [selectedFilter, setSelectedFilter] = useState("ownership");
-  const [selectedSubFilter, setSelectedSubFilter] = useState({subCategory: "general"});
+  const [selectedSubFilter, setSelectedSubFilter] = useState({ subCategory: "general" });
   const [selectedRangeFilter, setSelectedRangeFilter] = useState(5);
   const [searchTriggered, setSearchTriggered] = useState(false);
 
@@ -41,11 +41,17 @@ function ChartView() {
   };
 
   function search() {
-    // Reload the Chart component with the new filter and sub-filter
-    console.log('Executing search with:', selectedFilter, selectedSubFilter);
-    setSearchTriggered(!searchTriggered); // This will cause the Chart component to re-render
-    closeSidebar();
-    console.log("searchTriggered: ", searchTriggered);
+    if (selectedSubFilter.subCategory != "general" && !selectedSubFilter.identifier) {
+      alert("Please select a valid sub-filter.");
+      return;
+    }
+    else {
+      // Reload the Chart component with the new filter and sub-filter
+      console.log('Executing search with:', selectedFilter, selectedSubFilter);
+      setSearchTriggered(!searchTriggered); // This will cause the Chart component to re-render
+      closeSidebar();
+      console.log("searchTriggered: ", searchTriggered);
+    }
   };
 
   return (
@@ -66,7 +72,7 @@ function ChartView() {
             {selectedFilter == "ownership" && <OwnershipFilters onSubFilterChange={handleSubFilterChange} />}
           </div>
           <hr></hr>
-          <RangeFilter onRangeFilterChange={handleRangeFilterChange}/>
+          <RangeFilter onRangeFilterChange={handleRangeFilterChange} />
           <button id="search-btn" onClick={search} >Search</button>
         </div>
       </div>

@@ -8,8 +8,8 @@ const RangeFilter = ({ onRangeFilterChange }) => {
     };
     return (
         <div>
-            <p id="rangeValue">Number of elements: 5</p>
-            <input type="range" id="rangeInput" name="rangeInput" min="0" max="10" step="1" defaultValue="5" onChange={changeValue}/>
+            <p id="rangeValue">Number of elements: 10</p>
+            <input type="range" id="rangeInput" name="rangeInput" min="0" max="20" step="1" defaultValue="10" onChange={changeValue}/>
         </div>
     );
 };
