@@ -36,7 +36,7 @@ const Filters = ({ onFilterChange }) => {
                     checked={category === 'specific'}
                     onChange={handleCategoryChange}
                 />
-                Compare a specific shareholder
+                Compare a Shareholder
             </label>
         </div>
     );

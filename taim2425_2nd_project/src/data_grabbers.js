@@ -171,10 +171,12 @@ export async function specificShareholderOwnershipInGeneral(shareholder, topX) {
         const data = await response.json();
 
         // Sort the top holders by value, cleaning the value from "$" and commas
+        console.log("Data to be fixed: ", data.top_holders);
         const sortedHolders = data.top_holders
             .map(holder => ({
                 shareholder: holder.name,
                 value: parseFloat(holder.value.replace(/[$,]/g, '')) // Remove $ and commas, then convert to float
+
             }))
             .sort((a, b) => b.value - a.value); // Sort by value in descending order
 
@@ -221,9 +223,13 @@ export async function perShareholderPerSector(shareholder, topX) {
 
         // Extract investments and sort by investment value
         const investments = data[shareholder]
-            .map(([sector, value]) => ({
+            .map(([sector, value, fullName, city, state, website]) => ({
                 sector,
-                value: parseFloat(value.replace(/[$,]/g, ''))
+                value: parseFloat(value.replace(/[$,]/g, '')),
+                fullName,
+                city,
+                state,
+                website
             }))
             .sort((a, b) => b.value - a.value);
 

@@ -49,6 +49,7 @@ const Chart = ({ filter, subFilter, searchTriggered, range }) => {
                 setChartKey("shareholder");
                 setChartName(subFilter.searchQuery + " Investments in " + actualState + " Compared to the Top " + range + " Holders");
                 setChartSubtitle(subFilter.searchQuery + " is the " + rank + "largest holder in " + actualState);
+                setChartTooltipContent("stateInfo");
                 return chartArray;
             }
         }
@@ -71,6 +72,7 @@ const Chart = ({ filter, subFilter, searchTriggered, range }) => {
                 setChartKey("shareholder");
                 setChartName(subFilter.searchQuery + " Investments in " + subFilter.specificity + " Compared to the Top " + range + " Holders");
                 setChartSubtitle(subFilter.searchQuery + " is the " + rank + "largest holder in the " + subFilter.specificity + " sector");
+                setChartTooltipContent("sectorInfo");
                 return chartArray;
             }
         }
@@ -94,6 +96,7 @@ const Chart = ({ filter, subFilter, searchTriggered, range }) => {
                 setChartKey("shareholder");
                 setChartName(subFilter.shareholder + " Investments in the SP500 Compared to the Top " + range + " Holders");
                 setChartSubtitle(subFilter.shareholder + " is the " + rank + "largest holder in the SP500");
+                setChartTooltipContent("generalInfo");
                 return chartArray;
             }
         }
@@ -106,17 +109,20 @@ const Chart = ({ filter, subFilter, searchTriggered, range }) => {
             setChartKey("sector");
             setChartName(shareholderName + " Investments by Sector");
             setChartTooltipContent("sectorInfo");
+            setChartSubtitle("The " + range + " Sectors " + shareholderName + " Invests the Most");
             return await perShareholderPerSector(shareholderName, range);
         } else if (typeOfSearch == "company") {
             setChartKey("symbol");
             setChartName(shareholderName + " Investments by Company");
             setChartTooltipContent("companyInfo");
+            setChartSubtitle("The " + range + " Companies " + shareholderName + " Invests the Most");
             return await perShareholderPerCompany(shareholderName, range);
         }
         else {
             setChartKey("symbol");
             setChartName(shareholderName + " Investments by Company in " + subFilter.additional);
             setChartTooltipContent("companyInfo");
+            setChartSubtitle("The " + range + " Companies " + shareholderName + " Invests the Most in the " + subFilter.additional + " sector");
             return await perShareholderPerSectorPerCompany(shareholderName, subFilter.additional, range);
         }
     }
@@ -131,16 +137,22 @@ const Chart = ({ filter, subFilter, searchTriggered, range }) => {
             }
             setChartKey("shareholder");
             setChartName("Ownership Distribution in " + actualState);
+            setChartSubtitle("The Top " + range + " Holders in " + actualState);
+            setChartTooltipContent("stateInfo");
             let stateData = await ownershipByState(abbreviation, range);
             return stateData.holders;
         } else if (typeOfSearch.subCategory == "sector") {
             setChartKey("shareholder");
             setChartName("Ownership Distribution in " + typeOfSearch.identifier);
+            setChartSubtitle("The Top " + range + " Holders in the " + typeOfSearch.identifier + " sector");
+            setChartTooltipContent("sectorInfo");
             return await ownershipBySector(typeOfSearch.identifier, range);
         }
         else {
             setChartKey("shareholder");
             setChartName("Ownership Distribution Across SP500");
+            setChartSubtitle("The Top " + range + " Holders in the SP500");
+            setChartTooltipContent("generalInfo");
             return await ownershipInGeneral(range);
         }
 
@@ -179,7 +191,7 @@ const Chart = ({ filter, subFilter, searchTriggered, range }) => {
                         tooltip: {
                             renderer: function ({ datum }) {
                                 return {
-                                    title: datum[chartKey],
+                                    title: datum[chartKey],                                    
                                     content: chartTooltipContent === "companyInfo" ? `<b>${datum.value}M<br> ${datum.fullName}</b><br>${datum.city}, ${datum.state}<br><a href="${datum.website}" target="_blank">"${datum.website}"</a>` : `<b>Investment: $${datum.value}M</b>`,
                                 };
                             },

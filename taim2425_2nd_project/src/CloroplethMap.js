@@ -101,14 +101,25 @@ const ChoroplethMapComp = ({ geojsonData }) => {
       infoBox.className = 'info-box';
 
       ownershipByState(e.target.feature.properties.LSAD, 10)
-      .then(total_shares_value => {
-        infoBox.innerHTML = `
-        <p><strong>Name:</strong> ${NAME}</p>
-        <p><strong>Symbol:</strong> ${LSAD}</p>
-        <p><strong>Area:</strong> ${CENSUSAREA}</p>
+        .then(total_shares_value => {
+          if (total_shares_value.holders) {
+            infoBox.innerHTML = `
+        <p><strong>State Name:</strong> ${NAME}</p>
+        <p><strong>State Symbol:</strong> ${LSAD}</p>
+        <p><strong>State Area:</strong> ${CENSUSAREA}</p>
         <p><strong>Total Shares Value:</strong> ${total_shares_value.shares_value}</p>
+        <p><strong>Top Holder</strong> ${total_shares_value.holders[0].shareholder}</p>
       `;
-      })
+          }
+          else {
+            infoBox.innerHTML = `
+        <p><strong>State Name:</strong> ${NAME}</p>
+        <p><strong>State Symbol:</strong> ${LSAD}</p>
+        <p><strong>State Area:</strong> ${CENSUSAREA}</p>
+        <p><strong>Total Shares Value:</strong> No Financial Data Available</p>
+        <p><strong>Top Holder</strong> No Financial Data Available</p> `;
+          }
+          })
 
       infoContainer.style.display = "flex";
       infoContainer.style.justifyContent = "space-between";
@@ -116,7 +127,7 @@ const ChoroplethMapComp = ({ geojsonData }) => {
       infoBox.style.borderRadius = "10px";
       infoBox.style.padding = "10px";
       infoBox.style.width = "300px";
-      infoBox.style.height = "50%"
+      infoBox.style.height = "auto"
       infoBox.style.borderColor = "#0096C7";
       infoBox.style.backgroundColor = "rgba(0, 150, 199, 0.2)";
       infoBox.style.opacity = "1.0";
@@ -162,7 +173,7 @@ const ChoroplethMap = () => {
     return <div>Loading...</div>;
   }
 
-  return <div style={{display: 'flex'}}><ChoroplethMapComp geojsonData={data} />
+  return <div style={{ display: 'flex' }}><ChoroplethMapComp geojsonData={data} />
     <div id="informationBox"></div>
   </div>
 };
