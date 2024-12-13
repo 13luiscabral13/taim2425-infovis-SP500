@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Filters.css';
 import shareholders from './shareholder_list.json'; // Adjust the path as needed
+import { getCurrentLanguage } from './NavBar';
 
-const ShareholderFilters = ({ onSubFilterChange }) => {
+const ShareholderFilters = ({ onSubFilterChange, language }) => {
     const [subCategory, setCategory] = useState('');
     const [searchQuery, setSearchQuery] = useState('');
     const [suggestions, setSuggestions] = useState([]);
+    console.log("language: " + language )
 
     // Basic fuzzy search function
     const searchShareholders = (query) => {
@@ -42,6 +44,20 @@ const ShareholderFilters = ({ onSubFilterChange }) => {
         }
     };
 
+    // Update labels dynamically based on the selected language
+    const labels = {
+        en: {
+            sector: 'Sectors Invested In',
+            company: 'Companies Invested In',
+            shareholder: 'Search for Shareholder',
+        },
+        pt: {
+            sector: 'Setores Investidos',
+            company: 'Empresas Investidas',
+            shareholder: 'Pesquisar por Investidor',
+        },
+    };
+
     const handleSuggestionClick = (suggestion) => {
         setSearchQuery(suggestion);
         onSubFilterChange({ subCategory, identifier: suggestion });
@@ -67,7 +83,7 @@ const ShareholderFilters = ({ onSubFilterChange }) => {
                     type="text"
                     value={searchQuery}
                     onChange={handleSearchChange}
-                    placeholder="Search for Shareholder"
+                    placeholder={labels[language].shareholder}
                 />
             </label>
             <br/>
@@ -92,7 +108,7 @@ const ShareholderFilters = ({ onSubFilterChange }) => {
                     checked={subCategory === 'sector'}
                     onChange={handleSubCategoryChange}
                 />
-                Sectors Invested In
+                {labels[language].sector}
             </label>
             <label>
                 <input
@@ -101,7 +117,7 @@ const ShareholderFilters = ({ onSubFilterChange }) => {
                     checked={subCategory === 'company'}
                     onChange={handleSubCategoryChange}
                 />
-                Companies Invested In
+                {labels[language].company}
             </label>
             <br/>
         </div>

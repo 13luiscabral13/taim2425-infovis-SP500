@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Chart from './Chart';
 import Filters from './Filters';
@@ -6,6 +6,7 @@ import ShareholderFilters from './ShareholderFilters';
 import OwnershipFilters from './OwnershipFilters';
 import RangeFilter from './RangeFilter';
 import SpecificFilters from './SpecificFilters';
+import { getCurrentLanguage } from './NavBar';
 
 function ChartView() {
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
@@ -13,6 +14,44 @@ function ChartView() {
   const [selectedSubFilter, setSelectedSubFilter] = useState({ subCategory: "general" });
   const [selectedRangeFilter, setSelectedRangeFilter] = useState(10);
   const [searchTriggered, setSearchTriggered] = useState(false);
+  const languageSelect = getCurrentLanguage() || { value: "en" };
+  const [language, setLanguage] = useState(languageSelect.value); // Default language
+  console.log("language: " + language )
+
+// Update labels dynamically based on the selected language
+const labels = {
+  en: {
+      search: 'Search',
+      open_filters: 'Open Filters',
+      close_filters: 'Close Filters',
+  },
+  pt: {
+      search: 'Pesquisar',
+      open_filters: 'Abrir Filtros',
+      close_filters: 'Fechar Filtros',
+  },
+};
+
+  useEffect(() => {
+    const languageSelect = getCurrentLanguage(); // Get the language select element
+
+    const handleLanguageChange = () => {
+        setLanguage(languageSelect.value); // Update language state when the selection changes
+    };
+
+    languageSelect.addEventListener('change', () => {
+        handleLanguageChange()
+    });
+
+    return () => {
+        languageSelect.removeEventListener('change', handleLanguageChange); // Cleanup
+    };
+}, []);
+
+  function getSearchBar(){
+    const searchBar = document.querySelector('.searchInput input')
+    return searchBar
+  }
 
   const handleFilterChange = (filter) => {
     console.log('Selected filter:', filter);
@@ -58,27 +97,28 @@ function ChartView() {
   return (
     <div className="chart-view">
       <button onClick={toggleSidebar} className="toggle-button">
-        {isSidebarVisible ? 'Close Filters' : 'Open Filters'}
+        {isSidebarVisible ? labels[language].close_filters : labels[language].open_filters}
       </button>
 
       <div className={`sidebar-overlay ${isSidebarVisible ? 'visible' : ''}`}>
         <div className="sidebar-content">
           <div>
             <button onClick={closeSidebar} className="close-button"></button>
-            <Filters onFilterChange={handleFilterChange} />
+            <Filters onFilterChange={handleFilterChange} language={language} />
           </div>
           <hr></hr>
           <div>
-            {selectedFilter == "shareholder" && <ShareholderFilters onSubFilterChange={handleSubFilterChange} />}
-            {selectedFilter == "ownership" && <OwnershipFilters onSubFilterChange={handleSubFilterChange} />}
-            {selectedFilter == "specific" && <SpecificFilters onSubFilterChange={handleSubFilterChange} />}
+            {selectedFilter == "shareholder" && <ShareholderFilters onSubFilterChange={handleSubFilterChange} language={language} />}
+            {selectedFilter == "ownership" && <OwnershipFilters onSubFilterChange={handleSubFilterChange} language={language} />}
+            {selectedFilter == "specific" && <SpecificFilters onSubFilterChange={handleSubFilterChange} language={language} />}
           </div>
           <hr></hr>
-          <RangeFilter onRangeFilterChange={handleRangeFilterChange} />
-          <button id="search-btn" onClick={search} >Search</button>
+          <RangeFilter onRangeFilterChange={handleRangeFilterChange} language={language} />
+          <button id="search-btn" onClick={search} >{labels[language].search}</button>
         </div>
       </div>
-      <Chart filter={selectedFilter} subFilter={selectedSubFilter} searchTriggered={searchTriggered} range={selectedRangeFilter} />
+      {console.log(selectedSubFilter)}
+      <Chart filter={selectedFilter} subFilter={selectedSubFilter} searchTriggered={searchTriggered} range={selectedRangeFilter} language={language} />
     </div>
   );
 }

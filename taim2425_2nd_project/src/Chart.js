@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { AgCharts } from 'ag-charts-enterprise';
 import { perShareholderPerCompany, ownershipByState, perShareholderPerSector, ownershipBySector, ownershipInGeneral, perShareholderPerSectorPerCompany, specificShareholderOwnershipPerSector, specificShareholderOwnershipPerState, specificShareholderOwnershipInGeneral } from './data_grabbers';
 import './Chart.css';
+import { getCurrentLanguage } from './NavBar';
 
-const Chart = ({ filter, subFilter, searchTriggered, range }) => {
+const Chart = ({ filter, subFilter, searchTriggered, range, language }) => {
     const [chartData, setChartData] = useState([]);
     const [chartKey, setChartKey] = useState({});
     const [chartName, setChartName] = useState({});
@@ -11,6 +12,7 @@ const Chart = ({ filter, subFilter, searchTriggered, range }) => {
     const [reloadTrigger, setReloadTrigger] = useState(0); // State to trigger reloading
     const [goBackButton, setGoBackButton] = useState(false);
     const [chartSubtitle, setChartSubtitle] = useState("");
+    console.log("language: " + language)
 
     async function getSearchFunction(filter, subFilter, range) {
         if (filter == "shareholder") {
@@ -23,6 +25,16 @@ const Chart = ({ filter, subFilter, searchTriggered, range }) => {
         }
     }
 
+    // Update labels dynamically based on the selected language
+    const labels = {
+        en: {
+            back: 'Back to Sector',
+        },
+        pt: {
+            back: 'Voltar ao Setor',
+        },
+    };
+
     async function getSpecificInfo(subFilter, range) {
         if (subFilter.subCategory == "state") {
             let actualState = subFilter.specificity;
@@ -31,7 +43,8 @@ const Chart = ({ filter, subFilter, searchTriggered, range }) => {
                 actualState = subFilter.specificity.split(": ")[1];
                 abbreviation = subFilter.specificity.split(": ")[0];
             }
-            let data = await specificShareholderOwnershipPerState(subFilter.searchQuery, abbreviation, range);   
+            console.log(abbreviation)
+            let data = await specificShareholderOwnershipPerState(subFilter.searchQuery || subFilter.shareholder, abbreviation, range);   
             if (data && data[0]) {
                 console.log("Data:", data);
                 data[0].outlier = true;
@@ -39,22 +52,42 @@ const Chart = ({ filter, subFilter, searchTriggered, range }) => {
                 let rank = data[2] + 1;
                 if (rank == 1) {
                     rank = "";
-                } else if (rank == 2) {
-                    rank = "2nd ";
-                } else if (rank == 3) {
-                    rank = "3rd ";
-                } else {
-                    rank = rank + "th ";
                 }
-                setChartKey("shareholder");
-                setChartName(subFilter.searchQuery + " Investments in " + actualState + " Compared to the Top " + range + " Holders");
-                setChartSubtitle(subFilter.searchQuery + " is the " + rank + "largest holder in " + actualState);
-                setChartTooltipContent("stateInfo");
+                else{
+                    if (language==='en'){
+                        if (rank == 2) {
+                            rank = "2nd ";
+                        } else if (rank == 3) {
+                            rank = "3rd ";
+                        } else {
+                            rank = rank + "th ";
+                        }
+                    }
+                    else if(language==='pt'){
+                        rank = rank + "º "
+                    }
+                }
+                if(language==='en') {
+                    setChartKey("shareholder");
+                    setChartName((subFilter.searchQuery || subFilter.shareholder) + " Investments in " + actualState + " Compared to the Top " + range + " Holders");
+                    setChartSubtitle((subFilter.searchQuery || subFilter.shareholder) + " is the " + rank + "largest holder in " + actualState);
+                    setChartTooltipContent("stateInfo");
+                }
+                else if(language==='pt') {
+                    console.log("get specific info 1")
+                    setChartKey("shareholder");
+                    if(range==1)
+                        setChartName(" Investimentos do(a) " + (subFilter.searchQuery || subFilter.shareholder) + " em " + actualState + " Comparados com os do Maior Acionista");
+                    else
+                        setChartName(" Investimentos do(a) " + (subFilter.searchQuery || subFilter.shareholder) + " em " + actualState + " Comparados com os dos " + range + " Maiores Acionistas");
+                    setChartSubtitle((subFilter.searchQuery || subFilter.shareholder) + " é o " + rank + "maior acionista em " + actualState);
+                    setChartTooltipContent("stateInfo");
+                }
                 return chartArray;
             }
         }
         else if (subFilter.subCategory == "sector") {
-            let data = await specificShareholderOwnershipPerSector(subFilter.searchQuery, subFilter.specificity, range);
+            let data = await specificShareholderOwnershipPerSector(subFilter.searchQuery || subFilter.shareholder, subFilter.specificity, range);
             if (data) {
                 console.log("Data:", data);
                 data[0].outlier = true;
@@ -62,17 +95,37 @@ const Chart = ({ filter, subFilter, searchTriggered, range }) => {
                 let rank = data[2] + 1;
                 if (rank == 1) {
                     rank = "";
-                } else if (rank == 2) {
-                    rank = "2nd ";
-                } else if (rank == 3) {
-                    rank = "3rd ";
-                } else {
-                    rank = rank + "th ";
                 }
-                setChartKey("shareholder");
-                setChartName(subFilter.searchQuery + " Investments in " + subFilter.specificity + " Compared to the Top " + range + " Holders");
-                setChartSubtitle(subFilter.searchQuery + " is the " + rank + "largest holder in the " + subFilter.specificity + " sector");
-                setChartTooltipContent("sectorInfo");
+                else{
+                    if (language==='en'){
+                        if (rank == 2) {
+                            rank = "2nd ";
+                        } else if (rank == 3) {
+                            rank = "3rd ";
+                        } else {
+                            rank = rank + "th ";
+                        }
+                    }
+                    else if(language==='pt'){
+                        rank = rank + "º "
+                    }
+                }
+                if(language==='en'){
+                    setChartKey("shareholder");
+                    setChartName((subFilter.searchQuery || subFilter.shareholder) + " Investments in " + subFilter.specificity + " Compared to the Top " + range + " Holders");
+                    setChartSubtitle((subFilter.searchQuery || subFilter.shareholder) + " is the " + rank + "largest holder in the " + subFilter.specificity + " sector");
+                    setChartTooltipContent("sectorInfo");
+                }
+                else if(language==='pt'){
+                    console.log("get specific info 2")
+                    setChartKey("shareholder");
+                    if(range==1)
+                        setChartName("Investimentos do(a) " + (subFilter.searchQuery || subFilter.shareholder) + " em " + subFilter.specificity + " Comparados com os do Maior Acionista");
+                    else
+                    setChartName("Investimentos do(a) " + (subFilter.searchQuery || subFilter.shareholder) + " em " + subFilter.specificity + " Comparados com os dos " + range + " Maiores Acionistas");
+                    setChartSubtitle((subFilter.searchQuery || subFilter.shareholder) + " é o " + rank + "maior acionista no setor de " + subFilter.specificity);
+                    setChartTooltipContent("sectorInfo");
+                }
                 return chartArray;
             }
         }
@@ -86,17 +139,37 @@ const Chart = ({ filter, subFilter, searchTriggered, range }) => {
                 let rank = data[2] + 1;
                 if (rank == 1) {
                     rank = "";
-                } else if (rank == 2) {
-                    rank = "2nd ";
-                } else if (rank == 3) {
-                    rank = "3rd ";
-                } else {
-                    rank = rank + "th ";
                 }
-                setChartKey("shareholder");
-                setChartName(subFilter.shareholder + " Investments in the SP500 Compared to the Top " + range + " Holders");
-                setChartSubtitle(subFilter.shareholder + " is the " + rank + "largest holder in the SP500");
-                setChartTooltipContent("generalInfo");
+                else{
+                    if (language==='en'){
+                        if (rank == 2) {
+                            rank = "2nd ";
+                        } else if (rank == 3) {
+                            rank = "3rd ";
+                        } else {
+                            rank = rank + "th ";
+                        }
+                    }
+                    else if(language==='pt'){
+                        rank = rank + "º "
+                    }
+                }
+                if(language==='en'){
+                    setChartKey("shareholder");
+                    setChartName(subFilter.shareholder + " Investments in the SP500 Compared to the Top " + range + " Holders");
+                    setChartSubtitle(subFilter.shareholder + " is the " + rank + "largest holder in the SP500");
+                    setChartTooltipContent("generalInfo");
+                }
+                else if(language==='pt'){
+                    console.log("get specific info 3")
+                    setChartKey("shareholder");
+                    if(range==1)
+                        setChartName("Investimentos do(a)" + subFilter.shareholder + " no SP500 Comparados com os do Maior Acionista");
+                    else
+                        setChartName("Investimentos do(a) " + (subFilter.searchQuery || subFilter.shareholder) + " no SP500 Comparados com os dos " + range + " Maiores Acionistas");
+                    setChartSubtitle(subFilter.shareholder + " é o " + rank + "maior acionista no SP500");
+                    setChartTooltipContent("generalInfo");
+                }
                 return chartArray;
             }
         }
@@ -106,23 +179,68 @@ const Chart = ({ filter, subFilter, searchTriggered, range }) => {
         let shareholderName = subFilter.identifier;
         let typeOfSearch = subFilter.subCategory;
         if (typeOfSearch == "sector" && !subFilter.additional) {
-            setChartKey("sector");
-            setChartName(shareholderName + " Investments by Sector");
-            setChartTooltipContent("sectorInfo");
-            setChartSubtitle("The " + range + " Sectors " + shareholderName + " Invests the Most");
+            if(language==='en'){
+                setChartKey("sector");
+                setChartName(shareholderName + " Investments by Sector");
+                setChartTooltipContent("sectorInfo");
+                if(range==1)
+                    setChartSubtitle("The Sector " + shareholderName + " Invests the Most");
+                else
+                    setChartSubtitle("The " + range + " Sectors " + shareholderName + " Invests the Most");
+            }
+            else if(language==='pt'){
+                console.log("get shareholder info 1")
+                setChartKey("sector");
+                setChartName("Investimentos do(a) " + shareholderName + " por Setor");
+                setChartTooltipContent("sectorInfo");
+                if(range==1)
+                    setChartSubtitle("O Setor em que o(a) " + shareholderName + " Investe Mais");
+                else
+                    setChartSubtitle("Os " + range + " Setores em que o(a) " + shareholderName + " Investe Mais");
+            }
             return await perShareholderPerSector(shareholderName, range);
         } else if (typeOfSearch == "company") {
-            setChartKey("symbol");
-            setChartName(shareholderName + " Investments by Company");
-            setChartTooltipContent("companyInfo");
-            setChartSubtitle("The " + range + " Companies " + shareholderName + " Invests the Most");
+            if(language==='en'){
+                setChartKey("symbol");
+                setChartName(shareholderName + " Investments by Company");
+                setChartTooltipContent("companyInfo");
+                if(range==1)
+                    setChartSubtitle("The Company " + shareholderName + " Invests the Most");
+                else
+                    setChartSubtitle("The " + range + " Companies " + shareholderName + " Invests the Most");
+            }
+            else if(language==='pt'){
+                console.log("get shareholder info 2")
+                setChartKey("symbol");
+                setChartName("Investimentos do(a) " + shareholderName + " por Empresa");
+                setChartTooltipContent("companyInfo");
+                if(range==1)
+                    setChartSubtitle("A Empresa em que o(a) " + shareholderName + " Investe Mais");
+                else
+                    setChartSubtitle("As " + range + " Empresas em que o(a) " + shareholderName + " Investe Mais");
+            }
             return await perShareholderPerCompany(shareholderName, range);
         }
         else {
-            setChartKey("symbol");
-            setChartName(shareholderName + " Investments by Company in " + subFilter.additional);
-            setChartTooltipContent("companyInfo");
-            setChartSubtitle("The " + range + " Companies " + shareholderName + " Invests the Most in the " + subFilter.additional + " sector");
+            if(language==='en'){
+                setChartKey("symbol");
+                setChartName(shareholderName + " Investments by Company in " + subFilter.additional);
+                setChartTooltipContent("companyInfo");
+                if(range==1)
+                    setChartSubtitle("The Company " + shareholderName + " Invests the Most in the " + subFilter.additional + " sector");
+                else
+                    setChartSubtitle("The " + range + " Companies " + shareholderName + " Invests the Most in the " + subFilter.additional + " sector");
+            }
+            else if(language==='pt'){
+                console.log("get shareholder info 3")
+                setChartKey("symbol");
+                setChartName("Investimentos do(a) " + shareholderName + " por Empresa no setor " + subFilter.additional);
+                setChartTooltipContent("companyInfo");
+                if(range==1)
+                    setChartSubtitle("A Empresa em que o(a) " + shareholderName + " Investe Mais no setor " + subFilter.additional);
+                else
+                    setChartSubtitle("As " + range + " Empresas em que o(a) " + shareholderName + " Investe Mais no setor " + subFilter.additional);
+            }
             return await perShareholderPerSectorPerCompany(shareholderName, subFilter.additional, range);
         }
     }
@@ -135,27 +253,78 @@ const Chart = ({ filter, subFilter, searchTriggered, range }) => {
                 actualState = typeOfSearch.identifier.split(": ")[1];
                 abbreviation = typeOfSearch.identifier.split(": ")[0];
             }
-            setChartKey("shareholder");
-            setChartName("Ownership Distribution in " + actualState);
-            setChartSubtitle("The Top " + range + " Holders in " + actualState);
-            setChartTooltipContent("stateInfo");
+            if(language==='en'){
+                setChartKey("shareholder");
+                setChartName("Ownership Distribution in " + actualState);
+                setChartSubtitle("The Top " + range + " Holders in " + actualState);
+                setChartTooltipContent("stateInfo");
+            }
+            else if(language==='pt'){
+                console.log("get ownership info 1")
+                setChartKey("shareholder");
+                setChartName("Distribuição de Propriedade em " + actualState);
+                if(range==1)
+                    setChartSubtitle("O Maior Acionista em " + actualState);
+                else
+                    setChartSubtitle("Os " + range + " Maiores Acionistas em " + actualState);
+                setChartTooltipContent("stateInfo");
+            }
             let stateData = await ownershipByState(abbreviation, range);
             return stateData.holders;
         } else if (typeOfSearch.subCategory == "sector") {
-            setChartKey("shareholder");
-            setChartName("Ownership Distribution in " + typeOfSearch.identifier);
-            setChartSubtitle("The Top " + range + " Holders in the " + typeOfSearch.identifier + " sector");
-            setChartTooltipContent("sectorInfo");
+            if(language==='en'){
+                setChartKey("shareholder");
+                setChartName("Ownership Distribution in " + typeOfSearch.identifier);
+                setChartSubtitle("The Top " + range + " Holders in the " + typeOfSearch.identifier + " sector");
+                setChartTooltipContent("sectorInfo");
+            }
+            else if(language==='pt'){
+                console.log("get ownership info 2")
+                setChartKey("shareholder");
+                setChartName("Distribuição de Propriedade em " + typeOfSearch.identifier);
+                if(range==1)
+                    setChartSubtitle("O Maior Acionista no setor " + typeOfSearch.identifier);
+                else
+                    setChartSubtitle("Os " + range + " Maiores Acionistas no setor " + typeOfSearch.identifier);
+                setChartTooltipContent("sectorInfo");
+            }
             return await ownershipBySector(typeOfSearch.identifier, range);
         }
         else {
-            setChartKey("shareholder");
-            setChartName("Ownership Distribution Across SP500");
-            setChartSubtitle("The Top " + range + " Holders in the SP500");
-            setChartTooltipContent("generalInfo");
+            if(language==='en'){
+                setChartKey("shareholder");
+                setChartName("Ownership Distribution Across SP500");
+                setChartSubtitle("The Top " + range + " Holders in the SP500");
+                setChartTooltipContent("generalInfo");
+            }
+            else if(language==='pt'){
+                console.log("RANGE: " + range)
+                setChartKey("shareholder");
+                setChartName("Distribuição de Propriedade no SP500");
+                if(range==1){
+                    setChartSubtitle("O Maior Acionista no SP500");}
+                else{
+                    setChartSubtitle("Os " + range + " Maiores Acionistas no SP500");}
+                setChartTooltipContent("generalInfo");
+            }
             return await ownershipInGeneral(range);
         }
 
+    }
+
+    function manipulateValues(value){
+        let stringNumber = value.toString()
+        let reversedNumberString = stringNumber.split('').reverse().join('');
+        let reversedNumberStringSeparated = '';
+
+        for (let i = 0; i < reversedNumberString.length; i++) {
+            reversedNumberStringSeparated += reversedNumberString[i];
+            if (i % 3 === 2 && i < reversedNumberString.length - 1) {
+                reversedNumberStringSeparated += ',';
+            }
+        }
+        
+        return reversedNumberStringSeparated.split('').reverse().join('');
     }
 
     useEffect(() => {
@@ -168,7 +337,7 @@ const Chart = ({ filter, subFilter, searchTriggered, range }) => {
             }
         };
         fetchData(); // Call the async function to fetch data
-    }, [searchTriggered, reloadTrigger]);
+    }, [language, searchTriggered, reloadTrigger]);
 
     useEffect(() => {
         if (chartData) {
@@ -190,9 +359,11 @@ const Chart = ({ filter, subFilter, searchTriggered, range }) => {
                         // Place information about the company in the tooltip
                         tooltip: {
                             renderer: function ({ datum }) {
+                                const value = manipulateValues(datum.value)
+                                console.log(typeof value)
                                 return {
-                                    title: datum[chartKey],                                    
-                                    content: chartTooltipContent === "companyInfo" ? `<b>${datum.value}M<br> ${datum.fullName}</b><br>${datum.city}, ${datum.state}<br><a href="${datum.website}" target="_blank">"${datum.website}"</a>` : `<b>Investment: $${datum.value}M</b>`,
+                                    title: datum[chartKey],                                     
+                                    content: chartTooltipContent === "companyInfo" ? `<b>$${value}<br> ${datum.fullName}</b><br>${datum.city}, ${datum.state}<br><a href="${datum.website}" target="_blank">"${datum.website}"</a>` : `<b>Investment: $${value}</b>`,
                                 };
                             },
                             interaction: {
@@ -236,7 +407,7 @@ const Chart = ({ filter, subFilter, searchTriggered, range }) => {
     // Ensure #myChart only has one child element
 
     return <div id="chart-container">
-        {goBackButton && <button id="go-back-button" onClick={() => goBack(filter, subFilter)}>Back to Sector</button>}
+        {goBackButton && <button id="go-back-button" onClick={() => goBack(filter, subFilter)}>{labels[language].back}</button>}
         <div id="myChart" style={{ width: '100%', height: '650px' }} /></div>;
 };
 

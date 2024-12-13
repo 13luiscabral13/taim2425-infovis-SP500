@@ -1,13 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Filters.css';
-import sectors from './sector_list.json'; // Adjust the path as needed
+import sectors_en from './sector_list_en.json'; // Adjust the path as needed
+import sectors_pt from './sector_list_pt.json';
 import states from './state_list.json'; // Adjust the path as needed
+import { getCurrentLanguage } from './NavBar';
 
 
-const OwnershipFilters = ({ onSubFilterChange }) => {
+const OwnershipFilters = ({ onSubFilterChange, language }) => {
     const [subCategory, setCategory] = useState('general');
     const [searchQuery, setSearchQuery] = useState('');
     const [suggestions, setSuggestions] = useState([]);
+    console.log("language: " + language )
 
     // Basic fuzzy search function
     const searchAttribute = (query, attribute) => {
@@ -31,13 +34,39 @@ const OwnershipFilters = ({ onSubFilterChange }) => {
         });
     };
 
+    // Update labels dynamically based on the selected language
+    const labels = {
+        en: {
+            bySector: 'By Sector',
+            byState: 'By State',
+            inGeneral: 'In General',
+            search: 'Search for ',
+            sector: 'Sector',
+            state: 'State',
+        },
+        pt: {
+            bySector: 'Por Setor',
+            byState: 'Por estado',
+            inGeneral: 'Geral',
+            search: 'Pesquisar por ',
+            sector: 'Setor',
+            state: 'Estado',
+        },
+    };
+
     const handleSearchChange = (e) => {
         const query = e.target.value;
         setSearchQuery(query);
 
         if (query.length > 0) {
-            const results = searchAttribute(query, subCategory === 'sector' ? sectors : states);
-            setSuggestions(results);
+            if(language==='en'){
+                const results = searchAttribute(query, subCategory === 'sector' ? sectors_en : states);
+                setSuggestions(results);
+            }
+            else if(language==='pt'){
+                const results = searchAttribute(query, subCategory === 'sector' ? sectors_en : states);
+                setSuggestions(results);
+            }
         } else {
             setSuggestions([]);
         }
@@ -57,6 +86,7 @@ const OwnershipFilters = ({ onSubFilterChange }) => {
     const handleSubCategoryChange = (e) => {
         setCategory(e.target.value);
         onSubFilterChange({ subCategory: e.target.value });
+        setSearchQuery('');
     };
 
     return (
@@ -68,7 +98,7 @@ const OwnershipFilters = ({ onSubFilterChange }) => {
                     checked={subCategory === 'sector'}
                     onChange={handleSubCategoryChange}
                 />
-                By Sector
+                {labels[language].bySector}
             </label>
             <label>
                 <input
@@ -77,7 +107,7 @@ const OwnershipFilters = ({ onSubFilterChange }) => {
                     checked={subCategory === 'state'}
                     onChange={handleSubCategoryChange}
                 />
-                By State
+                {labels[language].byState}
             </label>
             <label>
                 <input
@@ -86,7 +116,7 @@ const OwnershipFilters = ({ onSubFilterChange }) => {
                     checked={subCategory === 'general'}
                     onChange={handleSubCategoryChange}                    
                 />
-                In General
+                {labels[language].inGeneral}
             </label>
             <br />
             {subCategory === 'sector' || subCategory === 'state' ? (
@@ -97,7 +127,7 @@ const OwnershipFilters = ({ onSubFilterChange }) => {
                             type="text"
                             value={searchQuery}
                             onChange={handleSearchChange}
-                            placeholder={"Search for " + (subCategory === 'sector' ? 'Sector' : 'State')}
+                            placeholder={labels[language].search + (subCategory === 'sector' ? labels[language].sector : labels[language].state)}
                         />
                     </label>
                 </div>

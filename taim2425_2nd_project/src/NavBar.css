@@ -32,6 +32,11 @@
     transition: color 0.3s;
 }
 
+.language-select {
+    background-color: #00bcd4;
+    color: #fff;
+}
+
 button {
     padding: 10px 20px;
     background-color: #00bcd4;

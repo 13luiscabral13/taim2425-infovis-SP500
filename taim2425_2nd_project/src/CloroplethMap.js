@@ -4,6 +4,7 @@ import { GeoJSON } from 'react-leaflet';
 import React, { useEffect, useRef, useState } from 'react';
 import geojsonData from './gz_2010_us_040_00_20m.json';
 import { ownershipByState } from './data_grabbers';
+import { getCurrentLanguage } from './NavBar';
 
 var geojson;
 
@@ -61,7 +62,21 @@ const ChoroplethMapComp = ({ geojsonData }) => {
 
     // method that we will use to update the control based on feature properties passed
     info.update = function (props) {
-      this._div.innerHTML = props ? ('<h4>' + props.LSAD + '</h4>') : '<h4> Hover over a state </h4>';
+      const languageSelect = getCurrentLanguage()
+      
+      const updateContainer = () => {
+          if (languageSelect.value === 'en') {
+            this._div.innerHTML = props ? ('<h4>' + props.LSAD + '</h4>') : '<h4> Hover over a state </h4>';
+          } else if (languageSelect.value === 'pt') {
+            this._div.innerHTML = props ? ('<h4>' + props.LSAD + '</h4>') : '<h4> Passe o rato sobre um estado </h4>';
+          }
+      };
+
+      languageSelect.addEventListener('change', () => {
+        updateContainer();
+      });
+
+      updateContainer();
     };
 
     info.addTo(map);
@@ -102,22 +117,43 @@ const ChoroplethMapComp = ({ geojsonData }) => {
 
       ownershipByState(e.target.feature.properties.LSAD, 10)
         .then(total_shares_value => {
-          if (total_shares_value.holders) {
-            infoBox.innerHTML = `
-        <p><strong>State Name:</strong> ${NAME}</p>
-        <p><strong>State Symbol:</strong> ${LSAD}</p>
-        <p><strong>State Area:</strong> ${CENSUSAREA}</p>
-        <p><strong>Total Shares Value:</strong> ${total_shares_value.shares_value}</p>
-        <p><strong>Top Holder</strong> ${total_shares_value.holders[0].shareholder}</p>
-      `;
+          if (getCurrentLanguage().value==="en") {
+            if (total_shares_value.holders) {
+              infoBox.innerHTML = `
+          <p><strong>State Name:</strong> ${NAME}</p>
+          <p><strong>State Symbol:</strong> ${LSAD}</p>
+          <p><strong>State Area:</strong> ${CENSUSAREA}</p>
+          <p><strong>Total Shares Value:</strong> ${total_shares_value.shares_value}</p>
+          <p><strong>Top Holder:</strong> ${total_shares_value.holders[0].shareholder}</p>
+        `;
+            }
+            else {
+              infoBox.innerHTML = `
+          <p><strong>State Name:</strong> ${NAME}</p>
+          <p><strong>State Symbol:</strong> ${LSAD}</p>
+          <p><strong>State Area:</strong> ${CENSUSAREA}</p>
+          <p><strong>Total Shares Value:</strong> No Financial Data Available</p>
+          <p><strong>Top Holder:</strong> No Financial Data Available</p> `;
+            }
           }
-          else {
-            infoBox.innerHTML = `
-        <p><strong>State Name:</strong> ${NAME}</p>
-        <p><strong>State Symbol:</strong> ${LSAD}</p>
-        <p><strong>State Area:</strong> ${CENSUSAREA}</p>
-        <p><strong>Total Shares Value:</strong> No Financial Data Available</p>
-        <p><strong>Top Holder</strong> No Financial Data Available</p> `;
+          else if (getCurrentLanguage().value==="pt") {
+            if (total_shares_value.holders) {
+              infoBox.innerHTML = `
+          <p><strong>Nome do Estado:</strong> ${NAME}</p>
+          <p><strong>Símbolo do Estado:</strong> ${LSAD}</p>
+          <p><strong>Área do Estado:</strong> ${CENSUSAREA}</p>
+          <p><strong>Valor Total das Ações:</strong> ${total_shares_value.shares_value}</p>
+          <p><strong>Maior Acionista:</strong> ${total_shares_value.holders[0].shareholder}</p>
+        `;
+            }
+            else {
+              infoBox.innerHTML = `
+          <p><strong>Nome do Estado:</strong> ${NAME}</p>
+          <p><strong>Símbolo do Estado:</strong> ${LSAD}</p>
+          <p><strong>Área do Estado:</strong> ${CENSUSAREA}</p>
+          <p><strong>Valor Total das Ações:</strong> Sem informação disponível</p>
+          <p><strong>Maior Acionista:</strong> Sem informação disponível</p> `;
+            }
           }
           })
 
@@ -145,7 +181,6 @@ const ChoroplethMapComp = ({ geojsonData }) => {
         mouseout: resetHighlight,
       });
     }
-
 
     geojson = L.geoJson(geojsonData, {
       style: style,

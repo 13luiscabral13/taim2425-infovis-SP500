@@ -1,19 +1,45 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Filters.css';
 import shareholders from './shareholder_list.json'; // Adjust the path as needed
-import sectors from './sector_list.json'; // Adjust the path as needed
+import sectors_en from './sector_list_en.json'; // Adjust the path as needed
+import sectors_pt from './sector_list_pt.json';
 import states from './state_list.json'; // Adjust the path as needed
+import { getCurrentLanguage } from './NavBar';
 
-const SpecificFilters = ({onSubFilterChange}) => {
+const SpecificFilters = ({ onSubFilterChange, language }) => {
     const [subCategory, setCategory] = useState('');
     const [searchQuery, setSearchQuery] = useState('');
     const [suggestions, setSuggestions] = useState([]);
     const [stateSectorSearchQuery, setStateSectorSearchQuery] = useState('');
     const [stateSectorSuggestions, setStateSectorSuggestions] = useState([]);
+    console.log("language: " + language )
 
     const handleSubCategoryChange = (e) => {
         setCategory(e.target.value);
         onSubFilterChange({ subCategory: e.target.value, shareholder: searchQuery });
+        setStateSectorSearchQuery('')
+    };
+
+    // Update labels dynamically based on the selected language
+    const labels = {
+        en: {
+            sector: 'By Sector',
+            state: 'By State',
+            general: 'In General',
+            search: 'Search for ',
+            sector: 'Sector',
+            state: 'State',
+            shareholder: 'Search for Shareholder',
+        },
+        pt: {
+            sector: 'Por Setor',
+            state: 'Por estado',
+            general: 'Geral',
+            search: 'Pesquisar por ',
+            sector: 'Setor',
+            state: 'Estado',
+            shareholder: 'Pesquisar por Investidor',
+        },
     };
 
     // Basic fuzzy search function
@@ -56,8 +82,14 @@ const SpecificFilters = ({onSubFilterChange}) => {
         setStateSectorSearchQuery(query);
 
         if (query.length > 0) {
-            const results = searchElements(query, subCategory === 'sector' ? sectors : states, 1);
-            setStateSectorSuggestions(results);
+            if(language==='en'){
+                const results = searchElements(query, subCategory === 'sector' ? sectors_en : states, 1);
+                setStateSectorSuggestions(results);
+            }
+            else if(language==='pt'){
+                const results = searchElements(query, subCategory === 'sector' ? sectors_en : states, 1);
+                setStateSectorSuggestions(results);
+            }
         } else {
             setStateSectorSuggestions([]);
         }
@@ -94,7 +126,7 @@ const SpecificFilters = ({onSubFilterChange}) => {
                 type="text"
                 value={searchQuery}
                 onChange={handleSearchChange}
-                placeholder="Search for Shareholder"
+                placeholder={labels[language].shareholder}
             />
         </label>
         <br/>
@@ -119,7 +151,7 @@ const SpecificFilters = ({onSubFilterChange}) => {
                     checked={subCategory === 'sector'}
                     onChange={handleSubCategoryChange}
                 />
-                By Sector
+                {labels[language].sector}
             </label>
             <label>
                 <input
@@ -128,7 +160,7 @@ const SpecificFilters = ({onSubFilterChange}) => {
                     checked={subCategory === 'state'}
                     onChange={handleSubCategoryChange}
                 />
-                By State
+                {labels[language].state}
             </label>
             <label>
                 <input
@@ -137,7 +169,7 @@ const SpecificFilters = ({onSubFilterChange}) => {
                     checked={subCategory === 'general'}
                     onChange={handleSubCategoryChange}                    
                 />
-                In General
+                {labels[language].general}
             </label>
             <br />
             {subCategory === 'sector' || subCategory === 'state' ? (
@@ -148,7 +180,7 @@ const SpecificFilters = ({onSubFilterChange}) => {
                             type="text"
                             value={stateSectorSearchQuery}
                             onChange={handleStateSectorSearchChange}
-                            placeholder={"Search for " + (subCategory === 'sector' ? 'Sector' : 'State')}
+                            placeholder={labels[language].search + (subCategory === 'sector' ? labels[language].sector : labels[language].state)}
                         />
                     </label>
                 </div>

@@ -7,7 +7,7 @@ import NavBar from './NavBar';
 
 function App() {
   // State to track the current view/page
-  const [currentPage, setCurrentPage] = useState('MapView');
+  const [currentPage, setCurrentPage] = useState('ChartView');
 
   return (
     <div>
