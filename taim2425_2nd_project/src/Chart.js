@@ -192,7 +192,7 @@ const Chart = ({ filter, subFilter, searchTriggered, range }) => {
                             renderer: function ({ datum }) {
                                 return {
                                     title: datum[chartKey],                                    
-                                    content: chartTooltipContent === "companyInfo" ? `<b>${datum.value}M<br> ${datum.fullName}</b><br>${datum.city}, ${datum.state}<br><a href="${datum.website}" target="_blank">"${datum.website}"</a>` : `<b>Investment: $${datum.value}M</b>`,
+                                    content: chartTooltipContent === "companyInfo" ? `<b>${datum.value}<br> ${datum.fullName}</b><br>${datum.city}, ${datum.state}<br><a href="${datum.website}" target="_blank">"${datum.website}"</a>` : `<b>Investment: $${datum.value}</b>`,
                                 };
                             },
                             interaction: {
@@ -202,8 +202,7 @@ const Chart = ({ filter, subFilter, searchTriggered, range }) => {
                         listeners: {
                             nodeClick: (event: any) => {
                                 if (filter == "shareholder" && subFilter.subCategory == "sector") {
-                                    console.log("Filter:", filter, "Subfilter:", subFilter, "Datum:", event.datum);
-                                    subFilter.additional = event.datum[chartKey];
+                                     subFilter.additional = event.datum[chartKey];
                                     setReloadTrigger(prev => prev + 1); // Update state to trigger reload
                                     // Reload the Chart component with the new filter and sub-filter
                                     setGoBackButton(true);

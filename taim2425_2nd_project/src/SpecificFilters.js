@@ -44,7 +44,7 @@ const SpecificFilters = ({onSubFilterChange}) => {
         setSearchQuery(query);
 
         if (query.length > 0) {
-            const results = searchElements(query, shareholders, 4);
+            const results = searchElements(query, shareholders, 3);
             setSuggestions(results);
         } else {
             setSuggestions([]);
